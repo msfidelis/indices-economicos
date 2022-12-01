@@ -86,6 +86,48 @@ type ResponseVariacao []struct {
 				Nome string `json:"nome"`
 			} `json:"localidade"`
 			Serie struct {
+				Num200001 string `json:"200001"`
+				Num200002 string `json:"200002"`
+				Num200003 string `json:"200003"`
+				Num200004 string `json:"200004"`
+				Num200101 string `json:"200101"`
+				Num200102 string `json:"200102"`
+				Num200103 string `json:"200103"`
+				Num200104 string `json:"200104"`
+				Num200201 string `json:"200201"`
+				Num200202 string `json:"200202"`
+				Num200203 string `json:"200203"`
+				Num200204 string `json:"200204"`
+				Num200301 string `json:"200301"`
+				Num200302 string `json:"200302"`
+				Num200303 string `json:"200303"`
+				Num200304 string `json:"200304"`
+				Num200401 string `json:"200401"`
+				Num200402 string `json:"200402"`
+				Num200403 string `json:"200403"`
+				Num200404 string `json:"200404"`
+				Num200501 string `json:"200501"`
+				Num200502 string `json:"200502"`
+				Num200503 string `json:"200503"`
+				Num200504 string `json:"200504"`
+				Num200601 string `json:"200601"`
+				Num200602 string `json:"200602"`
+				Num200603 string `json:"200603"`
+				Num200604 string `json:"200604"`
+				Num200701 string `json:"200701"`
+				Num200702 string `json:"200702"`
+				Num200703 string `json:"200703"`
+				Num200704 string `json:"200704"`
+				Num200801 string `json:"200801"`
+				Num200802 string `json:"200802"`
+				Num200803 string `json:"200803"`
+				Num200804 string `json:"200804"`
+				Num200901 string `json:"200901"`
+				Num200902 string `json:"200902"`
+				Num200903 string `json:"200903"`
+				Num200904 string `json:"200904"`
+				Num201001 string `json:"201001"`
+				Num201002 string `json:"201002"`
 				Num201003 string `json:"201003"`
 				Num201004 string `json:"201004"`
 				Num201101 string `json:"201101"`
@@ -180,8 +222,8 @@ func Runner() {
 
 func RunnerEvolucaoPIB() {
 	runnerName := "PIB - Variação"
-	// domain := "api.bcb.gov.br"
-	url := "https://servicodados.ibge.gov.br/api/v3/agregados/5932/periodos/-48/variaveis/6561?classificacao=11255[90707]&localidades=N1"
+	fonte := "https://servicodados.ibge.gov.br"
+	url := "https://servicodados.ibge.gov.br/api/v3/agregados/5932/periodos/-192/variaveis/6561?classificacao=11255[90707]&localidades=N1"
 	unidadeMedida := "Variação Trimestral"
 
 	file_path := "./data/pib/pib-variacao.json"
@@ -200,7 +242,7 @@ func RunnerEvolucaoPIB() {
 
 	now := time.Now()
 	pib.Atualizacao = now
-	pib.Fonte = url
+	pib.Fonte = fonte
 	pib.UnidadeMedida = unidadeMedida
 
 	l.Info().
@@ -404,7 +446,7 @@ func RunnerPIBPerCapta() {
 	runnerName := "PIB - Per Capta"
 	url := "https://servicodados.ibge.gov.br/api/v3/agregados/6784/periodos/-48/variaveis/9812?classificacao=&localidades=N1"
 	unidadeMedida := "PIB Per Capta"
-
+	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/pib/pib-per-capta.json"
 
 	l := logger.Instance()
@@ -421,7 +463,7 @@ func RunnerPIBPerCapta() {
 
 	now := time.Now()
 	pib.Atualizacao = now
-	pib.Fonte = url
+	pib.Fonte = fonte
 	pib.UnidadeMedida = unidadeMedida
 
 	l.Info().
