@@ -1,7 +1,7 @@
 package pib
 
 func Runner() {
-	// RunnerEvolucaoPIB()
-	// RunnerPIBPerCapta()
+	RunnerEvolucaoPIB()
+	RunnerPIBPerCapta()
 	RunnerPIBAcumulado()
 }
