@@ -120,6 +120,16 @@ func Runner() {
 
 		})
 
+		var output []Data
+
+		input := inpc.Data
+
+		for i := len(input) - 1; i >= 0; i-- {
+			output = append(output, input[i])
+		}
+
+		inpc.Data = output
+
 		l.Info().
 			Str("Runner", runnerName).
 			Msg("Convertendo a Struct do Schema em formato JSON")
