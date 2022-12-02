@@ -1,0 +1,192 @@
+package gini
+
+import (
+	"crawlers/pkg/logger"
+	"encoding/json"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+	"time"
+
+	"github.com/gocolly/colly"
+)
+
+type Data struct {
+	Ano   string  `json:"ano_referencia"`
+	Valor float64 `json:"valor"`
+}
+
+type GINI struct {
+	Atualizacao time.Time `json:"data_atualizacao"`
+	Fonte       string    `json:"fonte"`
+	Data        []Data    `json:"data"`
+}
+
+func Runner() {
+	runnerName := "GINI"
+	domain := "www.indexmundi.com"
+	url := "https://www.indexmundi.com/facts/brazil/indicator/SI.POV.GINI"
+	file_path := "./data/gini/gini.json"
+
+	fonte := "indexmundi.com / data.worldbank.org"
+
+	l := logger.Instance()
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Iniciando o Runner para Efetuar o Crawler")
+
+	c := colly.NewCollector(
+		colly.AllowedDomains(domain),
+	)
+
+	gini := &GINI{}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Atualizando campo da data/hora da atualização dos dados")
+
+	now := time.Now()
+	gini.Atualizacao = now
+	gini.Fonte = fonte
+
+	// Find and print all links
+	c.OnHTML("table", func(e *colly.HTMLElement) {
+
+		fmt.Println(e)
+
+		// panic("STOP")
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Domain", domain).
+			Str("URL", url).
+			Msg("Recuperando o HTML da Página")
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Domain", domain).
+			Str("URL", url).
+			Msg("Encontrando o elemento <table> para efetuar o parsing")
+
+		e.ForEach("tr", func(i int, tr *colly.HTMLElement) {
+
+			l.Info().
+				Str("Runner", runnerName).
+				Str("URL", url).
+				Msg("Item recuparado itens do elemento <table>")
+
+			l.Info().
+				Str("Runner", runnerName).
+				Str("URL", url).
+				Msg("Removendo a primeira linha da tabela Year/Value")
+
+			if i == 0 {
+				return
+			}
+
+			l.Info().
+				Str("Runner", runnerName).
+				Str("URL", url).
+				Msg("Normalizando os dados recuperados")
+
+			ano := strings.Replace(tr.ChildText("td:nth-child(1)"), ",", ".", -1)
+			index := strings.Replace(tr.ChildText("td:nth-child(2)"), ",", ".", -1)
+
+			valor, _ := strconv.ParseFloat(strings.TrimSpace(index), 64)
+
+			fmt.Println(ano)
+			fmt.Println(index)
+
+			item := Data{
+				Ano:   ano,
+				Valor: valor / 100,
+			}
+
+			l.Info().
+				Str("Runner", runnerName).
+				Msg("Agregando Item ao Slice")
+
+			gini.Data = append(gini.Data, item)
+
+			l.Info().
+				Str("Runner", runnerName).
+				Msg("Item Agregado ao Slice")
+
+		})
+
+		// Adicionando os anos manualmente por encontrá-los somente em noticias
+		// https://www.ipea.gov.br/cartadeconjuntura/index.php/tag/desigualdade-de-renda/
+
+		item2021 := Data{
+			Ano:   "2021",
+			Valor: 0.489,
+		}
+
+		gini.Data = append(gini.Data, item2021)
+
+		item2022 := Data{
+			Ano:   "2022",
+			Valor: 0.489,
+		}
+
+		gini.Data = append(gini.Data, item2022)
+
+		l.Info().
+			Str("Runner", runnerName).
+			Msg("Convertendo a Struct do Schema em formato JSON")
+
+		b, err := json.Marshal(gini)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("Error", err.Error()).
+				Msg("Erro ao converter a struct em JSON")
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Msg("Criando arquivo de persistência para os dados convertidos")
+
+		f, err := os.Create(file_path)
+		defer f.Close()
+
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", file_path).
+				Str("Error", err.Error()).
+				Msg("Erro ao criar o diretório para persistência dos dados")
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Msg("Iniciando a escrita dos dados no arquivo de persistência")
+
+		_, err = f.WriteString(string(b))
+
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", file_path).
+				Str("Error", err.Error()).
+				Msg("Erro para escrever os dados no arquivo")
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Msg("Finalizado")
+	})
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("Domain", domain).
+		Str("URL", url).
+		Msg("Efetuando requisição para o Endpoint")
+
+	c.Visit(url)
+}
