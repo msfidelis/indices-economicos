@@ -122,6 +122,20 @@ func Runner() {
 
 		l.Info().
 			Str("Runner", runnerName).
+			Msg("Revertendo a ordem do slice")
+
+		var output []Data
+
+		input := igpm.Data
+
+		for i := len(input) - 1; i >= 0; i-- {
+			output = append(output, input[i])
+		}
+
+		igpm.Data = output
+
+		l.Info().
+			Str("Runner", runnerName).
 			Msg("Convertendo a Struct do Schema em formato JSON")
 
 		b, err := json.Marshal(igpm)

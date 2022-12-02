@@ -120,6 +120,10 @@ func Runner() {
 
 		})
 
+		l.Info().
+			Str("Runner", runnerName).
+			Msg("Revertendo a ordem do slice")
+
 		var output []Data
 
 		input := inpc.Data
