@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -139,7 +140,33 @@ func RunnerPIBAcumuladoAno() {
 		Msg("Somando os acumulos trimestrais")
 
 	for _, v := range pib.Data {
-		resumido[v.Ano] += v.Valor
+
+		anoRaw := v.Ano[0:4]
+		ano := anoRaw
+		// ano, err := strconv.ParseInt(strings.TrimSpace(anoRaw), 10, 64)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("Error", err.Error()).
+				Str("Valor recuperado", anoRaw).
+				Msg("Erro ao converter o valor para Float64")
+		}
+		resumido[ano] += v.Valor
+	}
+
+	// Sort
+
+	ordenado := make(map[string]float64)
+
+	periodo := make([]string, 0, len(resumido))
+	for name := range resumido {
+		periodo = append(periodo, name)
+	}
+
+	sort.Strings(periodo)
+
+	for _, name := range periodo {
+		ordenado[name] = resumido[name]
 	}
 
 	l.Info().
@@ -152,7 +179,7 @@ func RunnerPIBAcumuladoAno() {
 		Str("Runner", runnerName).
 		Msg("Criando o resumo consolidado com o PIB Anual")
 
-	for i, v := range resumido {
+	for i, v := range ordenado {
 		item := DataAcumuladoAno{
 			Ano:   i,
 			Valor: v,
