@@ -36,9 +36,9 @@ func Runner() {
 func RunnerAcumuladoMensal() {
 	runnerName := "SELIC"
 	// domain := "api.bcb.gov.br"
-	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados/ultimos/1000?formato=json"
+	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados/ultimos/100?formato=json"
 	unidadeMedida := "Percentual ao mês"
-
+	fonte := "https://api.bcb.gov.br"
 	file_path := "./data/selic/selic-variacao-mes.json"
 
 	l := logger.Instance()
@@ -55,7 +55,7 @@ func RunnerAcumuladoMensal() {
 
 	now := time.Now()
 	selic.Atualizacao = now
-	selic.Fonte = url
+	selic.Fonte = fonte
 	selic.UnidadeMedida = unidadeMedida
 
 	l.Info().
@@ -215,8 +215,9 @@ func RunnerPercentualAoAno() {
 
 	runnerName := "SELIC"
 	// domain := "api.bcb.gov.br"
-	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/1000?formato=json"
+	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/100?formato=json"
 	unidadeMedida := "Percentual ao ano"
+	fonte := "https://api.bcb.gov.br"
 
 	file_path := "./data/selic/selic-percentual-ano.json"
 
@@ -234,7 +235,7 @@ func RunnerPercentualAoAno() {
 
 	now := time.Now()
 	selic.Atualizacao = now
-	selic.Fonte = url
+	selic.Fonte = fonte
 	selic.UnidadeMedida = unidadeMedida
 
 	l.Info().
