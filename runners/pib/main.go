@@ -4,4 +4,5 @@ func Runner() {
 	RunnerEvolucaoPIB()
 	RunnerPIBPerCapta()
 	RunnerPIBAcumulado()
+	RunnerPIBAcumuladoAno()
 }

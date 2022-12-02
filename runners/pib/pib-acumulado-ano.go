@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-type ResponseAcumulado []struct {
+type ResponseAcumuladoAno []struct {
 	NtCod                 string `json:"nt_cod"`
 	Nt                    string `json:"nt"`
 	UgCod                 string `json:"ug_cod"`
@@ -27,24 +27,26 @@ type ResponseAcumulado []struct {
 	V                     string `json:"v"`
 }
 
-type DataAcumulado struct {
-	Periodo string  `json:"periodo"`
-	Valor   float64 `json:"valor"`
+type DataAcumuladoAno struct {
+	Ano   string  `json:"ano"`
+	Valor float64 `json:"valor"`
 }
 
-type PIBAcumulado struct {
-	Atualizacao   time.Time       `json:"data_atualizacao"`
-	UnidadeMedida string          `json:"unidade_medida"`
-	Fonte         string          `json:"fonte"`
-	Data          []DataAcumulado `json:"data"`
+type PIBAcumuladoAno struct {
+	Atualizacao   time.Time          `json:"data_atualizacao"`
+	UnidadeMedida string             `json:"unidade_medida"`
+	Fonte         string             `json:"fonte"`
+	Data          []DataAcumuladoAno `json:"data"`
 }
 
-func RunnerPIBAcumulado() {
-	runnerName := "PIB - Acumulado"
+func RunnerPIBAcumuladoAno() {
+	runnerName := "PIB - Acumulado Anual"
 	url := "https://servicodados.ibge.gov.br/api/v1/conjunturais?&d=s&user=ibge&t=1846&v=585&p=200001-205701&ng=1(1)&c=11255(90707)"
-	unidadeMedida := "Milhões de Reais"
+	unidadeMedida := "Trilhões de Reais"
 	fonte := "https://servicodados.ibge.gov.br"
-	file_path := "./data/pib/pib-acumulado.json"
+	file_path := "./data/pib/pib-acumulado-ano.json"
+
+	resumido := make(map[string]float64)
 
 	l := logger.Instance()
 
@@ -52,7 +54,7 @@ func RunnerPIBAcumulado() {
 		Str("Runner", runnerName).
 		Msg("Iniciando o Runner para Efetuar o Crawler")
 
-	pib := &PIBAcumulado{}
+	pib := &PIBAcumuladoAno{}
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -106,6 +108,8 @@ func RunnerPIBAcumulado() {
 
 		valor, err := strconv.ParseFloat(strings.TrimSpace(v.V), 64)
 
+		ano := v.PCod[0:4]
+
 		if err != nil {
 			l.Fatal().
 				Str("Runner", runnerName).
@@ -114,9 +118,44 @@ func RunnerPIBAcumulado() {
 				Msg("Erro ao converter o valor para Float64")
 		}
 
-		item := DataAcumulado{
-			Periodo: v.P,
-			Valor:   valor,
+		item := DataAcumuladoAno{
+			Ano:   ano,
+			Valor: valor,
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Msg("Agregando Item ao Slice")
+
+		pib.Data = append(pib.Data, item)
+
+		l.Info().
+			Str("Runner", runnerName).
+			Msg("Item Agregado ao Slice")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Somando os acumulos trimestrais")
+
+	for _, v := range pib.Data {
+		resumido[v.Ano] += v.Valor
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Zerando a variável temporária de DataAcumuladoAno")
+
+	pib.Data = []DataAcumuladoAno{}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Criando o resumo consolidado com o PIB Anual")
+
+	for i, v := range resumido {
+		item := DataAcumuladoAno{
+			Ano:   i,
+			Valor: v,
 		}
 
 		l.Info().
