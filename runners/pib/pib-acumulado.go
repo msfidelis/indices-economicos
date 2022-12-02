@@ -41,7 +41,7 @@ type PIBAcumulado struct {
 
 func RunnerPIBAcumulado() {
 	runnerName := "PIB - Acumulado"
-	url := "https://servicodados.ibge.gov.br/api/v1/conjunturais?&d=s&user=ibge&t=1846&v=585&p=199601-205701&ng=1(1)&c=11255(90707)"
+	url := "https://servicodados.ibge.gov.br/api/v1/conjunturais?&d=s&user=ibge&t=1846&v=585&p=200001-205701&ng=1(1)&c=11255(90707)"
 	unidadeMedida := "Milhões de Reais"
 	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/pib/pib-acumulado.json"
