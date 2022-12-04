@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math"
 	"net/http"
 	"os"
 	"reflect"
@@ -24,11 +25,13 @@ var (
 )
 
 type Data struct {
-	Ano               string  `json:"ano_referencia"`
-	IDH               float64 `json:"idh"`
-	IDHF              float64 `json:"idh_feminino"`
-	IDHM              float64 `json:"idh_masculino"`
-	ExpectativaDeVida float64 `json:"expectativa_de_vida"`
+	Ano                        string  `json:"ano_referencia"`
+	IDH                        float64 `json:"idh"`
+	IDHF                       float64 `json:"idh_feminino"`
+	IDHM                       float64 `json:"idh_masculino"`
+	ExpectativaDeVida          float64 `json:"expectativa_de_vida"`
+	ExpectativaDeVidaFeminina  float64 `json:"expectativa_de_vida_feminina"`
+	ExpectativaDeVidaMasculina float64 `json:"expectativa_de_vida_masculina"`
 }
 
 type HDI struct {
@@ -144,6 +147,111 @@ type HDICsv struct {
 	MHD2021 string `csv:"hdi_m_2021"`
 	MHD2022 string `csv:"hdi_m_2022"`
 	MHD2023 string `csv:"hdi_m_2023"`
+
+	// Expectativa de Vida - Geral
+	LEG1991 string `csv:"le_1991"`
+	LEG1992 string `csv:"le_1992"`
+	LEG1993 string `csv:"le_1993"`
+	LEG1994 string `csv:"le_1994"`
+	LEG1995 string `csv:"le_1995"`
+	LEG1996 string `csv:"le_1996"`
+	LEG1997 string `csv:"le_1997"`
+	LEG1998 string `csv:"le_1998"`
+	LEG1999 string `csv:"le_1999"`
+	LEG2000 string `csv:"le_2000"`
+	LEG2001 string `csv:"le_2001"`
+	LEG2002 string `csv:"le_2002"`
+	LEG2003 string `csv:"le_2003"`
+	LEG2004 string `csv:"le_2004"`
+	LEG2005 string `csv:"le_2005"`
+	LEG2006 string `csv:"le_2006"`
+	LEG2007 string `csv:"le_2007"`
+	LEG2008 string `csv:"le_2008"`
+	LEG2009 string `csv:"le_2009"`
+	LEG2010 string `csv:"le_2010"`
+	LEG2011 string `csv:"le_2011"`
+	LEG2012 string `csv:"le_2012"`
+	LEG2013 string `csv:"le_2013"`
+	LEG2014 string `csv:"le_2014"`
+	LEG2015 string `csv:"le_2015"`
+	LEG2016 string `csv:"le_2016"`
+	LEG2017 string `csv:"le_2017"`
+	LEG2018 string `csv:"le_2018"`
+	LEG2019 string `csv:"le_2019"`
+	LEG2020 string `csv:"le_2020"`
+	LEG2021 string `csv:"le_2021"`
+	LEG2022 string `csv:"le_2022"`
+	LEG2023 string `csv:"le_2023"`
+
+	// Expectativa de Vida - Feminina
+	LEF1991 string `csv:"le_f_1991"`
+	LEF1992 string `csv:"le_f_1992"`
+	LEF1993 string `csv:"le_f_1993"`
+	LEF1994 string `csv:"le_f_1994"`
+	LEF1995 string `csv:"le_f_1995"`
+	LEF1996 string `csv:"le_f_1996"`
+	LEF1997 string `csv:"le_f_1997"`
+	LEF1998 string `csv:"le_f_1998"`
+	LEF1999 string `csv:"le_f_1999"`
+	LEF2000 string `csv:"le_f_2000"`
+	LEF2001 string `csv:"le_f_2001"`
+	LEF2002 string `csv:"le_f_2002"`
+	LEF2003 string `csv:"le_f_2003"`
+	LEF2004 string `csv:"le_f_2004"`
+	LEF2005 string `csv:"le_f_2005"`
+	LEF2006 string `csv:"le_f_2006"`
+	LEF2007 string `csv:"le_f_2007"`
+	LEF2008 string `csv:"le_f_2008"`
+	LEF2009 string `csv:"le_f_2009"`
+	LEF2010 string `csv:"le_f_2010"`
+	LEF2011 string `csv:"le_f_2011"`
+	LEF2012 string `csv:"le_f_2012"`
+	LEF2013 string `csv:"le_f_2013"`
+	LEF2014 string `csv:"le_f_2014"`
+	LEF2015 string `csv:"le_f_2015"`
+	LEF2016 string `csv:"le_f_2016"`
+	LEF2017 string `csv:"le_f_2017"`
+	LEF2018 string `csv:"le_f_2018"`
+	LEF2019 string `csv:"le_f_2019"`
+	LEF2020 string `csv:"le_f_2020"`
+	LEF2021 string `csv:"le_f_2021"`
+	LEF2022 string `csv:"le_f_2022"`
+	LEF2023 string `csv:"le_f_2023"`
+
+	// Expectativa de Vida - Masculina
+	LEM1991 string `csv:"le_m_1991"`
+	LEM1992 string `csv:"le_m_1992"`
+	LEM1993 string `csv:"le_m_1993"`
+	LEM1994 string `csv:"le_m_1994"`
+	LEM1995 string `csv:"le_m_1995"`
+	LEM1996 string `csv:"le_m_1996"`
+	LEM1997 string `csv:"le_m_1997"`
+	LEM1998 string `csv:"le_m_1998"`
+	LEM1999 string `csv:"le_m_1999"`
+	LEM2000 string `csv:"le_m_2000"`
+	LEM2001 string `csv:"le_m_2001"`
+	LEM2002 string `csv:"le_m_2002"`
+	LEM2003 string `csv:"le_m_2003"`
+	LEM2004 string `csv:"le_m_2004"`
+	LEM2005 string `csv:"le_m_2005"`
+	LEM2006 string `csv:"le_m_2006"`
+	LEM2007 string `csv:"le_m_2007"`
+	LEM2008 string `csv:"le_m_2008"`
+	LEM2009 string `csv:"le_m_2009"`
+	LEM2010 string `csv:"le_m_2010"`
+	LEM2011 string `csv:"le_m_2011"`
+	LEM2012 string `csv:"le_m_2012"`
+	LEM2013 string `csv:"le_m_2013"`
+	LEM2014 string `csv:"le_m_2014"`
+	LEM2015 string `csv:"le_m_2015"`
+	LEM2016 string `csv:"le_m_2016"`
+	LEM2017 string `csv:"le_m_2017"`
+	LEM2018 string `csv:"le_m_2018"`
+	LEM2019 string `csv:"le_m_2019"`
+	LEM2020 string `csv:"le_m_2020"`
+	LEM2021 string `csv:"le_m_2021"`
+	LEM2022 string `csv:"le_m_2022"`
+	LEM2023 string `csv:"le_m_2023"`
 }
 
 func Runner() {
@@ -345,6 +453,96 @@ func Runner() {
 
 					item := ordenado[ano]
 					item.IDHM = valor
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a expectativa de vida - Geral
+			for _, v := range campos[1:] {
+
+				if strings.HasPrefix(v, "LEG") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeVida = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a expectativa de vida - Feminina
+			for _, v := range campos[1:] {
+
+				if strings.HasPrefix(v, "LEF") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeVidaFeminina = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a expectativa de vida - Masculina
+			for _, v := range campos[1:] {
+
+				if strings.HasPrefix(v, "LEM") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeVidaMasculina = math.Round(valor*100) / 100
 
 					ordenado[ano] = item
 
