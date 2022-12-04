@@ -7,7 +7,8 @@ import (
 	// "crawlers/runners/ipca"
 	// "crawlers/runners/pib"
 	// "crawlers/runners/selic"
-	"crawlers/runners/gini"
+	// "crawlers/runners/gini"
+	"crawlers/runners/idh"
 )
 
 func main() {
@@ -46,9 +47,15 @@ func main() {
 	// selic.Runner()
 
 	// GINI
+	// l.Info().
+	// 	Msg("Iniciando o Runner de coeficiente de Gini")
+
+	// gini.Runner()
+
+	// HDI
 	l.Info().
 		Msg("Iniciando o Runner de coeficiente de Gini")
 
-	gini.Runner()
+	idh.Runner()
 
 }
