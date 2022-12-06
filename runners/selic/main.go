@@ -9,6 +9,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/gocarina/gocsv"
 )
 
 type Response []struct {
@@ -40,6 +42,7 @@ func RunnerAcumuladoMensal() {
 	unidadeMedida := "Percentual ao mês"
 	fonte := "https://api.bcb.gov.br"
 	file_path := "./data/selic/selic-variacao-mes.json"
+	fileNameOutputCSV := "./data/selic/selic-variacao-mes.csv"
 
 	l := logger.Instance()
 
@@ -204,6 +207,45 @@ func RunnerAcumuladoMensal() {
 			Str("Error", err.Error()).
 			Msg("Erro para escrever os dados no arquivo")
 	}
+
+	// Convertendo em CSV
+	csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o dataset em CSV")
+	}
+	defer csvFile.Close()
+
+	csvOutput, err := gocsv.MarshalString(&selic.Data)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao escrever o dataset em CSV")
+	}
+
+	_, err = csvFile.WriteString(string(csvOutput))
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Finalizado")
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -220,6 +262,7 @@ func RunnerPercentualAoAno() {
 	fonte := "https://api.bcb.gov.br"
 
 	file_path := "./data/selic/selic-percentual-ano.json"
+	fileNameOutputCSV := "./data/selic/selic-percentual-ano.csv"
 
 	l := logger.Instance()
 
@@ -384,6 +427,45 @@ func RunnerPercentualAoAno() {
 			Str("Error", err.Error()).
 			Msg("Erro para escrever os dados no arquivo")
 	}
+
+	// Convertendo em CSV
+	csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o dataset em CSV")
+	}
+	defer csvFile.Close()
+
+	csvOutput, err := gocsv.MarshalString(&selic.Data)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao escrever o dataset em CSV")
+	}
+
+	_, err = csvFile.WriteString(string(csvOutput))
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Finalizado")
 
 	l.Info().
 		Str("Runner", runnerName).
