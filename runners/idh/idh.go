@@ -555,7 +555,11 @@ func Runner() {
 	}
 
 	for _, i := range ordenado {
-		hdi.Data = append(hdi.Data, i)
+
+		if i.Ano != "" {
+			hdi.Data = append(hdi.Data, i)
+		}
+
 	}
 
 	sort.Slice(hdi.Data, func(i, j int) bool {
