@@ -9,12 +9,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gocarina/gocsv"
 	"github.com/gocolly/colly"
 )
 
 type Data struct {
-	Ano   string  `json:"ano_referencia"`
-	Valor float64 `json:"valor"`
+	Ano   string  `json:"ano_referencia" csv:"ano_referencia"`
+	Valor float64 `json:"valor" csv:"ano_referencia"`
 }
 
 type GINI struct {
@@ -28,6 +29,7 @@ func Runner() {
 	domain := "www.indexmundi.com"
 	url := "https://www.indexmundi.com/facts/brazil/indicator/SI.POV.GINI"
 	file_path := "./data/gini/gini.json"
+	fileNameOutputCSV := "./data/gini/gini.csv"
 
 	fonte := "indexmundi.com / data.worldbank.org"
 
@@ -175,6 +177,45 @@ func Runner() {
 				Str("Error", err.Error()).
 				Msg("Erro para escrever os dados no arquivo")
 		}
+
+		// Convertendo em CSV
+		csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro ao criar o dataset em CSV")
+		}
+		defer csvFile.Close()
+
+		csvOutput, err := gocsv.MarshalString(&gini.Data)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro ao escrever o dataset em CSV")
+		}
+
+		_, err = csvFile.WriteString(string(csvOutput))
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro para escrever os dados no arquivo")
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Msg("Dataset em CSV Criado")
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Msg("Finalizado")
 
 		l.Info().
 			Str("Runner", runnerName).

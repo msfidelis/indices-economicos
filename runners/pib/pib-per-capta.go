@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/fatih/structs"
+	"github.com/gocarina/gocsv"
 )
 
 type ResponsePerCapta []struct {
@@ -65,8 +66,8 @@ type ResponsePerCapta []struct {
 }
 
 type DataPerCapta struct {
-	Ano   string  `json:"ano"`
-	Valor float64 `json:"valor"`
+	Ano   string  `json:"ano" csv:"ano"`
+	Valor float64 `json:"valor" csv:"valor"`
 }
 
 type PIBPerCapta struct {
@@ -82,6 +83,7 @@ func RunnerPIBPerCapta() {
 	unidadeMedida := "PIB Per Capta"
 	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/pib/pib-per-capta.json"
+	fileNameOutputCSV := "./data/pib/pib-per-capta.csv"
 
 	l := logger.Instance()
 
@@ -245,6 +247,45 @@ func RunnerPIBPerCapta() {
 			Str("Error", err.Error()).
 			Msg("Erro para escrever os dados no arquivo")
 	}
+
+	// Convertendo em CSV
+	csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o dataset em CSV")
+	}
+	defer csvFile.Close()
+
+	csvOutput, err := gocsv.MarshalString(&pib.Data)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao escrever o dataset em CSV")
+	}
+
+	_, err = csvFile.WriteString(string(csvOutput))
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Finalizado")
 
 	l.Info().
 		Str("Runner", runnerName).

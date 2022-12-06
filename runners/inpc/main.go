@@ -8,13 +8,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gocarina/gocsv"
 	"github.com/gocolly/colly"
 )
 
 type Data struct {
-	MesAno       string  `json:"mes_ano"`
-	VariacaoMes  float64 `json:"variacao_mes"`
-	AcumuladoAno float64 `json:"acumulado_ano"`
+	MesAno       string  `json:"mes_ano" csv:"mes_ano"`
+	VariacaoMes  float64 `json:"variacao_mes" csv:"variacao_mes"`
+	AcumuladoAno float64 `json:"acumulado_ano" csv:"acumulado_ano"`
 }
 
 type INPC struct {
@@ -28,6 +29,7 @@ func Runner() {
 	domain := "informederendimentos.com"
 	url := "https://informederendimentos.com/indice-de-preco/inpc/"
 	file_path := "./data/inpc/inpc.json"
+	fileNameOutputCSV := "./data/inpc/inpc.csv"
 
 	l := logger.Instance()
 
@@ -176,6 +178,45 @@ func Runner() {
 				Str("Error", err.Error()).
 				Msg("Erro para escrever os dados no arquivo")
 		}
+
+		// Convertendo em CSV
+		csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro ao criar o dataset em CSV")
+		}
+		defer csvFile.Close()
+
+		csvOutput, err := gocsv.MarshalString(&inpc.Data)
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro ao escrever o dataset em CSV")
+		}
+
+		_, err = csvFile.WriteString(string(csvOutput))
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("Error", err.Error()).
+				Msg("Erro para escrever os dados no arquivo")
+		}
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Msg("Dataset em CSV Criado")
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Msg("Finalizado")
 
 		l.Info().
 			Str("Runner", runnerName).
