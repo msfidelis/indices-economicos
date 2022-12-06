@@ -25,16 +25,16 @@ var (
 )
 
 type Data struct {
-	Ano                                string  `json:"ano_referencia"`
-	IDH                                float64 `json:"idh"`
-	IDHF                               float64 `json:"idh_feminino"`
-	IDHM                               float64 `json:"idh_masculino"`
-	ExpectativaDeVida                  float64 `json:"expectativa_de_vida"`
-	ExpectativaDeVidaFeminina          float64 `json:"expectativa_de_vida_feminina"`
-	ExpectativaDeVidaMasculina         float64 `json:"expectativa_de_vida_masculina"`
-	ExpectativaDeAnosNaEscola          float64 `json:"expectativa_de_anos_escola"`
-	ExpectativaDeAnosNaEscolaFeminina  float64 `json:"expectativa_de_anos_escola_feminina"`
-	ExpectativaDeAnosNaEscolaMasculina float64 `json:"expectativa_de_anos_escola_masculina"`
+	Ano                                string  `json:"ano_referencia" csv:"ano_referencia"`
+	IDH                                float64 `json:"idh" csv:"idh"`
+	IDHF                               float64 `json:"idh_feminino" csv:"idh_feminino"`
+	IDHM                               float64 `json:"idh_masculino" csv:"idh_masculino"`
+	ExpectativaDeVida                  float64 `json:"expectativa_de_vida" csv:"expectativa_de_vida"`
+	ExpectativaDeVidaFeminina          float64 `json:"expectativa_de_vida_feminina" csv:"expectativa_de_vida_feminina"`
+	ExpectativaDeVidaMasculina         float64 `json:"expectativa_de_vida_masculina" csv:"expectativa_de_vida_masculina"`
+	ExpectativaDeAnosNaEscola          float64 `json:"expectativa_de_anos_escola" csv:"expectativa_de_anos_escola"`
+	ExpectativaDeAnosNaEscolaFeminina  float64 `json:"expectativa_de_anos_escola_feminina" csv:"expectativa_de_anos_escola_feminina"`
+	ExpectativaDeAnosNaEscolaMasculina float64 `json:"expectativa_de_anos_escola_masculina" csv:"expectativa_de_anos_escola_masculina"`
 }
 
 type HDI struct {
@@ -368,6 +368,7 @@ func Runner() {
 	fullURLFile := "https://hdr.undp.org/modules/custom/hdro_app/static/media/Onlinemaster_HDR2122_081522.ac8500f84b9d9d251f41.csv"
 	fileNameRaw := "./data/idh/raw/hdr-raw.csv"
 	fileNameOutput := "./data/idh/idh.json"
+	fileNameOutputCSV := "./data/idh/idh.csv"
 	fonte := "https://hdr.undp.org/"
 
 	l := logger.Instance()
@@ -818,6 +819,41 @@ func Runner() {
 			Str("Error", err.Error()).
 			Msg("Erro para escrever os dados no arquivo")
 	}
+
+	// Convertendo em CSV
+
+	csvFile, err := os.OpenFile(fileNameOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o dataset em CSV")
+	}
+	defer csvFile.Close()
+
+	csvOutput, err := gocsv.MarshalString(&hdi.Data)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao escrever o dataset em CSV")
+	}
+
+	_, err = csvFile.WriteString(string(csvOutput))
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutput).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Dataset em CSV Criado")
 
 	l.Info().
 		Str("Runner", runnerName).

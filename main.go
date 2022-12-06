@@ -16,6 +16,12 @@ func main() {
 	l.Info().
 		Msg("Iniciando o processo de Crawling dos dados abertos")
 
+	// IDH
+	l.Info().
+		Msg("Iniciando o Runner de coeficiente de IDH")
+
+	idh.Runner()
+
 	// PIB
 	l.Info().
 		Msg("Iniciando o Runner de PIB")
@@ -51,11 +57,5 @@ func main() {
 		Msg("Iniciando o Runner de coeficiente de Gini")
 
 	gini.Runner()
-
-	// HDI
-	l.Info().
-		Msg("Iniciando o Runner de coeficiente de IDH")
-
-	idh.Runner()
 
 }
