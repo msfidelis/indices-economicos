@@ -25,13 +25,16 @@ var (
 )
 
 type Data struct {
-	Ano                        string  `json:"ano_referencia"`
-	IDH                        float64 `json:"idh"`
-	IDHF                       float64 `json:"idh_feminino"`
-	IDHM                       float64 `json:"idh_masculino"`
-	ExpectativaDeVida          float64 `json:"expectativa_de_vida"`
-	ExpectativaDeVidaFeminina  float64 `json:"expectativa_de_vida_feminina"`
-	ExpectativaDeVidaMasculina float64 `json:"expectativa_de_vida_masculina"`
+	Ano                                string  `json:"ano_referencia"`
+	IDH                                float64 `json:"idh"`
+	IDHF                               float64 `json:"idh_feminino"`
+	IDHM                               float64 `json:"idh_masculino"`
+	ExpectativaDeVida                  float64 `json:"expectativa_de_vida"`
+	ExpectativaDeVidaFeminina          float64 `json:"expectativa_de_vida_feminina"`
+	ExpectativaDeVidaMasculina         float64 `json:"expectativa_de_vida_masculina"`
+	ExpectativaDeAnosNaEscola          float64 `json:"expectativa_de_anos_escola"`
+	ExpectativaDeAnosNaEscolaFeminina  float64 `json:"expectativa_de_anos_escola_feminina"`
+	ExpectativaDeAnosNaEscolaMasculina float64 `json:"expectativa_de_anos_escola_masculina"`
 }
 
 type HDI struct {
@@ -252,6 +255,111 @@ type HDICsv struct {
 	LEM2021 string `csv:"le_m_2021"`
 	LEM2022 string `csv:"le_m_2022"`
 	LEM2023 string `csv:"le_m_2023"`
+
+	// Expectativa anos na escola
+	EYS1991 string `csv:"eys_1991"`
+	EYS1992 string `csv:"eys_1992"`
+	EYS1993 string `csv:"eys_1993"`
+	EYS1994 string `csv:"eys_1994"`
+	EYS1995 string `csv:"eys_1995"`
+	EYS1996 string `csv:"eys_1996"`
+	EYS1997 string `csv:"eys_1997"`
+	EYS1998 string `csv:"eys_1998"`
+	EYS1999 string `csv:"eys_1999"`
+	EYS2000 string `csv:"eys_2000"`
+	EYS2001 string `csv:"eys_2001"`
+	EYS2002 string `csv:"eys_2002"`
+	EYS2003 string `csv:"eys_2003"`
+	EYS2004 string `csv:"eys_2004"`
+	EYS2005 string `csv:"eys_2005"`
+	EYS2006 string `csv:"eys_2006"`
+	EYS2007 string `csv:"eys_2007"`
+	EYS2008 string `csv:"eys_2008"`
+	EYS2009 string `csv:"eys_2009"`
+	EYS2010 string `csv:"eys_2010"`
+	EYS2011 string `csv:"eys_2011"`
+	EYS2012 string `csv:"eys_2012"`
+	EYS2013 string `csv:"eys_2013"`
+	EYS2014 string `csv:"eys_2014"`
+	EYS2015 string `csv:"eys_2015"`
+	EYS2016 string `csv:"eys_2016"`
+	EYS2017 string `csv:"eys_2017"`
+	EYS2018 string `csv:"eys_2018"`
+	EYS2019 string `csv:"eys_2019"`
+	EYS2020 string `csv:"eys_2020"`
+	EYS2021 string `csv:"eys_2021"`
+	EYS2022 string `csv:"eys_2022"`
+	EYS2023 string `csv:"eys_2023"`
+
+	// Expectativa anos na escola - Feminino
+	EYF1991 string `csv:"eys_f_1991"`
+	EYF1992 string `csv:"eys_f_1992"`
+	EYF1993 string `csv:"eys_f_1993"`
+	EYF1994 string `csv:"eys_f_1994"`
+	EYF1995 string `csv:"eys_f_1995"`
+	EYF1996 string `csv:"eys_f_1996"`
+	EYF1997 string `csv:"eys_f_1997"`
+	EYF1998 string `csv:"eys_f_1998"`
+	EYF1999 string `csv:"eys_f_1999"`
+	EYF2000 string `csv:"eys_f_2000"`
+	EYF2001 string `csv:"eys_f_2001"`
+	EYF2002 string `csv:"eys_f_2002"`
+	EYF2003 string `csv:"eys_f_2003"`
+	EYF2004 string `csv:"eys_f_2004"`
+	EYF2005 string `csv:"eys_f_2005"`
+	EYF2006 string `csv:"eys_f_2006"`
+	EYF2007 string `csv:"eys_f_2007"`
+	EYF2008 string `csv:"eys_f_2008"`
+	EYF2009 string `csv:"eys_f_2009"`
+	EYF2010 string `csv:"eys_f_2010"`
+	EYF2011 string `csv:"eys_f_2011"`
+	EYF2012 string `csv:"eys_f_2012"`
+	EYF2013 string `csv:"eys_f_2013"`
+	EYF2014 string `csv:"eys_f_2014"`
+	EYF2015 string `csv:"eys_f_2015"`
+	EYF2016 string `csv:"eys_f_2016"`
+	EYF2017 string `csv:"eys_f_2017"`
+	EYF2018 string `csv:"eys_f_2018"`
+	EYF2019 string `csv:"eys_f_2019"`
+	EYF2020 string `csv:"eys_f_2020"`
+	EYF2021 string `csv:"eys_f_2021"`
+	EYF2022 string `csv:"eys_f_2022"`
+	EYF2023 string `csv:"eys_f_2023"`
+
+	// Expectativa anos na escola - Masculino
+	EYM1991 string `csv:"eys_m_1991"`
+	EYM1992 string `csv:"eys_m_1992"`
+	EYM1993 string `csv:"eys_m_1993"`
+	EYM1994 string `csv:"eys_m_1994"`
+	EYM1995 string `csv:"eys_m_1995"`
+	EYM1996 string `csv:"eys_m_1996"`
+	EYM1997 string `csv:"eys_m_1997"`
+	EYM1998 string `csv:"eys_m_1998"`
+	EYM1999 string `csv:"eys_m_1999"`
+	EYM2000 string `csv:"eys_m_2000"`
+	EYM2001 string `csv:"eys_m_2001"`
+	EYM2002 string `csv:"eys_m_2002"`
+	EYM2003 string `csv:"eys_m_2003"`
+	EYM2004 string `csv:"eys_m_2004"`
+	EYM2005 string `csv:"eys_m_2005"`
+	EYM2006 string `csv:"eys_m_2006"`
+	EYM2007 string `csv:"eys_m_2007"`
+	EYM2008 string `csv:"eys_m_2008"`
+	EYM2009 string `csv:"eys_m_2009"`
+	EYM2010 string `csv:"eys_m_2010"`
+	EYM2011 string `csv:"eys_m_2011"`
+	EYM2012 string `csv:"eys_m_2012"`
+	EYM2013 string `csv:"eys_m_2013"`
+	EYM2014 string `csv:"eys_m_2014"`
+	EYM2015 string `csv:"eys_m_2015"`
+	EYM2016 string `csv:"eys_m_2016"`
+	EYM2017 string `csv:"eys_m_2017"`
+	EYM2018 string `csv:"eys_m_2018"`
+	EYM2019 string `csv:"eys_m_2019"`
+	EYM2020 string `csv:"eys_m_2020"`
+	EYM2021 string `csv:"eys_m_2021"`
+	EYM2022 string `csv:"eys_m_2022"`
+	EYM2023 string `csv:"eys_m_2023"`
 }
 
 func Runner() {
@@ -543,6 +651,89 @@ func Runner() {
 
 					item := ordenado[ano]
 					item.ExpectativaDeVidaMasculina = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a expectativa de anos na escola
+			for _, v := range campos[1:] {
+
+				// Anos na Escola - Geral
+				if strings.HasPrefix(v, "EYS") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeAnosNaEscola = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+				// Anos na Escola - Feminino
+				if strings.HasPrefix(v, "EYF") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeAnosNaEscolaFeminina = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+				// Anos na Escola - Masculino
+				if strings.HasPrefix(v, "EYM") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.ExpectativaDeAnosNaEscolaMasculina = math.Round(valor*100) / 100
 
 					ordenado[ano] = item
 
