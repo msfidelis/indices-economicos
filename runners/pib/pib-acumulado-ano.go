@@ -199,6 +199,10 @@ func RunnerPIBAcumuladoAno() {
 			Msg("Item Agregado ao Slice")
 	}
 
+	sort.Slice(pib.Data, func(i, j int) bool {
+		return pib.Data[i].Ano < pib.Data[j].Ano
+	})
+
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Convertendo a Struct do Schema em formato JSON")
