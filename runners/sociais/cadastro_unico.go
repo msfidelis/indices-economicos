@@ -265,6 +265,7 @@ func RunnerConsolidacaoPobreza() {
 
 	for _, k := range indice.Data {
 		if strings.HasPrefix(k.Referencia, "12") {
+			k.Referencia = k.Referencia[3:7]
 			anual.Data = append(anual.Data, k)
 		}
 	}
