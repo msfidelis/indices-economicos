@@ -54,6 +54,9 @@ func RunnerConsolidacaoPobreza() {
 	file_path := "./data/sociais/indices_pobreza_consolidado.json"
 	fileNameOutputCSV := "./data/sociais/indices_pobreza_consolidado.csv"
 
+	file_path_anual := "./data/sociais/indices_pobreza_consolidado_anual.json"
+	fileNameAnualOutputCSV := "./data/sociais/indices_pobreza_consolidado_anual.csv"
+
 	fonte := "https://aplicacoes.cidadania.gov.br"
 
 	l.Info().
@@ -252,18 +255,90 @@ func RunnerConsolidacaoPobreza() {
 			Msg("Erro para escrever os dados no arquivo")
 	}
 
+	anual := indice
+	anual.Data = []DataPobrezaConsolidado{}
+
 	l.Info().
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
 		Msg("Dataset em CSV Criado")
 
-	l.Info().
-		Str("Runner", runnerName).
-		Str("FilePath", fileNameOutputCSV).
-		Msg("Finalizado")
+	for _, k := range indice.Data {
+		if strings.HasPrefix(k.Referencia, "12") {
+			anual.Data = append(anual.Data, k)
+		}
+	}
+
+	a, err := json.Marshal(anual)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Msg("Erro ao converter a struct em JSON")
+	}
 
 	l.Info().
 		Str("Runner", runnerName).
 		Str("FilePath", file_path).
+		Msg("Criando arquivo de persistência para os dados convertidos")
+
+	fa, err := os.Create(file_path_anual)
+	defer f.Close()
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o diretório para persistência dos dados")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", file_path).
+		Msg("Iniciando a escrita dos dados no arquivo de persistência")
+
+	_, err = fa.WriteString(string(a))
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	// Convertendo em CSV
+	csvFileAnual, err := os.OpenFile(fileNameAnualOutputCSV, os.O_RDWR|os.O_CREATE, os.ModePerm)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameAnualOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao criar o dataset em CSV")
+	}
+	defer csvFileAnual.Close()
+
+	csvOutputAnual, err := gocsv.MarshalString(&anual.Data)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameAnualOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao escrever o dataset em CSV")
+	}
+
+	_, err = csvFileAnual.WriteString(string(csvOutputAnual))
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameAnualOutputCSV).
+			Str("Error", err.Error()).
+			Msg("Erro para escrever os dados no arquivo")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", file_path_anual).
 		Msg("Finalizado")
 }
