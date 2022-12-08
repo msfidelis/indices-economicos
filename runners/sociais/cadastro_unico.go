@@ -266,7 +266,4 @@ func RunnerConsolidacaoPobreza() {
 		Str("Runner", runnerName).
 		Str("FilePath", file_path).
 		Msg("Finalizado")
-
-	fmt.Println(consolidado)
-
 }
