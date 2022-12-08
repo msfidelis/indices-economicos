@@ -1,5 +1,0 @@
-package cadastrounicofamilia
-
-func main() {
-
-}

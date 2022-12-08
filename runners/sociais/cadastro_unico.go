@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math"
 	"os"
 	"sort"
 	"strconv"
@@ -27,11 +28,15 @@ type Pobreza struct {
 }
 
 type DataPobrezaConsolidado struct {
-	Referencia     string `json:"referencia" csv:"referencia"`
-	Periodo        int64  `json:"periodo" csv:"periodo"`
-	Pobreza        int64  `json:"pobreza" csv:"pobreza"`
-	ExtremaPobreza int64  `json:"extrema_pobreza" csv:"extrema_pobreza"`
-	Total          int64  `json:"total" csv:"total"`
+	Referencia                 string  `json:"referencia" csv:"referencia"`
+	Periodo                    int64   `json:"periodo" csv:"periodo"`
+	Pobreza                    int64   `json:"pobreza" csv:"pobreza"`
+	ExtremaPobreza             int64   `json:"extrema_pobreza" csv:"extrema_pobreza"`
+	Total                      int64   `json:"total" csv:"total"`
+	Populacao                  int64   `json:"populacao_estimada" csv:"populacao_estimada"`
+	PorcentagemPobreza         float64 `json:"porcentagem_pobreza" csv:"porcentagem_pobreza"`
+	PorcentagemExtremaPobreza  float64 `json:"porcentagem_extrema_pobreza" csv:"porcentagem_extrema_pobreza"`
+	PorcentagemVulnerabilidade float64 `json:"porcentagem_vulnerabilidade" csv:"porcentagem_vulnerabilidade"`
 }
 
 type PobrezaConsolidado struct {
@@ -50,6 +55,7 @@ func RunnerConsolidacaoPobreza() {
 	pobrezaFile := "./data/sociais/pobreza_cadastro_unico.json"
 	extremaPobrezaFile := "./data/sociais/extrema_pobreza_cadastro_unico.json"
 	pobrezaExtremaPobrezaFile := "./data/sociais/pobreza_extrema_pobreza_cadastro_unico.json"
+	estimativaPopulacaoFile := "./data/sociais/estimativa_populacional.json"
 
 	file_path := "./data/sociais/indices_pobreza_consolidado.json"
 	fileNameOutputCSV := "./data/sociais/indices_pobreza_consolidado.csv"
@@ -173,6 +179,67 @@ func RunnerConsolidacaoPobreza() {
 		item.Total = k.Total
 		consolidado[k.Referencia] = item
 	}
+
+	// Estimativa Populacao
+	dataPopulacao := EstimativaPopulacional{}
+	filePopulacao, err := ioutil.ReadFile(estimativaPopulacaoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", estimativaPopulacaoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(filePopulacao), &dataPopulacao)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", estimativaPopulacaoFile).
+			Msg("converter para struct")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Adicionando os Itens do Dataset de Estimativa Populacional para o Dataset Consolidado")
+
+	for _, k := range dataPopulacao.Data {
+		for i, c := range consolidado {
+			if c.Pobreza != 0 {
+				indiceAnual := i[3:7]
+				if indiceAnual == k.Referencia {
+					item := consolidado[i]
+					item.Populacao = k.Total
+					consolidado[i] = item
+				}
+			}
+		}
+	}
+
+	// Calculando Porcentagens
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Calculando a porcentagem de mizéria")
+
+	for i, _ := range consolidado {
+		item := consolidado[i]
+
+		item.PorcentagemPobreza = float64(item.Pobreza) / float64(item.Populacao)
+		item.PorcentagemExtremaPobreza = float64(item.ExtremaPobreza) / float64(item.Populacao)
+		item.PorcentagemVulnerabilidade = float64(item.Total) / float64(item.Populacao)
+
+		item.PorcentagemPobreza = math.Round(item.PorcentagemPobreza*100) / 100
+		item.PorcentagemExtremaPobreza = math.Round(item.PorcentagemExtremaPobreza*100) / 100
+		item.PorcentagemVulnerabilidade = math.Round(item.PorcentagemVulnerabilidade*100) / 100
+
+		consolidado[i] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Porcentagens calculadas")
 
 	for _, k := range consolidado {
 		indice.Data = append(indice.Data, k)
