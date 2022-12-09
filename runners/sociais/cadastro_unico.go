@@ -74,8 +74,8 @@ func RunnerConsolidacaoPobreza() {
 	indigenasPobrezaFile := "./data/sociais/indigenas_pobreza_cadastro_unico.json"
 	indigenasExtremaPobrezaFile := "./data/sociais/indigenas_extrema_pobreza_cadastro_unico.json"
 
-	// quilombolasPobrezaFile := "./data/sociais/quilombolas_pobreza_cadastro_unico.json"
-	// quilombolasExtremaPobrezaFile := "./data/sociais/quilombolas_extrema_pobreza_cadastro_unico.json"
+	quilombolasPobrezaFile := "./data/sociais/quilombolas_pobreza_cadastro_unico.json"
+	quilombolasExtremaPobrezaFile := "./data/sociais/quilombolas_extrema_pobreza_cadastro_unico.json"
 
 	// ciganosPobrezaFile := "./data/sociais/ciganos_pobreza_cadastro_unico.json"
 	// ciganosExtremaPobrezaFile := "./data/sociais/ciganos_extrema_pobreza_cadastro_unico.json"
@@ -329,6 +329,68 @@ func RunnerConsolidacaoPobreza() {
 		consolidado[k.Referencia] = item
 	}
 
+	// Quilombolas Pobreza
+	dataQuilombolasPobreza := Pobreza{}
+	fileQuilombolasPobrezaPobreza, err := ioutil.ReadFile(quilombolasPobrezaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileQuilombolasPobrezaPobreza), &dataQuilombolasPobreza)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("converter para struct")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Adicionando os Itens do Dataset de Extrema Pobreza para o Dataset Consolidado")
+
+	for _, k := range dataQuilombolasPobreza.Data {
+		item := consolidado[k.Referencia]
+		item.QuilombolasPobreza = k.Total
+		consolidado[k.Referencia] = item
+	}
+
+	// Quilombolas Pobreza
+	dataQuilombolasExtremaPobreza := Pobreza{}
+	fileQuilombolasExtremaPobrezaPobreza, err := ioutil.ReadFile(quilombolasExtremaPobrezaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileQuilombolasExtremaPobrezaPobreza), &dataQuilombolasExtremaPobreza)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("converter para struct")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Adicionando os Itens do Dataset de Extrema Pobreza para o Dataset Consolidado")
+
+	for _, k := range dataQuilombolasExtremaPobreza.Data {
+		item := consolidado[k.Referencia]
+		item.QuilombolasExtremaPobreza = k.Total
+		consolidado[k.Referencia] = item
+	}
+
 	// Estimativa Populacao
 	dataPopulacao := EstimativaPopulacional{}
 	filePopulacao, err := ioutil.ReadFile(estimativaPopulacaoFile)
@@ -350,6 +412,7 @@ func RunnerConsolidacaoPobreza() {
 			Msg("converter para struct")
 	}
 
+	// Consolidando dados populacionais
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Adicionando os Itens do Dataset de Estimativa Populacional para o Dataset Consolidado")
@@ -385,7 +448,7 @@ func RunnerConsolidacaoPobreza() {
 
 		item.FamiliasVulnerabilidade = item.FamiliasExtremaPobreza + item.FamiliasPobreza
 		item.IndigenasVulnerabilidade = item.IndigenasExtremaPobreza + item.IndigenasPobreza
-
+		item.QuilombolasVulnerabilidade = item.QuilombolasExtremaPobreza + item.QuilombolasPobreza
 		consolidado[i] = item
 	}
 
