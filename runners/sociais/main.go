@@ -11,6 +11,8 @@ func Runner() {
 	RunnerCadastroUnicoIndigenasExtremaPobreza()
 	RunnerCadastroUnicoQuilombolasPobreza()
 	RunnerCadastroUnicoQuilombolasExtremaPobreza()
+	RunnerCadastroUnicoCiganosPobreza()
+	RunnerCadastroUnicoCiganosExtremaPobreza()
 	RunnerConsolidacaoPobreza()
 
 }
