@@ -7,5 +7,8 @@ func Runner() {
 	RunnerCadastroUnicoPobrezaExtremaPobreza()
 	RunnerCadastroUnicoExtremaPobreza()
 	RunnerCadastroUnicoPobreza()
+	RunnerCadastroUnicoIndigenasPobreza()
+	RunnerCadastroUnicoIndigenasExtremaPobreza()
 	RunnerConsolidacaoPobreza()
+
 }
