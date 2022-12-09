@@ -157,7 +157,7 @@ type PIB struct {
 func RunnerEvolucaoPIB() {
 	runnerName := "PIB - Variação"
 	fonte := "https://servicodados.ibge.gov.br"
-	url := "https://servicodados.ibge.gov.br/api/v3/agregados/5932/periodos/-192/variaveis/6561?classificacao=11255[90707]&localidades=N1"
+	url := "https://servicodados.ibge.gov.br/api/v3/agregados/5932/periodos/-400/variaveis/6561?classificacao=11255[90707]&localidades=N1"
 	unidadeMedida := "Variação Trimestral"
 
 	file_path := "./data/pib/pib-variacao.json"
