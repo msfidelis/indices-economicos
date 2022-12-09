@@ -2,7 +2,6 @@ package main
 
 import (
 	"crawlers/pkg/logger"
-	"crawlers/runners/pib"
 	"crawlers/runners/sociais"
 )
 
@@ -17,11 +16,11 @@ func main() {
 
 	// idh.Runner()
 
-	// PIB
-	l.Info().
-		Msg("Iniciando o Runner de PIB")
+	// // PIB
+	// l.Info().
+	// 	Msg("Iniciando o Runner de PIB")
 
-	pib.Runner()
+	// pib.Runner()
 
 	// // IPCA
 	// l.Info().
