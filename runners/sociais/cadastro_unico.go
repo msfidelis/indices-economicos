@@ -337,6 +337,13 @@ func RunnerConsolidacaoPobreza() {
 		}
 	}
 
+	// Fix do Ultimo Item do Array
+	lItem := indice.Data[len(indice.Data)-1]
+	if !strings.HasPrefix(lItem.Referencia, "12") {
+		lItem.Referencia = lItem.Referencia[3:7]
+		anual.Data = append(anual.Data, lItem)
+	}
+
 	a, err := json.Marshal(anual)
 	if err != nil {
 		l.Fatal().
