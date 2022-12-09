@@ -40,6 +40,15 @@ type DataPobrezaConsolidado struct {
 	FamiliasPobreza            int64   `json:"familias_pobreza" csv:"familias_pobreza"`
 	FamiliasExtremaPobreza     int64   `json:"familias_extrema_pobreza" csv:"familias_extrema_pobreza"`
 	FamiliasVulnerabilidade    int64   `json:"familias_vulnerabilidade" csv:"familias_vulnerabilidade"`
+	IndigenasPobreza           int64   `json:"indigenas_pobreza" csv:"indigenas_pobreza"`
+	IndigenasExtremaPobreza    int64   `json:"indigenas_extrema_pobreza" csv:"indigenas_extrema_pobreza"`
+	IndigenasVulnerabilidade   int64   `json:"indigenas_vulnerabilidade" csv:"indigenas_vulnerabilidade"`
+	QuilombolasPobreza         int64   `json:"quilombolas_pobreza" csv:"quilombolas_pobreza"`
+	QuilombolasExtremaPobreza  int64   `json:"quilombolas_extrema_pobreza" csv:"quilombolas_extrema_pobreza"`
+	QuilombolasVulnerabilidade int64   `json:"quilombolas_vulnerabilidade" csv:"quilombolas_vulnerabilidade"`
+	CiganosPobreza             int64   `json:"ciganos_pobreza" csv:"ciganos_pobreza"`
+	CiganosExtremaPobreza      int64   `json:"ciganos_extrema_pobreza" csv:"ciganos_extrema_pobreza"`
+	CiganosVulnerabilidade     int64   `json:"ciganos_vulnerabilidade" csv:"ciganos_vulnerabilidade"`
 }
 
 type PobrezaConsolidado struct {
@@ -61,6 +70,15 @@ func RunnerConsolidacaoPobreza() {
 
 	familiasPobrezaFile := "./data/sociais/familias_pobreza_cadastro_unico.json"
 	familiasExtremaPobrezaFile := "./data/sociais/familias_extrema_pobreza_cadastro_unico.json"
+
+	indigenasPobrezaFile := "./data/sociais/indigenas_pobreza_cadastro_unico.json"
+	indigenasExtremaPobrezaFile := "./data/sociais/indigenas_extrema_pobreza_cadastro_unico.json"
+
+	// quilombolasPobrezaFile := "./data/sociais/quilombolas_pobreza_cadastro_unico.json"
+	// quilombolasExtremaPobrezaFile := "./data/sociais/quilombolas_extrema_pobreza_cadastro_unico.json"
+
+	// ciganosPobrezaFile := "./data/sociais/ciganos_pobreza_cadastro_unico.json"
+	// ciganosExtremaPobrezaFile := "./data/sociais/ciganos_extrema_pobreza_cadastro_unico.json"
 
 	estimativaPopulacaoFile := "./data/sociais/estimativa_populacional.json"
 
@@ -249,6 +267,68 @@ func RunnerConsolidacaoPobreza() {
 		consolidado[k.Referencia] = item
 	}
 
+	// Indigenas Pobreza
+	dataIndigenasPobreza := Pobreza{}
+	fileIndigenasPobrezaPobreza, err := ioutil.ReadFile(indigenasPobrezaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIndigenasPobrezaPobreza), &dataIndigenasPobreza)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("converter para struct")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Adicionando os Itens do Dataset de Extrema Pobreza para o Dataset Consolidado")
+
+	for _, k := range dataIndigenasPobreza.Data {
+		item := consolidado[k.Referencia]
+		item.IndigenasPobreza = k.Total
+		consolidado[k.Referencia] = item
+	}
+
+	// Indigenas Pobreza
+	dataIndigenasExtremaPobreza := Pobreza{}
+	fileIndigenasExtremaPobrezaPobreza, err := ioutil.ReadFile(indigenasExtremaPobrezaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIndigenasExtremaPobrezaPobreza), &dataIndigenasExtremaPobreza)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", familiasExtremaPobrezaFile).
+			Msg("converter para struct")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Adicionando os Itens do Dataset de Extrema Pobreza para o Dataset Consolidado")
+
+	for _, k := range dataIndigenasExtremaPobreza.Data {
+		item := consolidado[k.Referencia]
+		item.IndigenasExtremaPobreza = k.Total
+		consolidado[k.Referencia] = item
+	}
+
 	// Estimativa Populacao
 	dataPopulacao := EstimativaPopulacional{}
 	filePopulacao, err := ioutil.ReadFile(estimativaPopulacaoFile)
@@ -304,6 +384,7 @@ func RunnerConsolidacaoPobreza() {
 		item.PorcentagemVulnerabilidade = math.Round(item.PorcentagemVulnerabilidade*100) / 100
 
 		item.FamiliasVulnerabilidade = item.FamiliasExtremaPobreza + item.FamiliasPobreza
+		item.IndigenasVulnerabilidade = item.IndigenasExtremaPobreza + item.IndigenasPobreza
 
 		consolidado[i] = item
 	}
