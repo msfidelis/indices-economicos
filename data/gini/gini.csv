@@ -1,4 +1,4 @@
-ano_referencia,ano_referencia
+ano_referencia,valor
 1981,0.579
 1982,0.584
 1983,0.59
@@ -37,3 +37,4 @@ ano_referencia,ano_referencia
 2020,0.489
 2021,0.489
 2022,0.489
+22,0.489

@@ -15,7 +15,7 @@ import (
 
 type Data struct {
 	Ano   string  `json:"ano_referencia" csv:"ano_referencia"`
-	Valor float64 `json:"valor" csv:"ano_referencia"`
+	Valor float64 `json:"valor" csv:"valor"`
 }
 
 type GINI struct {
