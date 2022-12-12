@@ -2,7 +2,14 @@ package main
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/runners/gini"
+	"crawlers/runners/idh"
+	"crawlers/runners/igpm"
 	"crawlers/runners/inflacao"
+	"crawlers/runners/inpc"
+	"crawlers/runners/ipca"
+	"crawlers/runners/pib"
+	"crawlers/runners/selic"
 )
 
 func main() {
@@ -17,50 +24,50 @@ func main() {
 
 	inflacao.Runner()
 
-	// // IDH
-	// l.Info().
-	// 	Msg("Iniciando o Runner de coeficiente de IDH")
+	// IDH
+	l.Info().
+		Msg("Iniciando o Runner de coeficiente de IDH")
 
-	// idh.Runner()
+	idh.Runner()
 
-	// // PIB
-	// l.Info().
-	// 	Msg("Iniciando o Runner de PIB")
+	// PIB
+	l.Info().
+		Msg("Iniciando o Runner de PIB")
 
-	// pib.Runner()
+	pib.Runner()
 
-	// // IPCA
-	// l.Info().
-	// 	Msg("Iniciando o Runner de IPCA")
+	// IPCA
+	l.Info().
+		Msg("Iniciando o Runner de IPCA")
 
-	// ipca.Runner()
+	ipca.Runner()
 
-	// // INPC
-	// l.Info().
-	// 	Msg("Iniciando o Runner de INPC")
+	// INPC
+	l.Info().
+		Msg("Iniciando o Runner de INPC")
 
-	// inpc.Runner()
+	inpc.Runner()
 
-	// // IGP-M
-	// l.Info().
-	// 	Msg("Iniciando o Runner de IGP-M")
+	// IGP-M
+	l.Info().
+		Msg("Iniciando o Runner de IGP-M")
 
-	// igpm.Runner()
+	igpm.Runner()
 
-	// // SELIC
-	// l.Info().
-	// 	Msg("Iniciando o Runner de Selic")
+	// SELIC
+	l.Info().
+		Msg("Iniciando o Runner de Selic")
 
-	// selic.Runner()
+	selic.Runner()
 
-	// // GINI
-	// l.Info().
-	// 	Msg("Iniciando o Runner de coeficiente de Gini")
-	// gini.Runner()
+	// GINI
+	l.Info().
+		Msg("Iniciando o Runner de coeficiente de Gini")
+	gini.Runner()
 
-	// // Sociais
-	// l.Info().
-	// 	Msg("Iniciando o Runner de Indicadores Sociais")
+	// Sociais
+	l.Info().
+		Msg("Iniciando o Runner de Indicadores Sociais")
 
 	// sociais.Runner()
 

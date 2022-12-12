@@ -1,7 +1,7 @@
 package inflacao
 
 func Runner() {
-	// RunnerIPCA()
-	// RunnerINPC()
+	RunnerIPCA()
+	RunnerINPC()
 	RunnerConsolidacao()
 }
