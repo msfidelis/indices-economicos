@@ -36,6 +36,9 @@ func RunnerConsolidacao() {
 
 	runnerName := "Inflação - Consolidacao"
 
+	unidadeMedida := "%"
+	fonte := "https://servicodados.ibge.gov.br"
+
 	ipcaFile := "./data/inflacao/ipca.json"
 	inpcFile := "./data/inflacao/inpc.json"
 
@@ -45,6 +48,11 @@ func RunnerConsolidacao() {
 	consolidado := make(map[string]Data)
 
 	inflacao := Inflacao{}
+
+	now := time.Now()
+	inflacao.Atualizacao = now
+	inflacao.Fonte = fonte
+	inflacao.UnidadeMedida = unidadeMedida
 
 	l.Info().
 		Str("Runner", runnerName).
