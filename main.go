@@ -10,6 +10,7 @@ import (
 	"crawlers/runners/ipca"
 	"crawlers/runners/pib"
 	"crawlers/runners/selic"
+	"crawlers/runners/sociais"
 )
 
 func main() {
@@ -69,6 +70,6 @@ func main() {
 	l.Info().
 		Msg("Iniciando o Runner de Indicadores Sociais")
 
-	// sociais.Runner()
+	sociais.Runner()
 
 }
