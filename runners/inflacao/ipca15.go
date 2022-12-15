@@ -215,7 +215,7 @@ func RunnerIPCA15() {
 	}
 
 	for _, i := range ordenado {
-		if i.AcumuladoAno == 0 && i.Acumulado12Meses == 0 && i.Variacao == 0 {
+		if i.AcumuladoAno == 0 || i.Acumulado12Meses == 0 || i.Variacao == 0 || i.Referencia == "" {
 			continue
 		}
 
