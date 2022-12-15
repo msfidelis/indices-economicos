@@ -335,7 +335,7 @@ func RunnerAuxilioBrasilConsolidacao() {
 		item := consolidado[k.Referencia]
 		if item.AnoMes != 0 {
 			item.FamiliasVulnerabilidade = k.FamiliasVulnerabilidade
-			item.CoberturaAuxilio = float64(item.FamiliasVulnerabilidade) / float64(item.Familias)
+			item.CoberturaAuxilio = float64(item.Familias) / float64(item.FamiliasVulnerabilidade)
 			consolidado[k.Referencia] = item
 			fmt.Println(item)
 		}
