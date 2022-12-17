@@ -3,9 +3,12 @@ package inflacao
 import (
 	"crawlers/pkg/logger"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"os"
 	"sort"
+	"strconv"
+	"strings"
 	"time"
 
 	"github.com/gocarina/gocsv"
@@ -15,6 +18,7 @@ type Data struct {
 	Referencia             string  `json:"referencia" csv:"referencia"`
 	Ano                    string  `json:"ano" csv:"ano"`
 	Mes                    string  `json:"mes" csv:"mes"`
+	AnoMes                 int64   `json:"ano_mes" csv:"ano_mes"`
 	IPCAVariacao           float64 `json:"ipca_variacao" csv:"ipca_variacao"`
 	IPCAAcumuladoAno       float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
 	IPCAAcumulado12Meses   float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
@@ -129,10 +133,14 @@ func RunnerConsolidacao() {
 
 	for _, ip := range IPCA.Data {
 
+		anoMesStr := fmt.Sprintf("%s%s", ip.Ano, ip.Mes)
+		anoMes, _ := strconv.ParseInt(strings.TrimSpace(anoMesStr), 10, 64)
+
 		item := Data{}
 		item.Referencia = ip.Referencia
 		item.Ano = ip.Ano
 		item.Mes = ip.Mes
+		item.AnoMes = anoMes
 
 		if ip.Mes == "12" {
 			item.ConsolidacaoAno = true
