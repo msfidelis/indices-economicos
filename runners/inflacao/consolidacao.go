@@ -12,16 +12,19 @@ import (
 )
 
 type Data struct {
-	Referencia           string  `json:"referencia" csv:"referencia"`
-	Ano                  string  `json:"ano" csv:"ano"`
-	Mes                  string  `json:"mes" csv:"mes"`
-	IPCAVariacao         float64 `json:"ipca_variacao" csv:"ipca_variacao"`
-	IPCAAcumuladoAno     float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
-	IPCAAcumulado12Meses float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
-	INPCVariacao         float64 `json:"inpc_variacao" csv:"inpc_variacao"`
-	INPCAcumuladoAno     float64 `json:"inpc_acumulado_ano" csv:"inpc_acumulado_ano"`
-	INPCAcumulado12Meses float64 `json:"inpc_acumulado_doze_meses" csv:"inpc_acumulado_doze_meses"`
-	ConsolidacaoAno      bool    `json:"consolidado_ano" csv:"consolidado_ano"`
+	Referencia             string  `json:"referencia" csv:"referencia"`
+	Ano                    string  `json:"ano" csv:"ano"`
+	Mes                    string  `json:"mes" csv:"mes"`
+	IPCAVariacao           float64 `json:"ipca_variacao" csv:"ipca_variacao"`
+	IPCAAcumuladoAno       float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
+	IPCAAcumulado12Meses   float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
+	IPCA15Variacao         float64 `json:"ipca15_variacao" csv:"ipca15_variacao"`
+	IPCA15AcumuladoAno     float64 `json:"ipca15_acumulado_ano" csv:"ipca15_acumulado_ano"`
+	IPCA15Acumulado12Meses float64 `json:"ipca15_acumulado_doze_meses" csv:"ipca15_acumulado_doze_meses"`
+	INPCVariacao           float64 `json:"inpc_variacao" csv:"inpc_variacao"`
+	INPCAcumuladoAno       float64 `json:"inpc_acumulado_ano" csv:"inpc_acumulado_ano"`
+	INPCAcumulado12Meses   float64 `json:"inpc_acumulado_doze_meses" csv:"inpc_acumulado_doze_meses"`
+	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
 type Inflacao struct {
@@ -40,6 +43,7 @@ func RunnerConsolidacao() {
 	fonte := "https://servicodados.ibge.gov.br"
 
 	ipcaFile := "./data/inflacao/ipca.json"
+	ipca15File := "./data/inflacao/ipca15.json"
 	inpcFile := "./data/inflacao/inpc.json"
 
 	file_path := "./data/inflacao/inflacao.json"
@@ -78,6 +82,26 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	IPCA15 := IPCA15{}
+	fileIPCA15, err := ioutil.ReadFile(ipca15File)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipca15File).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPCA15), &IPCA15)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipca15File).
+			Msg("converter para struct")
+	}
+
 	INPC := INPC{}
 	fileINPC, err := ioutil.ReadFile(inpcFile)
 
@@ -99,7 +123,6 @@ func RunnerConsolidacao() {
 	}
 
 	// Construção do map de referencias
-
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Construção do map de referencias")
@@ -134,6 +157,26 @@ func RunnerConsolidacao() {
 		l.Info().
 			Str("Runner", runnerName).
 			Str("Dataset", "IPCA").
+			Str("Periodo", ip.Referencia).
+			Msg("Agregando os Item ao Consolidado")
+
+		consolidado[ip.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPCA15 ao Consolidado")
+
+	for _, ip := range IPCA15.Data {
+
+		item := consolidado[ip.Referencia]
+		item.IPCA15Variacao = ip.Variacao
+		item.IPCA15AcumuladoAno = ip.AcumuladoAno
+		item.IPCA15Acumulado12Meses = ip.Acumulado12Meses
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Dataset", "IPCA15").
 			Str("Periodo", ip.Referencia).
 			Msg("Agregando os Item ao Consolidado")
 
