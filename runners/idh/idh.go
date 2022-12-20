@@ -38,6 +38,8 @@ type Data struct {
 	MediaDeAnosNaEscola                float64 `json:"media_de_anos_escola" csv:"media_de_anos_escola"`
 	MediaDeAnosNaEscolaFeminina        float64 `json:"media_de_anos_escola_feminina" csv:"media_de_anos_escola_feminina"`
 	MediaDeAnosNaEscolaMasculina       float64 `json:"media_de_anos_escola_masculina" csv:"media_de_anos_escola_masculina"`
+	MortalidadeMaterna                 float64 `json:"taxa_mortalidade_materna" csv:"taxa_mortalidade_materna"`
+	EmissaoCO2                         float64 `json:"emissao_toneladas_co2_per_capta" csv:"emissao_toneladas_co2_per_capta"`
 }
 
 type HDI struct {
@@ -468,6 +470,76 @@ type HDICsv struct {
 	MYM2021 string `csv:"mys_m_2021"`
 	MYM2022 string `csv:"mys_m_2022"`
 	MYM2023 string `csv:"mys_m_2023"`
+
+	// Taxa de Mortalidade Materna
+	MMR1991 string `csv:"mmr_1991"`
+	MMR1992 string `csv:"mmr_1992"`
+	MMR1993 string `csv:"mmr_1993"`
+	MMR1994 string `csv:"mmr_1994"`
+	MMR1995 string `csv:"mmr_1995"`
+	MMR1996 string `csv:"mmr_1996"`
+	MMR1997 string `csv:"mmr_1997"`
+	MMR1998 string `csv:"mmr_1998"`
+	MMR1999 string `csv:"mmr_1999"`
+	MMR2000 string `csv:"mmr_2000"`
+	MMR2001 string `csv:"mmr_2001"`
+	MMR2002 string `csv:"mmr_2002"`
+	MMR2003 string `csv:"mmr_2003"`
+	MMR2004 string `csv:"mmr_2004"`
+	MMR2005 string `csv:"mmr_2005"`
+	MMR2006 string `csv:"mmr_2006"`
+	MMR2007 string `csv:"mmr_2007"`
+	MMR2008 string `csv:"mmr_2008"`
+	MMR2009 string `csv:"mmr_2009"`
+	MMR2010 string `csv:"mmr_2010"`
+	MMR2011 string `csv:"mmr_2011"`
+	MMR2012 string `csv:"mmr_2012"`
+	MMR2013 string `csv:"mmr_2013"`
+	MMR2014 string `csv:"mmr_2014"`
+	MMR2015 string `csv:"mmr_2015"`
+	MMR2016 string `csv:"mmr_2016"`
+	MMR2017 string `csv:"mmr_2017"`
+	MMR2018 string `csv:"mmr_2018"`
+	MMR2019 string `csv:"mmr_2019"`
+	MMR2020 string `csv:"mmr_2020"`
+	MMR2021 string `csv:"mmr_2021"`
+	MMR2022 string `csv:"mmr_2022"`
+	MMR2023 string `csv:"mmr_2023"`
+
+	// Produção de Dioxido de Carbono Per-Capta (Toneladas)
+	CO21991 string `csv:"co2_prod_1991"`
+	CO21992 string `csv:"co2_prod_1992"`
+	CO21993 string `csv:"co2_prod_1993"`
+	CO21994 string `csv:"co2_prod_1994"`
+	CO21995 string `csv:"co2_prod_1995"`
+	CO21996 string `csv:"co2_prod_1996"`
+	CO21997 string `csv:"co2_prod_1997"`
+	CO21998 string `csv:"co2_prod_1998"`
+	CO21999 string `csv:"co2_prod_1999"`
+	CO22000 string `csv:"co2_prod_2000"`
+	CO22001 string `csv:"co2_prod_2001"`
+	CO22002 string `csv:"co2_prod_2002"`
+	CO22003 string `csv:"co2_prod_2003"`
+	CO22004 string `csv:"co2_prod_2004"`
+	CO22005 string `csv:"co2_prod_2005"`
+	CO22006 string `csv:"co2_prod_2006"`
+	CO22007 string `csv:"co2_prod_2007"`
+	CO22008 string `csv:"co2_prod_2008"`
+	CO22009 string `csv:"co2_prod_2009"`
+	CO22010 string `csv:"co2_prod_2010"`
+	CO22011 string `csv:"co2_prod_2011"`
+	CO22012 string `csv:"co2_prod_2012"`
+	CO22013 string `csv:"co2_prod_2013"`
+	CO22014 string `csv:"co2_prod_2014"`
+	CO22015 string `csv:"co2_prod_2015"`
+	CO22016 string `csv:"co2_prod_2016"`
+	CO22017 string `csv:"co2_prod_2017"`
+	CO22018 string `csv:"co2_prod_2018"`
+	CO22019 string `csv:"co2_prod_2019"`
+	CO22020 string `csv:"co2_prod_2020"`
+	CO22021 string `csv:"co2_prod_2021"`
+	CO22022 string `csv:"co2_prod_2022"`
+	CO22023 string `csv:"co2_prod_2023"`
 }
 
 func Runner() {
@@ -933,6 +1005,68 @@ func Runner() {
 
 			}
 
+			// Construindo a Mortalidade Materna
+			for _, v := range campos[1:] {
+
+				// Média de Anos na Escola - Geral
+				if strings.HasPrefix(v, "MMR") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.MortalidadeMaterna = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a Emissão de CO2 per capta
+			for _, v := range campos[1:] {
+
+				// Média de Anos na Escola - Geral
+				if strings.HasPrefix(v, "CO2") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.EmissaoCO2 = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
 		}
 
 	}
@@ -1002,14 +1136,14 @@ func Runner() {
 		Str("FilePath", fileNameRaw).
 		Msg("Removendo arquivo temporario")
 
-	err = os.Remove(fileNameRaw)
-	if err != nil {
-		l.Fatal().
-			Str("Runner", runnerName).
-			Str("FilePath", fileNameOutput).
-			Str("Error", err.Error()).
-			Msg("Erro para escrever os dados no arquivo")
-	}
+	// err = os.Remove(fileNameRaw)
+	// if err != nil {
+	// 	l.Fatal().
+	// 		Str("Runner", runnerName).
+	// 		Str("FilePath", fileNameOutput).
+	// 		Str("Error", err.Error()).
+	// 		Msg("Erro para escrever os dados no arquivo")
+	// }
 
 	// Convertendo em CSV
 
