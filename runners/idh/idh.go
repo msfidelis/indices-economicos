@@ -35,6 +35,9 @@ type Data struct {
 	ExpectativaDeAnosNaEscola          float64 `json:"expectativa_de_anos_escola" csv:"expectativa_de_anos_escola"`
 	ExpectativaDeAnosNaEscolaFeminina  float64 `json:"expectativa_de_anos_escola_feminina" csv:"expectativa_de_anos_escola_feminina"`
 	ExpectativaDeAnosNaEscolaMasculina float64 `json:"expectativa_de_anos_escola_masculina" csv:"expectativa_de_anos_escola_masculina"`
+	MediaDeAnosNaEscola                float64 `json:"media_de_anos_escola" csv:"media_de_anos_escola"`
+	MediaDeAnosNaEscolaFeminina        float64 `json:"media_de_anos_escola_feminina" csv:"media_de_anos_escola_feminina"`
+	MediaDeAnosNaEscolaMasculina       float64 `json:"media_de_anos_escola_masculina" csv:"media_de_anos_escola_masculina"`
 }
 
 type HDI struct {
@@ -360,6 +363,111 @@ type HDICsv struct {
 	EYM2021 string `csv:"eys_m_2021"`
 	EYM2022 string `csv:"eys_m_2022"`
 	EYM2023 string `csv:"eys_m_2023"`
+
+	// Média de anos na escola
+	MYS1991 string `csv:"mys_1991"`
+	MYS1992 string `csv:"mys_1992"`
+	MYS1993 string `csv:"mys_1993"`
+	MYS1994 string `csv:"mys_1994"`
+	MYS1995 string `csv:"mys_1995"`
+	MYS1996 string `csv:"mys_1996"`
+	MYS1997 string `csv:"mys_1997"`
+	MYS1998 string `csv:"mys_1998"`
+	MYS1999 string `csv:"mys_1999"`
+	MYS2000 string `csv:"mys_2000"`
+	MYS2001 string `csv:"mys_2001"`
+	MYS2002 string `csv:"mys_2002"`
+	MYS2003 string `csv:"mys_2003"`
+	MYS2004 string `csv:"mys_2004"`
+	MYS2005 string `csv:"mys_2005"`
+	MYS2006 string `csv:"mys_2006"`
+	MYS2007 string `csv:"mys_2007"`
+	MYS2008 string `csv:"mys_2008"`
+	MYS2009 string `csv:"mys_2009"`
+	MYS2010 string `csv:"mys_2010"`
+	MYS2011 string `csv:"mys_2011"`
+	MYS2012 string `csv:"mys_2012"`
+	MYS2013 string `csv:"mys_2013"`
+	MYS2014 string `csv:"mys_2014"`
+	MYS2015 string `csv:"mys_2015"`
+	MYS2016 string `csv:"mys_2016"`
+	MYS2017 string `csv:"mys_2017"`
+	MYS2018 string `csv:"mys_2018"`
+	MYS2019 string `csv:"mys_2019"`
+	MYS2020 string `csv:"mys_2020"`
+	MYS2021 string `csv:"mys_2021"`
+	MYS2022 string `csv:"mys_2022"`
+	MYS2023 string `csv:"mys_2023"`
+
+	// Média de anos na escola - Feminino
+	MYF1991 string `csv:"mys_f_1991"`
+	MYF1992 string `csv:"mys_f_1992"`
+	MYF1993 string `csv:"mys_f_1993"`
+	MYF1994 string `csv:"mys_f_1994"`
+	MYF1995 string `csv:"mys_f_1995"`
+	MYF1996 string `csv:"mys_f_1996"`
+	MYF1997 string `csv:"mys_f_1997"`
+	MYF1998 string `csv:"mys_f_1998"`
+	MYF1999 string `csv:"mys_f_1999"`
+	MYF2000 string `csv:"mys_f_2000"`
+	MYF2001 string `csv:"mys_f_2001"`
+	MYF2002 string `csv:"mys_f_2002"`
+	MYF2003 string `csv:"mys_f_2003"`
+	MYF2004 string `csv:"mys_f_2004"`
+	MYF2005 string `csv:"mys_f_2005"`
+	MYF2006 string `csv:"mys_f_2006"`
+	MYF2007 string `csv:"mys_f_2007"`
+	MYF2008 string `csv:"mys_f_2008"`
+	MYF2009 string `csv:"mys_f_2009"`
+	MYF2010 string `csv:"mys_f_2010"`
+	MYF2011 string `csv:"mys_f_2011"`
+	MYF2012 string `csv:"mys_f_2012"`
+	MYF2013 string `csv:"mys_f_2013"`
+	MYF2014 string `csv:"mys_f_2014"`
+	MYF2015 string `csv:"mys_f_2015"`
+	MYF2016 string `csv:"mys_f_2016"`
+	MYF2017 string `csv:"mys_f_2017"`
+	MYF2018 string `csv:"mys_f_2018"`
+	MYF2019 string `csv:"mys_f_2019"`
+	MYF2020 string `csv:"mys_f_2020"`
+	MYF2021 string `csv:"mys_f_2021"`
+	MYF2022 string `csv:"mys_f_2022"`
+	MYF2023 string `csv:"mys_f_2023"`
+
+	// Média de anos na escola - Masculino
+	MYM1991 string `csv:"mys_m_1991"`
+	MYM1992 string `csv:"mys_m_1992"`
+	MYM1993 string `csv:"mys_m_1993"`
+	MYM1994 string `csv:"mys_m_1994"`
+	MYM1995 string `csv:"mys_m_1995"`
+	MYM1996 string `csv:"mys_m_1996"`
+	MYM1997 string `csv:"mys_m_1997"`
+	MYM1998 string `csv:"mys_m_1998"`
+	MYM1999 string `csv:"mys_m_1999"`
+	MYM2000 string `csv:"mys_m_2000"`
+	MYM2001 string `csv:"mys_m_2001"`
+	MYM2002 string `csv:"mys_m_2002"`
+	MYM2003 string `csv:"mys_m_2003"`
+	MYM2004 string `csv:"mys_m_2004"`
+	MYM2005 string `csv:"mys_m_2005"`
+	MYM2006 string `csv:"mys_m_2006"`
+	MYM2007 string `csv:"mys_m_2007"`
+	MYM2008 string `csv:"mys_m_2008"`
+	MYM2009 string `csv:"mys_m_2009"`
+	MYM2010 string `csv:"mys_m_2010"`
+	MYM2011 string `csv:"mys_m_2011"`
+	MYM2012 string `csv:"mys_m_2012"`
+	MYM2013 string `csv:"mys_m_2013"`
+	MYM2014 string `csv:"mys_m_2014"`
+	MYM2015 string `csv:"mys_m_2015"`
+	MYM2016 string `csv:"mys_m_2016"`
+	MYM2017 string `csv:"mys_m_2017"`
+	MYM2018 string `csv:"mys_m_2018"`
+	MYM2019 string `csv:"mys_m_2019"`
+	MYM2020 string `csv:"mys_m_2020"`
+	MYM2021 string `csv:"mys_m_2021"`
+	MYM2022 string `csv:"mys_m_2022"`
+	MYM2023 string `csv:"mys_m_2023"`
 }
 
 func Runner() {
@@ -662,7 +770,7 @@ func Runner() {
 			// Construindo a expectativa de anos na escola
 			for _, v := range campos[1:] {
 
-				// Anos na Escola - Geral
+				// Expectativa Anos na Escola - Geral
 				if strings.HasPrefix(v, "EYS") {
 
 					r := reflect.ValueOf(pais)
@@ -688,7 +796,7 @@ func Runner() {
 
 				}
 
-				// Anos na Escola - Feminino
+				// Expectativa Anos na Escola - Feminino
 				if strings.HasPrefix(v, "EYF") {
 
 					r := reflect.ValueOf(pais)
@@ -714,7 +822,7 @@ func Runner() {
 
 				}
 
-				// Anos na Escola - Masculino
+				// Expectativa Anos na Escola - Masculino
 				if strings.HasPrefix(v, "EYM") {
 
 					r := reflect.ValueOf(pais)
@@ -735,6 +843,89 @@ func Runner() {
 
 					item := ordenado[ano]
 					item.ExpectativaDeAnosNaEscolaMasculina = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a média de anos na escola
+			for _, v := range campos[1:] {
+
+				// Média de Anos na Escola - Geral
+				if strings.HasPrefix(v, "MYS") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.MediaDeAnosNaEscola = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+				// Média de Anos na Escola - Feminino
+				if strings.HasPrefix(v, "MYF") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.MediaDeAnosNaEscolaFeminina = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+				// Média de Anos na Escola - Masculino
+				if strings.HasPrefix(v, "MYM") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.MediaDeAnosNaEscolaMasculina = math.Round(valor*100) / 100
 
 					ordenado[ano] = item
 
