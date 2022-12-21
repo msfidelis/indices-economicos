@@ -2,6 +2,7 @@ package idh
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -549,6 +550,8 @@ func Runner() {
 	fileNameRaw := "./data/idh/raw/hdr-raw.csv"
 	fileNameOutput := "./data/idh/idh.json"
 	fileNameOutputCSV := "./data/idh/idh.csv"
+	s3KeyJSON := "idh/idh.json"
+	s3KeyCSV := "idh/idh.csv"
 	fonte := "https://hdr.undp.org/"
 
 	l := logger.Instance()
@@ -1179,6 +1182,34 @@ func Runner() {
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
 		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Str("S3Key", s3KeyCSV).
+		Msg("Fazendo Upload para o S3")
+
+	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("S3Key", s3KeyCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	err = upload.S3(fileNameOutput, s3KeyJSON)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutput).
+			Str("S3Key", s3KeyJSON).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
 
 	l.Info().
 		Str("Runner", runnerName).

@@ -8,6 +8,7 @@ require (
 	github.com/antchfx/htmlquery v1.2.5 // indirect
 	github.com/antchfx/xmlquery v1.3.13 // indirect
 	github.com/antchfx/xpath v1.2.1 // indirect
+	github.com/aws/aws-sdk-go v1.44.164 // indirect
 	github.com/cavaliercoder/grab v3.0.1+incompatible // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
@@ -15,6 +16,7 @@ require (
 	github.com/gocolly/colly v1.2.0 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
 	github.com/golang/protobuf v1.3.1 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/kennygrant/sanitize v1.2.4 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect

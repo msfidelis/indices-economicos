@@ -2,6 +2,7 @@ package sociais
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -249,6 +250,9 @@ func RunnerAuxilioBrasilConsolidacao() {
 	file_path := "./data/sociais/auxilio_brasil_consolido.json"
 	fileNameOutputCSV := "./data/sociais/auxilio_brasil_consolido.csv"
 
+	s3KeyCSV := "sociais/auxilio_brasil_consolido.csv"
+	s3KeyJSON := "sociais/auxilio_brasil_consolido.json"
+
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Iniciando o Processo de Consolidação de dados")
@@ -337,7 +341,6 @@ func RunnerAuxilioBrasilConsolidacao() {
 			item.FamiliasVulnerabilidade = k.FamiliasVulnerabilidade
 			item.CoberturaAuxilio = float64(item.Familias) / float64(item.FamiliasVulnerabilidade)
 			consolidado[k.Referencia] = item
-			fmt.Println(item)
 		}
 	}
 	// Criando o objeto final
@@ -433,12 +436,38 @@ func RunnerAuxilioBrasilConsolidacao() {
 	l.Info().
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
+		Str("S3Key", s3KeyCSV).
+		Msg("Fazendo Upload para o S3")
+
+	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("S3Key", s3KeyCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	err = upload.S3(file_path, s3KeyJSON)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("S3Key", s3KeyJSON).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
 		Msg("Finalizado")
 
 	l.Info().
 		Str("Runner", runnerName).
 		Str("FilePath", file_path).
 		Msg("Finalizado")
-
-	// fmt.Println(indice)
 }

@@ -2,6 +2,7 @@ package pib
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -48,6 +49,9 @@ func RunnerPIBAcumulado() {
 	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/pib/pib-acumulado.json"
 	fileNameOutputCSV := "./data/pib/pib-acumulado.csv"
+
+	s3KeyCSV := "pib/pib-acumulado.csv"
+	s3KeyJSON := "pib/pib-acumulado.json"
 
 	l := logger.Instance()
 
@@ -209,6 +213,34 @@ func RunnerPIBAcumulado() {
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
 		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Str("S3Key", s3KeyCSV).
+		Msg("Fazendo Upload para o S3")
+
+	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("S3Key", s3KeyCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	err = upload.S3(file_path, s3KeyJSON)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("S3Key", s3KeyJSON).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
 
 	l.Info().
 		Str("Runner", runnerName).
