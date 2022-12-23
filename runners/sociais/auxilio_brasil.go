@@ -57,6 +57,9 @@ func RunnerAuxilioBrasil() {
 	file_path := "./data/sociais/auxilio_brasil.json"
 	fileNameOutputCSV := "./data/sociais/auxilio_brasil.csv"
 
+	s3KeyCSV := "sociais/auxilio_brasil.csv"
+	s3KeyJSON := "sociais/auxilio_brasil.json"
+
 	l := logger.Instance()
 
 	l.Info().
@@ -218,6 +221,28 @@ func RunnerAuxilioBrasil() {
 			Str("Runner", runnerName).
 			Str("FilePath", fileNameOutputCSV).
 			Msg("Finalizado")
+
+		err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", fileNameOutputCSV).
+				Str("S3Key", s3KeyCSV).
+				Str("Error", err.Error()).
+				Msg("Erro ao fazer upload do arquivo para o S3")
+		}
+
+		err = upload.S3(file_path, s3KeyJSON)
+
+		if err != nil {
+			l.Fatal().
+				Str("Runner", runnerName).
+				Str("FilePath", file_path).
+				Str("S3Key", s3KeyJSON).
+				Str("Error", err.Error()).
+				Msg("Erro ao fazer upload do arquivo para o S3")
+		}
 
 		l.Info().
 			Str("Runner", runnerName).
