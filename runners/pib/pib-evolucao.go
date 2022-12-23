@@ -226,14 +226,10 @@ func RunnerEvolucaoPIB() {
 	names := structs.Names(response[0].Resultados[0].Series[0].Serie)
 
 	for _, v := range names {
-
-		fmt.Println(v)
 		r := reflect.ValueOf(response[0].Resultados[0].Series[0].Serie)
 		f := reflect.Indirect(r).FieldByName(v)
 
 		valueRaw := f.String()
-
-		fmt.Println(valueRaw)
 
 		l.Info().
 			Str("Runner", runnerName).

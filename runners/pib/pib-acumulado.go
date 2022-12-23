@@ -4,7 +4,6 @@ import (
 	"crawlers/pkg/logger"
 	"crawlers/pkg/upload"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"os"
 	"strconv"
@@ -109,8 +108,6 @@ func RunnerPIBAcumulado() {
 	}
 
 	for _, v := range response {
-		fmt.Println(v)
-
 		valor, err := strconv.ParseFloat(strings.TrimSpace(v.V), 64)
 
 		if err != nil {

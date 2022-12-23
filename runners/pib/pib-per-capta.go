@@ -4,7 +4,6 @@ import (
 	"crawlers/pkg/logger"
 	"crawlers/pkg/upload"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"os"
 	"reflect"
@@ -149,13 +148,10 @@ func RunnerPIBPerCapta() {
 
 	for _, v := range names {
 
-		fmt.Println(v)
 		r := reflect.ValueOf(response[0].Resultados[0].Series[0].Serie)
 		f := reflect.Indirect(r).FieldByName(v)
 
 		valueRaw := f.String()
-
-		fmt.Println(valueRaw)
 
 		l.Info().
 			Str("Runner", runnerName).

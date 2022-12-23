@@ -29,6 +29,12 @@ type Data struct {
 	INPCVariacao           float64 `json:"inpc_variacao" csv:"inpc_variacao"`
 	INPCAcumuladoAno       float64 `json:"inpc_acumulado_ano" csv:"inpc_acumulado_ano"`
 	INPCAcumulado12Meses   float64 `json:"inpc_acumulado_doze_meses" csv:"inpc_acumulado_doze_meses"`
+	IPAVariacao            float64 `json:"ipa_variacao" csv:"ipa_variacao"`
+	IPAAcumuladoAno        float64 `json:"ipa_acumulado_ano" csv:"ipa_acumulado_ano"`
+	IPCVariacao            float64 `json:"ipc_fipe_variacao" csv:"ipc_fipe_variacao"`
+	IPCAcumuladoAno        float64 `json:"ipc_fipe_acumulado_ano" csv:"ipc_fipe_acumulado_ano"`
+	INCCVariacao           float64 `json:"incc_variacao" csv:"incc_variacao"`
+	INCCAcumuladoAno       float64 `json:"incc_acumulado_ano" csv:"incc_acumulado_ano"`
 	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
@@ -50,6 +56,9 @@ func RunnerConsolidacao() {
 	ipcaFile := "./data/inflacao/ipca.json"
 	ipca15File := "./data/inflacao/ipca15.json"
 	inpcFile := "./data/inflacao/inpc.json"
+	ipaFile := "./data/inflacao/ipa.json"
+	ipcFile := "./data/inflacao/ipc-fipe.json"
+	inccFile := "./data/inflacao/incc.json"
 
 	file_path := "./data/inflacao/inflacao.json"
 	fileNameOutputCSV := "./data/inflacao/inflacao.csv"
@@ -127,6 +136,66 @@ func RunnerConsolidacao() {
 			Str("Runner", runnerName).
 			Str("Error", err.Error()).
 			Str("Arquivo", inpcFile).
+			Msg("converter para struct")
+	}
+
+	IPA := IPA{}
+	fileIPA, err := ioutil.ReadFile(ipaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPA), &IPA)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipaFile).
+			Msg("converter para struct")
+	}
+
+	IPC := IPC{}
+	fileIPC, err := ioutil.ReadFile(ipcFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPC), &IPC)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcFile).
+			Msg("converter para struct")
+	}
+
+	INCC := INCC{}
+	fileINCC, err := ioutil.ReadFile(inccFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", inccFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileINCC), &INCC)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", inccFile).
 			Msg("converter para struct")
 	}
 
@@ -209,6 +278,63 @@ func RunnerConsolidacao() {
 		l.Info().
 			Str("Runner", runnerName).
 			Str("Dataset", "INPC").
+			Str("Periodo", in.Referencia).
+			Msg("Agregando os Item ao Consolidado")
+
+		consolidado[in.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPA ao Consolidado")
+
+	for _, in := range IPA.Data {
+
+		item := consolidado[in.Referencia]
+		item.IPAVariacao = in.Variacao
+		item.IPAAcumuladoAno = in.AcumuladoAno
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Dataset", "IPA").
+			Str("Periodo", in.Referencia).
+			Msg("Agregando os Item ao Consolidado")
+
+		consolidado[in.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPC-FIPE ao Consolidado")
+
+	for _, in := range IPC.Data {
+
+		item := consolidado[in.Referencia]
+		item.IPCVariacao = in.Variacao
+		item.IPCAcumuladoAno = in.AcumuladoAno
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Dataset", "IPC-FIPE").
+			Str("Periodo", in.Referencia).
+			Msg("Agregando os Item ao Consolidado")
+
+		consolidado[in.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de INCC ao Consolidado")
+
+	for _, in := range INCC.Data {
+
+		item := consolidado[in.Referencia]
+		item.INCCVariacao = in.Variacao
+		item.INCCAcumuladoAno = in.AcumuladoAno
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Dataset", "INCC").
 			Str("Periodo", in.Referencia).
 			Msg("Agregando os Item ao Consolidado")
 

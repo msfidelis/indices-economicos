@@ -68,7 +68,6 @@ func main() {
 	// Sociais
 	l.Info().
 		Msg("Iniciando o Runner de Indicadores Sociais")
-
 	sociais.Runner()
 
 }

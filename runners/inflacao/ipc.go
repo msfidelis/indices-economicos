@@ -15,7 +15,7 @@ import (
 	"github.com/gocolly/colly"
 )
 
-type DataINCC struct {
+type DataIPC struct {
 	Referencia   string  `json:"referencia" csv:"referencia"`
 	Ano          string  `json:"ano" csv:"ano"`
 	Mes          string  `json:"mes" csv:"mes"`
@@ -24,24 +24,24 @@ type DataINCC struct {
 	AcumuladoAno float64 `json:"acumulado_ano" csv:"acumulado_ano"`
 }
 
-type INCC struct {
-	Atualizacao   time.Time  `json:"data_atualizacao"`
-	UnidadeMedida string     `json:"unidade_medida"`
-	Fonte         string     `json:"fonte"`
-	Data          []DataINCC `json:"data"`
+type IPC struct {
+	Atualizacao   time.Time `json:"data_atualizacao"`
+	UnidadeMedida string    `json:"unidade_medida"`
+	Fonte         string    `json:"fonte"`
+	Data          []DataIPC `json:"data"`
 }
 
-func RunnerINCC() {
-	runnerName := "INCC-DI"
+func RunnerIPC() {
+	runnerName := "IPC-FIPE"
 	domain := "www.debit.com.br"
-	url := "https://www.debit.com.br/tabelas/tabela-completa.php?indice=incc"
-	file_path := "./data/inflacao/incc.json"
-	fileNameOutputCSV := "./data/inflacao/incc.csv"
+	url := "https://www.debit.com.br/tabelas/tabela-completa.php?indice=ipc_fipe"
+	file_path := "./data/inflacao/ipc-fipe.json"
+	fileNameOutputCSV := "./data/inflacao/ipc-fipe.csv"
 
-	s3KeyCSV := "inflacao/incc.csv"
-	s3KeyJSON := "inflacao/incc.json"
+	s3KeyCSV := "inflacao/ipc-fipe.csv"
+	s3KeyJSON := "inflacao/ipc-fipe.json"
 
-	acc := []DataINCC{}
+	acc := []DataIPC{}
 
 	l := logger.Instance()
 
@@ -53,7 +53,7 @@ func RunnerINCC() {
 		colly.AllowedDomains(domain),
 	)
 
-	indice := &INCC{}
+	indice := &IPC{}
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -95,7 +95,7 @@ func RunnerINCC() {
 
 			referencia := fmt.Sprintf("%s-%s", ano, mes)
 
-			item := DataINCC{
+			item := DataIPC{
 				Variacao:   valor,
 				Ano:        ano,
 				Mes:        mes,

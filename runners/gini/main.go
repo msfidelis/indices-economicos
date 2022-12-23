@@ -4,7 +4,6 @@ import (
 	"crawlers/pkg/logger"
 	"crawlers/pkg/upload"
 	"encoding/json"
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -97,9 +96,6 @@ func Runner() {
 			index := strings.Replace(tr.ChildText("td:nth-child(2)"), ",", ".", -1)
 
 			valor, _ := strconv.ParseFloat(strings.TrimSpace(index), 64)
-
-			fmt.Println(ano)
-			fmt.Println(index)
 
 			item := Data{
 				Ano:   ano,
