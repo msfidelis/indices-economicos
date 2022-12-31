@@ -44,40 +44,72 @@ func main() {
 	l.Info().
 		Msg("Iniciando o Runner de PIB")
 
-	pib.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		pib.Runner()
+	}()
 
 	// IPCA
 	l.Info().
 		Msg("Iniciando o Runner de IPCA")
 
-	ipca.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		ipca.Runner()
+	}()
 
 	// INPC
 	l.Info().
 		Msg("Iniciando o Runner de INPC")
 
-	inpc.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		inpc.Runner()
+	}()
 
 	// IGP-M
 	l.Info().
 		Msg("Iniciando o Runner de IGP-M")
 
-	igpm.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		igpm.Runner()
+	}()
 
 	// SELIC
 	l.Info().
 		Msg("Iniciando o Runner de Selic")
 
-	selic.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		selic.Runner()
+	}()
 
 	// GINI
 	l.Info().
 		Msg("Iniciando o Runner de coeficiente de Gini")
-	gini.Runner()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		gini.Runner()
+	}()
 
 	// Sociais
 	l.Info().
 		Msg("Iniciando o Runner de Indicadores Sociais")
-	sociais.Runner()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		sociais.Runner()
+	}()
+
+	wg.Wait()
 
 }
