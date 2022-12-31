@@ -11,9 +11,11 @@ import (
 	"crawlers/runners/pib"
 	"crawlers/runners/selic"
 	"crawlers/runners/sociais"
+	"sync"
 )
 
 func main() {
+	var wg sync.WaitGroup
 	l := logger.Instance()
 	l.Info().
 		Msg("Iniciando o processo de Crawling dos dados abertos")
@@ -22,13 +24,21 @@ func main() {
 	l.Info().
 		Msg("Iniciando o Runner de Inflação")
 
-	inflacao.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		inflacao.Runner()
+	}()
 
 	// IDH
 	l.Info().
 		Msg("Iniciando o Runner de coeficiente de IDH")
 
-	idh.Runner()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		idh.Runner()
+	}()
 
 	// PIB
 	l.Info().

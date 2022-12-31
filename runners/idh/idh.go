@@ -41,6 +41,7 @@ type Data struct {
 	MediaDeAnosNaEscolaMasculina       float64 `json:"media_de_anos_escola_masculina" csv:"media_de_anos_escola_masculina"`
 	MortalidadeMaterna                 float64 `json:"taxa_mortalidade_materna" csv:"taxa_mortalidade_materna"`
 	EmissaoCO2                         float64 `json:"emissao_toneladas_co2_per_capta" csv:"emissao_toneladas_co2_per_capta"`
+	MaterialFootprint                  float64 `json:"material_footprint_toneladas_per_capta" csv:"material_footprint_toneladas_per_capta"`
 }
 
 type HDI struct {
@@ -541,6 +542,41 @@ type HDICsv struct {
 	CO22021 string `csv:"co2_prod_2021"`
 	CO22022 string `csv:"co2_prod_2022"`
 	CO22023 string `csv:"co2_prod_2023"`
+
+	// Material Footprint
+	MFE1991 string `csv:"mf_1991"`
+	MFE1992 string `csv:"mf_1992"`
+	MFE1993 string `csv:"mf_1993"`
+	MFE1994 string `csv:"mf_1994"`
+	MFE1995 string `csv:"mf_1995"`
+	MFE1996 string `csv:"mf_1996"`
+	MFE1997 string `csv:"mf_1997"`
+	MFE1998 string `csv:"mf_1998"`
+	MFE1999 string `csv:"mf_1999"`
+	MFE2000 string `csv:"mf_2000"`
+	MFE2001 string `csv:"mf_2001"`
+	MFE2002 string `csv:"mf_2002"`
+	MFE2003 string `csv:"mf_2003"`
+	MFE2004 string `csv:"mf_2004"`
+	MFE2005 string `csv:"mf_2005"`
+	MFE2006 string `csv:"mf_2006"`
+	MFE2007 string `csv:"mf_2007"`
+	MFE2008 string `csv:"mf_2008"`
+	MFE2009 string `csv:"mf_2009"`
+	MFE2010 string `csv:"mf_2010"`
+	MFE2011 string `csv:"mf_2011"`
+	MFE2012 string `csv:"mf_2012"`
+	MFE2013 string `csv:"mf_2013"`
+	MFE2014 string `csv:"mf_2014"`
+	MFE2015 string `csv:"mf_2015"`
+	MFE2016 string `csv:"mf_2016"`
+	MFE2017 string `csv:"mf_2017"`
+	MFE2018 string `csv:"mf_2018"`
+	MFE2019 string `csv:"mf_2019"`
+	MFE2020 string `csv:"mf_2020"`
+	MFE2021 string `csv:"mf_2021"`
+	MFE2022 string `csv:"mf_2022"`
+	MFE2023 string `csv:"mf_2023"`
 }
 
 func Runner() {
@@ -1063,6 +1099,37 @@ func Runner() {
 
 					item := ordenado[ano]
 					item.EmissaoCO2 = math.Round(valor*100) / 100
+
+					ordenado[ano] = item
+
+				}
+
+			}
+
+			// Construindo a Emissão de Material Footprint
+			for _, v := range campos[1:] {
+
+				// Média de Anos na Escola - Geral
+				if strings.HasPrefix(v, "MFE") {
+
+					r := reflect.ValueOf(pais)
+					f := reflect.Indirect(r).FieldByName(v)
+
+					ano := v[3:7]
+
+					valorStr := fmt.Sprintf("0%v", f.String())
+					valor, err := strconv.ParseFloat(strings.TrimSpace(valorStr), 64)
+
+					if err != nil {
+						l.Fatal().
+							Str("Runner", runnerName).
+							Str("Error", err.Error()).
+							Str("Valor recuperado", valorStr).
+							Msg("Erro ao converter o valor para Float64")
+					}
+
+					item := ordenado[ano]
+					item.MaterialFootprint = math.Round(valor*100) / 100
 
 					ordenado[ano] = item
 
