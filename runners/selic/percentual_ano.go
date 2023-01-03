@@ -18,7 +18,7 @@ func RunnerPercentualAoAno() {
 
 	runnerName := "SELIC"
 	// domain := "api.bcb.gov.br"
-	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/100?formato=json"
+	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/400?formato=json"
 	unidadeMedida := "Percentual ao ano"
 	fonte := "https://api.bcb.gov.br"
 

@@ -17,7 +17,7 @@ import (
 func RunnerAcumuladoMensal() {
 	runnerName := "SELIC"
 	// domain := "api.bcb.gov.br"
-	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados/ultimos/100?formato=json"
+	url := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados/ultimos/400?formato=json"
 	unidadeMedida := "Percentual ao mês"
 	fonte := "https://api.bcb.gov.br"
 	file_path := "./data/selic/selic-variacao-mes.json"
