@@ -42,9 +42,7 @@ func Runner() {
 		Str("Runner", runnerName).
 		Msg("Iniciando o Runner para Efetuar o Crawler")
 
-	c := colly.NewCollector(
-		colly.AllowedDomains(domain),
-	)
+	c := colly.NewCollector()
 
 	gini := &GINI{}
 

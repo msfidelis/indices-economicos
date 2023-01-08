@@ -1,0 +1,5 @@
+package sociais
+
+func RunnerSalarioMinimo() {
+
+}
