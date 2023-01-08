@@ -35,6 +35,7 @@ type Data struct {
 	IPCAcumuladoAno        float64 `json:"ipc_fipe_acumulado_ano" csv:"ipc_fipe_acumulado_ano"`
 	INCCVariacao           float64 `json:"incc_variacao" csv:"incc_variacao"`
 	INCCAcumuladoAno       float64 `json:"incc_acumulado_ano" csv:"incc_acumulado_ano"`
+	SalarioMinimo          float64 `json:"salario_minimo" csv:"salario_minimo"`
 	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
@@ -59,6 +60,7 @@ func RunnerConsolidacao() {
 	ipaFile := "./data/inflacao/ipa.json"
 	ipcFile := "./data/inflacao/ipc-fipe.json"
 	inccFile := "./data/inflacao/incc.json"
+	salarioMinimoFile := "./data/inflacao/salario_minimo.json"
 
 	file_path := "./data/inflacao/inflacao.json"
 	fileNameOutputCSV := "./data/inflacao/inflacao.csv"
@@ -199,6 +201,26 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	salarioMinimo := SalarioMinimo{}
+	fileSalarioMinimo, err := ioutil.ReadFile(salarioMinimoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", salarioMinimoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileSalarioMinimo), &salarioMinimo)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", salarioMinimoFile).
+			Msg("converter para struct")
+	}
+
 	// Construção do map de referencias
 	l.Info().
 		Str("Runner", runnerName).
@@ -335,6 +357,20 @@ func RunnerConsolidacao() {
 		l.Info().
 			Str("Runner", runnerName).
 			Str("Dataset", "INCC").
+			Str("Periodo", in.Referencia).
+			Msg("Agregando os Item ao Consolidado")
+
+		consolidado[in.Referencia] = item
+	}
+
+	for _, in := range salarioMinimo.Data {
+
+		item := consolidado[in.Referencia]
+		item.SalarioMinimo = in.Valor
+
+		l.Info().
+			Str("Runner", runnerName).
+			Str("Dataset", "Salario Minimo").
 			Str("Periodo", in.Referencia).
 			Msg("Agregando os Item ao Consolidado")
 

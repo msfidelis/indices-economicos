@@ -7,5 +7,6 @@ func Runner() {
 	RunnerIPA()
 	RunnerIPC()
 	RunnerINCC()
+	RunnerSalarioMinimo()
 	RunnerConsolidacao()
 }

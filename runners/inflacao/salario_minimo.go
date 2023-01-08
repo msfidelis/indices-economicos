@@ -5,7 +5,6 @@ import (
 	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
-	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -15,33 +14,32 @@ import (
 	"github.com/gocolly/colly"
 )
 
-type DataINCC struct {
-	Referencia   string  `json:"referencia" csv:"referencia"`
-	Ano          string  `json:"ano" csv:"ano"`
-	Mes          string  `json:"mes" csv:"mes"`
-	Anomes       string  `json:"ano_mes csv:"ano_mes"`
-	Variacao     float64 `json:"variacao" csv:"variacao"`
-	AcumuladoAno float64 `json:"acumulado_ano" csv:"acumulado_ano"`
+type DataSalarioMinimo struct {
+	Referencia  string  `json:"referencia" csv:"referencia"`
+	Ano         string  `json:"ano" csv:"ano"`
+	Mes         string  `json:"mes" csv:"mes"`
+	Anomes      string  `json:"ano_mes csv:"ano_mes"`
+	Valor       float64 `json:"valor" csv:"valor"`
+	Consolidado bool    `json:"consolidado" csv:"consolidado"`
 }
 
-type INCC struct {
-	Atualizacao   time.Time  `json:"data_atualizacao"`
-	UnidadeMedida string     `json:"unidade_medida"`
-	Fonte         string     `json:"fonte"`
-	Data          []DataINCC `json:"data"`
+type SalarioMinimo struct {
+	Atualizacao time.Time           `json:"data_atualizacao"`
+	Fonte       string              `json:"fonte"`
+	Data        []DataSalarioMinimo `json:"data"`
 }
 
-func RunnerINCC() {
-	runnerName := "INCC-DI"
+func RunnerSalarioMinimo() {
+	runnerName := "Salário Minimo"
 	domain := "www.debit.com.br"
-	url := "https://www.debit.com.br/tabelas/tabela-completa.php?indice=incc"
-	file_path := "./data/inflacao/incc.json"
-	fileNameOutputCSV := "./data/inflacao/incc.csv"
+	url := "https://debit.com.br/tabelas/tabela-completa.php?indice=salario_minimo"
+	file_path := "./data/inflacao/salario_minimo.json"
+	fileNameOutputCSV := "./data/inflacao/salario_minimo.csv"
 
-	s3KeyCSV := "inflacao/incc.csv"
-	s3KeyJSON := "inflacao/incc.json"
+	s3KeyCSV := "inflacao/salario_minimo.csv"
+	s3KeyJSON := "inflacao/salario_minimo.json"
 
-	acc := []DataINCC{}
+	acc := []DataSalarioMinimo{}
 
 	l := logger.Instance()
 
@@ -51,7 +49,7 @@ func RunnerINCC() {
 
 	c := colly.NewCollector()
 
-	indice := &INCC{}
+	indice := &SalarioMinimo{}
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -61,7 +59,6 @@ func RunnerINCC() {
 	indice.Atualizacao = now
 	indice.Fonte = url
 
-	// Find and print all links
 	c.OnHTML("table", func(e *colly.HTMLElement) {
 
 		l.Info().
@@ -78,7 +75,8 @@ func RunnerINCC() {
 
 		e.ForEach("tr", func(i int, tr *colly.HTMLElement) {
 			referencia_td := tr.ChildText("td:nth-child(1)")
-			valor_td := strings.Replace(tr.ChildText("td:nth-child(2)"), ",", ".", -1)
+			valor_td := strings.Replace(tr.ChildText("td:nth-child(2)"), ".", "", -1)
+			valor_td = strings.Replace(valor_td, ",", ".", -1)
 
 			// Ignorando empty values
 			if len([]rune(referencia_td)) <= 1 {
@@ -93,8 +91,8 @@ func RunnerINCC() {
 
 			referencia := fmt.Sprintf("%s-%s", ano, mes)
 
-			item := DataINCC{
-				Variacao:   valor,
+			item := DataSalarioMinimo{
+				Valor:      valor,
 				Ano:        ano,
 				Mes:        mes,
 				Anomes:     anomes,
@@ -119,17 +117,15 @@ func RunnerINCC() {
 		Str("URL", url).
 		Msg("Construindo o acomulado")
 
-	for i, k := range acc {
+	for _, k := range acc {
 
 		// Ignorando o Acumulado Ano
-		if k.Mes == "01" {
-			k.AcumuladoAno = k.Variacao
+		if k.Mes == "12" {
+			k.Consolidado = true
 			indice.Data = append(indice.Data, k)
 			continue
 		} else {
-			l := indice.Data[i-1]
-			acumulado := l.AcumuladoAno + k.Variacao
-			k.AcumuladoAno = math.Round(acumulado*100) / 100
+			k.Consolidado = false
 		}
 
 		indice.Data = append(indice.Data, k)
@@ -249,4 +245,5 @@ func RunnerINCC() {
 		Str("Runner", runnerName).
 		Str("FilePath", file_path).
 		Msg("Finalizado")
+
 }
