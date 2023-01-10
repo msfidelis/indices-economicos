@@ -514,3 +514,4 @@ referencia,ano,mes,variacao,acumulado_ano,acumulado_doze_meses,consolidado_ano,i
 2022-09,2022,09,-0.29,4.09,7.17,false,Num202209
 2022-10,2022,10,0.59,4.7,6.47,false,Num202210
 2022-11,2022,11,0.41,5.13,5.9,false,Num202211
+2022-12,2022,12,0.62,5.79,5.79,true,Num202212
