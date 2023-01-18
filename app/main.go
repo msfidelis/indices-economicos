@@ -9,6 +9,7 @@ import (
 	"crawlers/runners/inpc"
 	"crawlers/runners/ipca"
 	"crawlers/runners/pib"
+	"crawlers/runners/selic"
 	"crawlers/runners/sociais"
 	"sync"
 )
@@ -83,11 +84,11 @@ func main() {
 	l.Info().
 		Msg("Iniciando o Runner de Selic")
 
-	// wg.Add(1)
-	// go func() {
-	// 	defer wg.Done()
-	// 	selic.Runner()
-	// }()
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		selic.Runner()
+	}()
 
 	// GINI
 	l.Info().
