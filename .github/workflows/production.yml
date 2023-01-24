@@ -27,3 +27,6 @@ jobs:
 
       - name: Docker Push Latest
         run: docker push 181560427716.dkr.ecr.us-east-1.amazonaws.com/economia-popular/indices-economicos:latest
+
+
+        
