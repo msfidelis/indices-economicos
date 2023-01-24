@@ -11,12 +11,25 @@ import (
 	"crawlers/runners/pib"
 	"crawlers/runners/selic"
 	"crawlers/runners/sociais"
+	"os"
 	"sync"
 )
 
 func main() {
+
 	var wg sync.WaitGroup
 	l := logger.Instance()
+
+	batch_index := os.Getenv("AWS_BATCH_JOB_ARRAY_INDEX")
+
+	if batch_index == "0" {
+
+		l.Warn().
+			Msg("Skipping Index")
+
+		os.Exit(0)
+	}
+
 	l.Info().
 		Msg("Iniciando o processo de Crawling dos dados abertos")
 
