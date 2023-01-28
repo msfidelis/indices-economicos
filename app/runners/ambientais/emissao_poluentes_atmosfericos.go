@@ -5,11 +5,11 @@ import (
 	"crawlers/pkg/upload"
 	"crypto/tls"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"os"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/gocarina/gocsv"
@@ -111,7 +111,6 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 	}
 
 	for _, v := range response.Data {
-		fmt.Println(v)
 		valor_raw := strings.Replace(v.Quantidade, ",", "", -1)
 		valor, err := strconv.ParseFloat(strings.TrimSpace(valor_raw), 64)
 
@@ -259,5 +258,24 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 		Str("Runner", runnerName).
 		Str("FilePath", file_path).
 		Msg("Finalizado")
+
+	var wg sync.WaitGroup
+
+	l.Info().
+		Msg("Iniciando o Runner de Poluentes Municipios e de Estados")
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		RunnerPoluentesAtmosfericosMunicipios(index)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		RunnerPoluentesAtmosfericosEstados(index)
+	}()
+
+	wg.Wait()
 
 }
