@@ -2,6 +2,7 @@ package inflacao
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -42,6 +43,9 @@ func RunnerIPCA15() {
 	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/inflacao/ipca15.json"
 	fileNameOutputCSV := "./data/inflacao/ipca15.csv"
+
+	s3KeyCSV := "inflacao/ipca15.csv"
+	s3KeyJSON := "inflacao/ipca15.json"
 
 	ordenado := make(map[string]DataIPCA15)
 
@@ -303,6 +307,39 @@ func RunnerIPCA15() {
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
 		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Str("S3Key", s3KeyCSV).
+		Msg("Fazendo Upload para o S3")
+
+	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("S3Key", s3KeyCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	err = upload.S3(file_path, s3KeyJSON)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("S3Key", s3KeyJSON).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Msg("Finalizado")
 
 	l.Info().
 		Str("Runner", runnerName).

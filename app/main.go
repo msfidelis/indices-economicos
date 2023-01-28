@@ -2,6 +2,7 @@ package main
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/runners/ambientais"
 	"crawlers/runners/gini"
 	"crawlers/runners/idh"
 	"crawlers/runners/igpm"
@@ -121,6 +122,16 @@ func main() {
 	go func() {
 		defer wg.Done()
 		sociais.Runner()
+	}()
+
+	// Ambientais
+	l.Info().
+		Msg("Iniciando o Runner de Indicadores Ambientais")
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		ambientais.Runner()
 	}()
 
 	wg.Wait()
