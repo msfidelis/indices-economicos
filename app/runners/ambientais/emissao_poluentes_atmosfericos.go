@@ -273,7 +273,19 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
+		RunnerPoluentesAtmosfericosMunicipiosResumido(index)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
 		RunnerPoluentesAtmosfericosEstados(index)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		RunnerPoluentesAtmosfericosEstadosResumido(index)
 	}()
 
 	wg.Wait()
