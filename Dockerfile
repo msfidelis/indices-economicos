@@ -23,6 +23,7 @@ RUN mkdir -p ./data/ipca
 RUN mkdir -p ./data/pib
 RUN mkdir -p ./data/selic
 RUN mkdir -p ./data/sociais/
+RUN mkdir -p ./data/ambientais/
 RUN mkdir -p ./data/idh/raw/
 
 CMD ["./main"]
