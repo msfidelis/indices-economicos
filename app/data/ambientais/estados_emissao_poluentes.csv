@@ -1,1315 +1,1321 @@
 referencia,estado,poluente_emitido,quantidade
-2015,PARAIBA,Monóxido de carbono (CO),16660.449999999997
-2021,RONDONIA,Óxidos de enxofre (SOx),2755.1900000000005
-2013,MATO GROSSO DO SUL,Partículas (PM10),233.2
-2022,MATO GROSSO,Monóxido de carbono (CO),164.71
-2020,SAO PAULO,Dióxido de enxofre,1.16
-2014,ALAGOAS,Material Particulado (MP),103781.99
-2014,ACRE,Óxidos de nitrogênio (NOx),5043
-2020,ALAGOAS,Óxidos de nitrogênio (NOx),4985.35
-2019,MINAS GERAIS,Material Particulado (MP),1015962.8100000037
-2022,PARANA,Monóxido de carbono (CO),7254.179999999999
-2020,BAHIA,Óxidos de enxofre (SOx),17400.69000000001
-2021,RIO DE JANEIRO,Óxidos de enxofre (SOx),207849.82000000004
-2020,MINAS GERAIS,Óxidos de nitrogênio (NOx),81124.74000000003
-2018,CEARA,Monóxido de carbono,232.9
-2014,TOCANTINS,Monóxido de carbono (CO),4535.190000000001
-2021,ACRE,Óxidos de nitrogênio (NOx),7141.39
-2017,SERGIPE,Material Particulado (MP),183735.24000000002
-2013,BAHIA,Compostos orgânicos voláteis não metânicos(COVNM),5.3
-2017,SAO PAULO,Dióxido de enxofre,110
-2016,MARANHAO,Monóxido de carbono (CO),1797.4
-2020,PARA,Material Particulado (MP),12998.880000000008
-2017,PARAIBA,Monóxido de carbono (CO),35556.41
-2016,ESPIRITO SANTO,Óxidos de enxofre (SOx),32940.32
-2016,ACRE,Material Particulado (MP),9478.060000000001
-2016,PIAUI,Óxidos de nitrogênio (NOx),168.19
-2019,RIO GRANDE DO SUL,Monóxido de carbono (CO),79897497.23000012
-2016,DISTRITO FEDERAL,Monóxido de carbono,8.18
-2015,MINAS GERAIS,Dióxido de enxofre,0.6
-2014,SAO PAULO,Cloro,394.22999999999996
-2015,GOIAS,Material Particulado (MP),215123.31999999995
-2019,PERNAMBUCO,Material Particulado (MP),96295.42999999995
-2017,AMAZONAS,Material Particulado (MP),14839.660000000003
-2015,AMAPA,Óxidos de enxofre (SOx),98.34
-2016,TOCANTINS,Óxidos de nitrogênio (NOx),2788.7799999999997
-2016,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),10286.369999999999
-2015,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
-2013,SANTA CATARINA,Partículas (PM10),13.97
-2021,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),550454.48
-2018,PARANA,Óxidos de nitrogênio (NOx),31499.62
-2017,BAHIA,Óxidos de enxofre (SOx),19947.159999999996
-2018,RIO DE JANEIRO,Monóxido de carbono (CO),489291.88000000006
-2022,SAO PAULO,Monóxido de carbono (CO),82.86999999999999
-2013,MINAS GERAIS,Ácido nítrico,2932.77
-2015,AMAZONAS,Monóxido de carbono (CO),23692378.359999996
-2013,PARAIBA,Óxidos de enxofre (SOx),14303.310000000001
-2013,RONDONIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",610.77
-2015,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),52.56
-2017,SANTA CATARINA,Monóxido de carbono (CO),371131.1600000002
-2016,MARANHAO,Óxidos de enxofre (SOx),75009.43
-2019,ALAGOAS,Monóxido de carbono (CO),10336.25
-2013,ALAGOAS,Partículas (PM10),1320
-2013,MATO GROSSO,Monóxido de carbono (CO),291369.92
-2020,MATO GROSSO DO SUL,Dióxido de enxofre,25.9
-2013,SANTA CATARINA,Cloreto de hidrogênio (ácido clorídrico) em solução aquosa,120
-2014,RONDONIA,Material Particulado (MP),1690746.3700000003
-2016,MATO GROSSO,Óxidos de enxofre (SOx),536.8999999999999
-2017,MINAS GERAIS,Dióxido de enxofre,1.71
-2014,DISTRITO FEDERAL,Material Particulado (MP),233.73999999999998
-2021,DISTRITO FEDERAL,Material Particulado (MP),478.2799999999999
-2019,PERNAMBUCO,Óxidos de nitrogênio (NOx),655211.06
-2018,GOIAS,Monóxido de carbono (CO),93944044.96
-2014,ESPIRITO SANTO,Material Particulado (MP),166815.17999999996
-2013,CEARA,Monóxido de carbono (CO),2195820.409999999
-2014,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
-2014,PARANA,Dióxido de enxofre,1
-2013,TOCANTINS,Material Particulado (MP),18799.089999999997
-2021,RIO DE JANEIRO,Monóxido de carbono (CO),378217.6800000001
-2019,MATO GROSSO,Monóxido de carbono (CO),325094.4500000002
-2015,PARA,Material Particulado (MP),42444.469999999994
-2013,GOIAS,Óxidos de nitrogênio (NOx),967694.2400000001
-2020,PERNAMBUCO,Monóxido de carbono (CO),16529552.21
-2021,RORAIMA,Óxidos de nitrogênio (NOx),20.57
-2016,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),23779.579999999987
-2017,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),42482.53999999999
-2014,MARANHAO,Monóxido de carbono (CO),3956.980000000001
-2014,AMAZONAS,Partículas (PM10),139.32999999999998
-2016,MATO GROSSO,Óxidos de nitrogênio (NOx),5900.640000000002
-2021,SANTA CATARINA,Óxidos de enxofre (SOx),128707.19999999997
-2020,AMAZONAS,Monóxido de carbono (CO),173362236255.4901
-2016,RIO DE JANEIRO,Material Particulado (MP),50761378.56000002
-2021,ALAGOAS,Óxidos de enxofre (SOx),686.05
-2017,TOCANTINS,Material Particulado (MP),166610.29000000007
-2016,MATO GROSSO,Material Particulado (MP),10623.350000000006
-2015,BAHIA,Material Particulado (MP),281968.6999999998
-2018,TOCANTINS,Monóxido de carbono (CO),8567.95
-2016,AMAZONAS,Material Particulado (MP),44625202.11999999
-2014,SAO PAULO,"Manganês em formas brutas (lingotes, placas, etc.) e semimanufaturadas (barras, perfis, chapas, etc.); pós; desperdícios e resíduos",4
-2015,BAHIA,Monóxido de carbono (CO),696356.7400000002
-2021,DISTRITO FEDERAL,Monóxido de carbono (CO),13487.840000000002
-2014,DISTRITO FEDERAL,Monóxido de carbono (CO),949568.05
-2013,MARANHAO,Monóxido de carbono (CO),4345.79
-2022,RIO DE JANEIRO,Óxidos de enxofre (SOx),1.6
-2019,PIAUI,Monóxido de carbono (CO),817795.2100000001
-2017,MARANHAO,Óxidos de nitrogênio (NOx),7505.52
-2022,PARA,Monóxido de carbono (CO),7.6
-2013,MATO GROSSO,Dióxido de enxofre,0.51
-2013,PARA,Monóxido de carbono (CO),621677.3800000001
-2015,RIO GRANDE DO NORTE,Material Particulado (MP),33403.67999999998
-2021,TOCANTINS,Óxidos de nitrogênio (NOx),1264.1699999999998
-2014,SERGIPE,Monóxido de carbono (CO),1575.1200000000001
-2022,DISTRITO FEDERAL,Material Particulado (MP),2.27
-2016,SAO PAULO,Material Particulado (MP),4022939.770000008
-2020,PARA,Óxidos de nitrogênio (NOx),15119.039999999999
-2018,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),3510.4300000000003
-2014,AMAZONAS,Monóxido de carbono,1693.6
-2013,SAO PAULO,Benzeno,86812
-2019,ESPIRITO SANTO,Óxidos de enxofre (SOx),28675.19
-2013,MARANHAO,Óxidos de nitrogênio (NOx),1410236.2400000002
-2014,SAO PAULO,Outros óxidos de chumbo,0.02
-2021,PARA,Material Particulado (MP),27649.140000000003
-2013,AMAZONAS,Óxidos de nitrogênio (NOx),42038.92999999999
-2020,AMAZONAS,Óxidos de enxofre (SOx),1091602335.9900002
-2020,RONDONIA,Material Particulado (MP),20273.839999999993
-2013,MINAS GERAIS,Óxidos de nitrogênio (NOx),207256.08000000005
-2013,AMAZONAS,Dióxido de enxofre,11.45
-2014,GOIAS,Dióxido de enxofre,1718.4
-2014,GOIAS,Cinzas e resíduos contendo chumbo,0.13
-2018,MINAS GERAIS,Material Particulado (MP),6781145.8099999195
-2016,RIO GRANDE DO SUL,Material Particulado (MP),2893846.7999999914
-2014,BAHIA,Óxidos de enxofre (SOx),1763158.2800000005
-2016,AMAZONAS,Óxidos de nitrogênio (NOx),14391454.579999996
-2018,ESPIRITO SANTO,Material Particulado (MP),35107.61999999999
-2014,RIO GRANDE DO SUL,Monóxido de carbono,225711.32
-2015,SAO PAULO,Monóxido de carbono (CO),4497945.759999998
-2017,GOIAS,Óxidos de nitrogênio (NOx),822712.0599999997
-2017,ESPIRITO SANTO,Material Particulado (MP),67858.93
-2014,ESPIRITO SANTO,Óxidos de enxofre (SOx),38460.97000000001
-2016,MARANHAO,Material Particulado (MP),6698.800000000002
-2013,RIO DE JANEIRO,Material Particulado (MP),9130167.83
-2014,CEARA,Óxidos de enxofre (SOx),1553.1399999999999
-2013,MINAS GERAIS,Partículas (PM10),26102.589999999997
-2022,GOIAS,Óxidos de nitrogênio (NOx),361.26
-2022,CEARA,Óxidos de nitrogênio (NOx),4910.94
-2016,ALAGOAS,Óxidos de nitrogênio (NOx),67682.17000000001
-2016,PARAIBA,Material Particulado (MP),19214.439999999995
-2013,ESPIRITO SANTO,Monóxido de carbono (CO),1522828.3000000005
-2014,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),34154.34
-2018,RONDONIA,Óxidos de nitrogênio (NOx),4071.2000000000007
-2021,PARANA,Óxidos de enxofre (SOx),14664.65
-2013,SAO PAULO,Etilbenzeno,8069
-2014,CEARA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",5.57
-2018,SAO PAULO,Monóxido de carbono (CO),3016130.1099999985
-2021,PARAIBA,Monóxido de carbono (CO),78852.04000000002
-2014,DISTRITO FEDERAL,Óxidos de enxofre (SOx),191.39
-2013,SAO PAULO,Dióxido de enxofre,759508.47
-2013,ESPIRITO SANTO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",56.4
-2016,AMAPA,Material Particulado (MP),10.56
-2020,SERGIPE,Óxidos de nitrogênio (NOx),4611.429999999999
-2020,CEARA,Óxidos de nitrogênio (NOx),118796.15999999995
-2016,GOIAS,Óxidos de nitrogênio (NOx),225583.6
-2020,PARANA,Material Particulado (MP),3521840.7699999977
-2022,PARANA,Material Particulado (MP),3272.05
-2021,ESPIRITO SANTO,Óxidos de enxofre (SOx),19204.029999999995
-2013,AMAPA,Material Particulado (MP),131.76
-2015,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
-2014,SAO PAULO,Óxidos de enxofre (SOx),234200.63999999998
-2020,PERNAMBUCO,Óxidos de enxofre (SOx),163085.13000000003
-2014,ALAGOAS,Monóxido de carbono (CO),15053.72
-2022,CEARA,Óxidos de enxofre (SOx),68237.82999999999
-2014,SANTA CATARINA,Monóxido de carbono,3208.1
-2014,SAO PAULO,Material Particulado (MP),5008448.029999988
-2016,PARAIBA,Monóxido de carbono (CO),8065.44
-2022,MINAS GERAIS,Material Particulado (MP),1269.01
-2021,ACRE,Material Particulado (MP),361.96000000000004
-2013,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),27247.18
-2015,MATO GROSSO DO SUL,Material Particulado (MP),207156.13000000003
-2014,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
-2016,ACRE,Óxidos de nitrogênio (NOx),5071.6
-2016,SERGIPE,Material Particulado (MP),755.44
-2021,PARANA,Monóxido de carbono,66.24
-2017,PARANA,Material Particulado (MP),2673172.3799999976
-2014,MATO GROSSO DO SUL,Material Particulado (MP),589691.7500000002
-2022,BAHIA,Óxidos de nitrogênio (NOx),23.47
-2020,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),376364.16999999987
-2014,PARAIBA,Monóxido de carbono (CO),12572.299999999997
-2018,ESPIRITO SANTO,Óxidos de enxofre (SOx),33311.75
-2015,SERGIPE,Material Particulado (MP),6755.280000000001
-2022,PARANA,Óxidos de nitrogênio (NOx),515.7500000000001
-2019,PARA,Monóxido de carbono (CO),152657.87999999995
-2016,AMAPA,Óxidos de nitrogênio (NOx),20.5
-2019,DISTRITO FEDERAL,Óxidos de enxofre (SOx),103209114.91000003
-2013,RIO GRANDE DO NORTE,Monóxido de carbono (CO),13697.310000000005
-2013,MATO GROSSO,Óxidos de enxofre (SOx),45699.93000000001
-2013,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1325278.03
-2019,RIO GRANDE DO NORTE,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",88.81
-2017,GOIAS,Material Particulado (MP),546212.2600000002
-2021,GOIAS,Óxidos de enxofre (SOx),8543.240000000003
-2019,RIO GRANDE DO NORTE,Monóxido de carbono (CO),3862564.68
-2016,AMAZONAS,Partículas (PM10),217.64000000000001
-2013,TOCANTINS,Boro; telúrio,0.51
-2016,PARA,Monóxido de carbono (CO),770070.04
-2015,ALAGOAS,Óxidos de enxofre (SOx),98.62
-2019,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.01
-2016,PIAUI,Monóxido de carbono (CO),618769.86
-2019,GOIAS,Material Particulado (MP),62697.24000000004
-2017,PERNAMBUCO,Monóxido de carbono (CO),87842.55
-2018,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),20534.940000000002
-2021,PERNAMBUCO,Óxidos de enxofre (SOx),460775.0600000001
-2020,RONDONIA,Óxidos de nitrogênio (NOx),2900.3999999999996
-2016,GOIAS,Material Particulado (MP),192774.14
-2016,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),55400.29
-2013,PARANA,Óxidos de nitrogênio (NOx),1296948.2000000004
-2022,PARAIBA,Material Particulado (MP),13000
-2019,PARANA,Material Particulado (MP),69233.78000000006
-2021,TOCANTINS,Monóxido de carbono (CO),1541.3099999999997
-2018,PERNAMBUCO,Monóxido de carbono (CO),928480.6800000002
-2013,MATO GROSSO DO SUL,Material Particulado (MP),547790.64
-2020,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),18809.140000000007
-2021,RIO GRANDE DO NORTE,Monóxido de carbono (CO),8910759.810000002
-2013,PARANA,Cinzas e resíduos contendo chumbo,400
-2015,MINAS GERAIS,Partículas (PM10),0.01
-2020,SAO PAULO,Material Particulado (MP),3690303.959999973
-2018,CEARA,Monóxido de carbono (CO),1937737.8700000017
-2016,MINAS GERAIS,Óxidos de enxofre (SOx),125963.63
-2021,ALAGOAS,Material Particulado (MP),3490.1799999999994
-2014,ACRE,Óxidos de enxofre (SOx),95
-2013,RIO DE JANEIRO,Fluoreto de hidrogênio (ácido fluorídrico),0.37
-2017,SAO PAULO,Monóxido de carbono (CO),1365787.8500000038
-2021,GOIAS,Óxidos de nitrogênio (NOx),21238.659999999993
-2013,SANTA CATARINA,Material Particulado (MP),1058659.81
-2013,GOIAS,Monóxido de carbono (CO),85472209.69
-2017,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
-2014,BAHIA,Monóxido de carbono (CO),293690.07000000007
-2022,BAHIA,Material Particulado (MP),67.71000000000001
-2017,MATO GROSSO DO SUL,Monóxido de carbono,7.84
-2016,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),2059.9700000000003
-2016,TOCANTINS,Óxidos de enxofre (SOx),1046.2199999999998
-2020,ALAGOAS,Óxidos de enxofre (SOx),26.35
-2016,SANTA CATARINA,Óxidos de nitrogênio (NOx),30656.339999999993
-2015,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),39054.87000000001
-2021,BAHIA,Óxidos de nitrogênio (NOx),129577.77000000005
-2013,RONDONIA,Óxidos de enxofre (SOx),5832.37
-2014,PIAUI,Monóxido de carbono (CO),15.33
-2013,ACRE,Óxidos de nitrogênio (NOx),5000
-2013,MATO GROSSO,Óxidos de nitrogênio (NOx),257813.41000000006
-2016,RONDONIA,Óxidos de enxofre (SOx),7572.780000000001
-2013,PERNAMBUCO,Óxidos de nitrogênio (NOx),143069.81999999998
-2013,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",76.69
-2013,MINAS GERAIS,Cloreto de hidrogênio (ácido clorídrico),13753.08
-2014,TOCANTINS,Material Particulado (MP),157721.78000000003
-2015,TOCANTINS,Óxidos de enxofre (SOx),1652.91
-2020,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),2391.3100000000004
-2020,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),487.47999999999996
-2017,AMAPA,Material Particulado (MP),22
-2015,SANTA CATARINA,Óxidos de enxofre (SOx),120347.48
-2021,PARA,Óxidos de enxofre (SOx),34411.19999999999
-2014,RIO GRANDE DO NORTE,Material Particulado (MP),9112.640000000003
-2019,PARANA,Óxidos de enxofre (SOx),17553.840000000004
-2014,BAHIA,Óxidos de nitrogênio (NOx),2529202.209999998
-2017,GOIAS,Óxidos de enxofre (SOx),91741.02
-2014,PARANA,Óxidos de nitrogênio (NOx),874421.9500000003
-2014,AMAZONAS,Dióxido de enxofre,612.75
-2013,CEARA,Dióxido de enxofre,127.2
-2018,TOCANTINS,Material Particulado (MP),8314.95
-2014,PARAIBA,Óxidos de enxofre (SOx),16400.62
-2017,ACRE,Material Particulado (MP),128.83
-2013,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1964.33
-2013,AMAPA,Óxidos de enxofre (SOx),231.31
-2014,MINAS GERAIS,Óxidos de enxofre (SOx),59622.450000000004
-2020,MATO GROSSO DO SUL,Monóxido de carbono (CO),41481.39
-2022,ESPIRITO SANTO,Material Particulado (MP),0
-2019,GOIAS,Monóxido de carbono (CO),8308353.99
-2021,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1834.5700000000002
-2020,SAO PAULO,Óxidos de enxofre (SOx),37982.389999999985
-2015,RIO DE JANEIRO,Monóxido de carbono (CO),38547041.929999955
-2013,PARANA,Material Particulado (MP),26442129.730000064
-2019,ACRE,Óxidos de nitrogênio (NOx),5071.38
-2020,BAHIA,Partículas (PM10),0.62
-2022,RONDONIA,Óxidos de nitrogênio (NOx),8
-2017,RORAIMA,Óxidos de enxofre (SOx),7.47
-2015,CEARA,Monóxido de carbono (CO),113745672.10000002
-2019,MATO GROSSO DO SUL,Monóxido de carbono (CO),265815.16000000003
-2013,MINAS GERAIS,Óxidos de enxofre (SOx),211252.47000000012
-2021,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),10904.679999999997
-2014,PIAUI,Óxidos de nitrogênio (NOx),121.3
-2014,SANTA CATARINA,Monóxido de carbono (CO),1283690.2100000002
-2016,MINAS GERAIS,Monóxido de carbono,6007.6
-2015,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),7272.790000000001
-2014,ALAGOAS,Óxidos de enxofre (SOx),571.61
-2016,SAO PAULO,Cloro,551.88
-2019,SAO PAULO,Óxidos de nitrogênio (NOx),2751433.3100000015
-2021,RONDONIA,Material Particulado (MP),20611.41
-2013,PERNAMBUCO,Partículas (PM10),1.51
-2021,BAHIA,Monóxido de carbono (CO),129409.89999999994
-2016,MINAS GERAIS,Monóxido de carbono (CO),1388139.65
-2019,RONDONIA,Material Particulado (MP),27466.80000000001
-2017,RIO GRANDE DO NORTE,Monóxido de carbono (CO),42786.22000000001
-2021,SERGIPE,Material Particulado (MP),1497.07
-2022,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),0
-2014,GOIAS,Outros fluoretos,345328.50000000006
-2014,RIO GRANDE DO SUL,Dióxido de enxofre,11602.279999999999
-2020,RIO GRANDE DO NORTE,Monóxido de carbono (CO),3977266.1700000004
-2013,PIAUI,Monóxido de carbono (CO),386.01
-2017,MINAS GERAIS,Desperdícios e resíduos de cromo,30
-2013,SAO PAULO,Diclorometano (cloreto de metileno),2396.68
-2014,BAHIA,Material Particulado (MP),16066330.200000001
-2014,PARA,Material Particulado (MP),280749.8999999999
-2020,PERNAMBUCO,Material Particulado (MP),382758.4699999999
-2018,MARANHAO,Óxidos de nitrogênio (NOx),9314.499999999998
-2015,SAO PAULO,Dióxido de enxofre,489.73
-2019,SAO PAULO,Monóxido de carbono (CO),33325391.069999963
-2019,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),28330.39000000001
-2019,RONDONIA,Óxidos de enxofre (SOx),320.03
-2016,MATO GROSSO DO SUL,Monóxido de carbono,7.83
-2015,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1322.68
-2021,BAHIA,Óxidos de enxofre (SOx),44026.189999999995
-2013,DISTRITO FEDERAL,Monóxido de carbono,8.18
-2014,RONDONIA,Óxidos de nitrogênio (NOx),3764.7699999999995
-2017,SAO PAULO,Material Particulado (MP),5132729.83999998
-2018,SANTA CATARINA,Material Particulado (MP),339375.22000000015
-2020,SANTA CATARINA,Monóxido de carbono (CO),384591.75000000023
-2013,SANTA CATARINA,Óxidos de nitrogênio (NOx),3079251.569999998
-2016,BAHIA,Óxidos de nitrogênio (NOx),252565.94000000018
-2018,RORAIMA,Óxidos de nitrogênio (NOx),23.63
-2020,TOCANTINS,Material Particulado (MP),9458.17
-2018,SERGIPE,Óxidos de nitrogênio (NOx),9293.3
-2016,SERGIPE,Óxidos de enxofre (SOx),4405.95
-2013,BAHIA,Monóxido de carbono,1380.08
-2013,MINAS GERAIS,Amoniaco em soluçao aquosa,137.94
-2020,SAO PAULO,Monóxido de carbono (CO),22894215.08999998
-2016,AMAPA,Óxidos de enxofre (SOx),1.5
-2019,MINAS GERAIS,Dióxido de enxofre,1.6400000000000001
-2014,SANTA CATARINA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1305.03
-2015,PERNAMBUCO,Material Particulado (MP),84102891374.01004
-2014,PARAIBA,Óxidos de nitrogênio (NOx),48277.67999999999
-2014,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
-2018,RIO DE JANEIRO,Material Particulado (MP),15038094.749999998
-2014,RIO GRANDE DO NORTE,Monóxido de carbono (CO),11398.570000000007
-2017,SERGIPE,Óxidos de nitrogênio (NOx),7114.81
-2013,RIO GRANDE DO NORTE,Monóxido de carbono,623.41
-2020,GOIAS,Óxidos de nitrogênio (NOx),17240.280000000006
-2017,SANTA CATARINA,Óxidos de nitrogênio (NOx),40731.28999999999
-2020,GOIAS,Monóxido de carbono (CO),9090624.970000003
-2022,BAHIA,Óxidos de enxofre (SOx),0.49
-2017,RIO GRANDE DO NORTE,Material Particulado (MP),37738.04999999997
-2017,RONDONIA,Monóxido de carbono (CO),319688.70000000007
-2019,MATO GROSSO,Óxidos de enxofre (SOx),392153.27
-2022,GOIAS,Monóxido de carbono (CO),819.46
-2020,PARA,Óxidos de enxofre (SOx),19243.48999999999
-2018,PARANA,Material Particulado (MP),150571.65999999992
-2020,CEARA,Monóxido de carbono (CO),951365.2500000002
-2013,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),810612.73
-2016,CEARA,Monóxido de carbono (CO),117820.44
-2015,DISTRITO FEDERAL,Monóxido de carbono (CO),1377.7700000000002
-2020,RIO GRANDE DO NORTE,Material Particulado (MP),4344674.129999997
-2019,DISTRITO FEDERAL,Material Particulado (MP),63511076.510000005
-2016,TOCANTINS,Material Particulado (MP),187623.71
-2014,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),52120.31000000001
-2021,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),736.1
-2013,SANTA CATARINA,Dióxido de enxofre,2028.4299999999998
-2013,PARA,Óxidos de nitrogênio (NOx),13758.559999999996
-2017,PARA,Material Particulado (MP),30854.87999999999
-2016,TOCANTINS,Monóxido de carbono (CO),7909.410000000001
-2016,RIO DE JANEIRO,Óxidos de enxofre (SOx),48317374.80000002
-2018,DISTRITO FEDERAL,Monóxido de carbono (CO),1328.0500000000002
-2015,TOCANTINS,Material Particulado (MP),28005.299999999996
-2018,RONDONIA,Óxidos de enxofre (SOx),791.06
-2017,MATO GROSSO DO SUL,Monóxido de carbono (CO),24884.01
-2014,ALAGOAS,Óxidos de nitrogênio (NOx),1114.3899999999999
-2013,RIO DE JANEIRO,Monóxido de carbono,1705.95
-2018,MINAS GERAIS,Monóxido de carbono (CO),2298323.8699999996
-2019,ESPIRITO SANTO,Material Particulado (MP),30467.219999999987
-2014,MINAS GERAIS,Óxidos de nitrogênio (NOx),177505.00000000012
-2020,RONDONIA,Óxidos de enxofre (SOx),1022.2
-2017,RORAIMA,Monóxido de carbono (CO),30.44
-2020,RORAIMA,Monóxido de carbono (CO),531.04
-2018,PIAUI,Óxidos de nitrogênio (NOx),50586.42
-2014,AMAZONAS,Material Particulado (MP),104900242.84
-2014,SERGIPE,Material Particulado (MP),1010.3
-2013,MINAS GERAIS,Nitrogênio,6823.63
-2015,SANTA CATARINA,Material Particulado (MP),209791.1
-2015,DISTRITO FEDERAL,Material Particulado (MP),342.30999999999995
-2015,PARANA,Monóxido de carbono (CO),76180698.59000003
-2021,CEARA,Monóxido de carbono (CO),706693.2899999998
-2019,MINAS GERAIS,Monóxido de carbono (CO),3255757.199999999
-2013,SAO PAULO,"1,1,1-tricloroetano (metilcloroformio)",2391
-2013,PARANA,Dióxido de enxofre,5.72
-2017,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),19894.78
-2017,PIAUI,Óxidos de enxofre (SOx),6.99
-2013,SAO PAULO,Naftaleno,2391
-2018,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20895.41999999999
-2019,DISTRITO FEDERAL,Monóxido de carbono (CO),330506128.2
-2021,MATO GROSSO,Óxidos de enxofre (SOx),2985.29
-2013,RIO DE JANEIRO,Monóxido de carbono (CO),1273588.94
-2014,AMAZONAS,Óxidos de nitrogênio (NOx),52592617.58000001
-2019,RORAIMA,Óxidos de enxofre (SOx),7.52
-2014,MINAS GERAIS,Partículas (PM10),0.01
-2016,CEARA,Monóxido de carbono,23.24
-2013,SAO PAULO,o-diclorobenzeno,2391
-2018,RORAIMA,Material Particulado (MP),4.99
-2017,MARANHAO,Monóxido de carbono (CO),5465.14
-2016,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
-2013,RIO GRANDE DO NORTE,Material Particulado (MP),8026.030000000003
-2022,CEARA,Monóxido de carbono (CO),13920.64
-2018,PIAUI,Óxidos de enxofre (SOx),15.61
-2017,AMAZONAS,Monóxido de carbono (CO),13302.070000000003
-2018,MATO GROSSO DO SUL,Monóxido de carbono (CO),85698.46
-2019,RIO GRANDE DO NORTE,Material Particulado (MP),2723276.3600000003
-2013,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),4303.910000000001
-2013,PERNAMBUCO,Óxido nitroso,7977.21
-2020,BAHIA,Material Particulado (MP),142357.16999999998
-2019,MINAS GERAIS,Óxidos de enxofre (SOx),25136.580000000005
-2018,ALAGOAS,Óxidos de enxofre (SOx),569.94
-2015,PIAUI,Óxidos de nitrogênio (NOx),120.43
-2020,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),19559.539999999994
-2017,BAHIA,Material Particulado (MP),66494.01999999997
-2017,MATO GROSSO,Material Particulado (MP),16549.940000000006
-2017,TOCANTINS,Óxidos de nitrogênio (NOx),14312.179999999997
-2013,BAHIA,Óxido nitroso,18.85
-2021,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",3000
-2020,SAO PAULO,Óxidos de nitrogênio (NOx),1557679.750000001
-2018,DISTRITO FEDERAL,Material Particulado (MP),231.32000000000005
-2016,ESPIRITO SANTO,Monóxido de carbono (CO),261480.90000000002
-2015,AMAZONAS,Material Particulado (MP),110226846.59999995
-2018,PERNAMBUCO,Óxidos de enxofre (SOx),166751.88000000006
-2013,SAO PAULO,"1,1,2-Tricloroetano",2391
-2018,MATO GROSSO,Monóxido de carbono (CO),128436.67999999998
-2014,CEARA,Óxidos de nitrogênio (NOx),9457.05
-2014,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),180367.09000000005
-2017,ALAGOAS,Óxidos de nitrogênio (NOx),107675.87
-2014,SAO PAULO,Monóxido de carbono,396.25
-2022,RONDONIA,Monóxido de carbono (CO),30
-2013,SAO PAULO,Monóxido de carbono (CO),15339839.189999996
-2021,RIO GRANDE DO NORTE,Material Particulado (MP),3840861.080000001
-2022,BAHIA,Monóxido de carbono (CO),2337399.1300000004
-2013,SERGIPE,Óxidos de nitrogênio (NOx),8932.089999999998
-2014,MINAS GERAIS,Nitrogênio,0.9
-2020,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",25
-2013,SANTA CATARINA,Compostos orgânicos voláteis não metânicos(COVNM),65.98
-2016,RIO DE JANEIRO,Monóxido de carbono (CO),53486148.189999975
-2013,AMAZONAS,Material Particulado (MP),4944758.0600000005
-2017,DISTRITO FEDERAL,Nitrogênio,8426.41
-2020,MARANHAO,Óxidos de enxofre (SOx),23726.979999999996
-2014,TOCANTINS,Óxidos de enxofre (SOx),132.55999999999997
-2019,MINAS GERAIS,Partículas (PM10),11.790000000000001
-2013,SAO PAULO,Tolueno,29415
-2021,GOIAS,Material Particulado (MP),68216.96
-2015,DISTRITO FEDERAL,Monóxido de carbono,8.18
-2015,AMAZONAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",25.150000000000002
-2013,PERNAMBUCO,Monóxido de carbono,558
-2015,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1
-2018,ALAGOAS,Material Particulado (MP),118043.39
-2014,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
-2013,PERNAMBUCO,Dióxido de enxofre,1835.1200000000001
-2015,PARAIBA,Óxidos de nitrogênio (NOx),1653940.26
-2014,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),319203.94
-2014,AMAPA,Óxidos de nitrogênio (NOx),2315.46
-2019,MARANHAO,Óxidos de enxofre (SOx),18231.530000000002
-2021,PIAUI,Monóxido de carbono (CO),9629.26
-2013,PARA,Outros fluoretos,0.46
-2017,MINAS GERAIS,Óxidos de nitrogênio (NOx),903195.5500000002
-2013,MATO GROSSO DO SUL,Dióxido de enxofre,1.96
-2022,PIAUI,Material Particulado (MP),0.01
-2013,RIO GRANDE DO SUL,clorodifluorometano (HCFC-22),13.6
-2021,RIO DE JANEIRO,Material Particulado (MP),70244.10000000003
-2021,PARANA,Material Particulado (MP),1033217.4600000005
-2019,CEARA,Monóxido de carbono (CO),1379016.270000001
-2013,ACRE,Óxidos de enxofre (SOx),88
-2015,PARA,Monóxido de carbono (CO),153225.03
-2022,GOIAS,Óxidos de enxofre (SOx),144.87
-2016,PERNAMBUCO,Óxidos de nitrogênio (NOx),983244.1700000002
-2014,BAHIA,Monóxido de carbono,0
-2016,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),2884.0699999999993
-2018,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),8708.519999999993
-2019,MINAS GERAIS,Óxidos de nitrogênio (NOx),42774.969999999994
-2013,ESPIRITO SANTO,Material Particulado (MP),57500.67000000002
-2015,ALAGOAS,Material Particulado (MP),110991.20000000003
-2021,PIAUI,Óxidos de enxofre (SOx),5.209999999999999
-2013,MINAS GERAIS,Poeiras de zinco,145.72
-2017,PARA,Monóxido de carbono (CO),120173.46999999997
-2015,MINAS GERAIS,Monóxido de carbono (CO),2796359.3400000012
-2017,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
-2021,MARANHAO,Material Particulado (MP),12922.11
-2016,MINAS GERAIS,Dióxido de enxofre,1
-2016,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
-2016,SANTA CATARINA,Material Particulado (MP),316035.25000000035
-2021,MINAS GERAIS,Material Particulado (MP),659620.2600000042
-2014,PARANA,Material Particulado (MP),862128.4200000016
-2020,BAHIA,Monóxido de carbono (CO),2056466.2200000007
-2020,PARANA,Óxidos de enxofre (SOx),12656.790000000003
-2019,RORAIMA,Óxidos de nitrogênio (NOx),23.69
-2016,SANTA CATARINA,Monóxido de carbono,3600
-2020,MINAS GERAIS,Material Particulado (MP),730803.7200000032
-2018,RIO GRANDE DO SUL,Material Particulado (MP),96290.86999999994
-2016,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),38764.35999999999
-2014,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1307.27
-2013,GOIAS,Material Particulado (MP),1329728.6700000006
-2015,RONDONIA,Material Particulado (MP),15825.399999999989
-2016,PIAUI,Óxidos de enxofre (SOx),49.16
-2022,PERNAMBUCO,Monóxido de carbono (CO),2
-2017,ESPIRITO SANTO,Monóxido de carbono (CO),270176.7700000001
-2018,CEARA,Óxidos de enxofre (SOx),331686.00000000023
-2014,PARANA,Óxidos de enxofre (SOx),24807.979999999992
-2018,TOCANTINS,Óxidos de enxofre (SOx),238229.05999999997
-2015,PARANA,Monóxido de carbono,87.23
-2016,ALAGOAS,Óxidos de enxofre (SOx),179.31
-2017,SERGIPE,Óxidos de enxofre (SOx),3804.1400000000003
-2018,ALAGOAS,Óxidos de nitrogênio (NOx),44416.04999999999
-2016,PARANA,Monóxido de carbono (CO),77980043.21000001
-2017,RIO GRANDE DO SUL,Monóxido de carbono (CO),55022255.00999998
-2018,ESPIRITO SANTO,Monóxido de carbono (CO),257101.96000000008
-2013,CEARA,Óxidos de enxofre (SOx),1939.01
-2016,MINAS GERAIS,Desperdícios e resíduos de chumbo,0
-2021,RORAIMA,Óxidos de enxofre (SOx),3.76
-2019,RONDONIA,Monóxido de carbono (CO),703318647.6
-2019,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),12892.77
-2013,ACRE,Material Particulado (MP),44.02
-2016,SERGIPE,Monóxido de carbono (CO),19062304.430000007
-2019,MATO GROSSO DO SUL,Monóxido de carbono,7.81
-2020,PARAIBA,Óxidos de enxofre (SOx),3645.9199999999996
-2021,CEARA,Material Particulado (MP),256848.8700000004
-2021,CEARA,Óxidos de enxofre (SOx),403999.19000000035
-2017,CEARA,Monóxido de carbono,232.8
-2015,SAO PAULO,Eter etilico do etilenoglicol,1
-2018,PARAIBA,Monóxido de carbono (CO),25540.459999999992
-2021,PARA,Óxidos de nitrogênio (NOx),14894.480000000007
-2020,AMAPA,Óxidos de nitrogênio (NOx),4.25
-2014,PERNAMBUCO,Óxidos de enxofre (SOx),302076.94000000006
-2013,PARAIBA,Óxidos de nitrogênio (NOx),30820.760000000002
-2014,SAO PAULO,Dióxido de enxofre,6809.73
-2014,SANTA CATARINA,Dióxido de enxofre,0.19
-2016,SAO PAULO,Óxidos de enxofre (SOx),90861.39999999986
-2014,AMAPA,Óxidos de enxofre (SOx),148.76
-2020,MATO GROSSO,Óxidos de nitrogênio (NOx),773548.0200000003
-2014,ACRE,Material Particulado (MP),61.08
-2015,ALAGOAS,Monóxido de carbono (CO),13467.38
-2016,CEARA,Material Particulado (MP),1490570.8000000003
-2021,AMAZONAS,Material Particulado (MP),563448.1400000001
-2018,ACRE,Material Particulado (MP),87.54
-2014,MARANHAO,Material Particulado (MP),1007813.8300000002
-2014,RIO GRANDE DO SUL,Material Particulado (MP),514212.01000000024
-2021,PARA,Monóxido de carbono (CO),187129.0900000001
-2021,BAHIA,Material Particulado (MP),2114690.3599999994
-2018,MATO GROSSO DO SUL,Material Particulado (MP),14528.190000000002
-2014,SERGIPE,Óxidos de nitrogênio (NOx),8014.289999999999
-2020,SAO PAULO,Monóxido de carbono,0.04
-2013,SAO PAULO,"1,1,2,2-Tetracloroetano",2391
-2017,SANTA CATARINA,Material Particulado (MP),558341.590000002
-2021,PERNAMBUCO,Monóxido de carbono (CO),108013.19999999994
-2018,GOIAS,Óxidos de enxofre (SOx),12233.610000000004
-2021,SAO PAULO,Outros fluoretos,63948
-2019,SERGIPE,Monóxido de carbono (CO),17240.809999999994
-2021,PARANA,Óxidos de nitrogênio (NOx),65172.10000000003
-2014,GOIAS,Monóxido de carbono (CO),515777604.69
-2017,ACRE,Monóxido de carbono (CO),10390.51
-2018,SERGIPE,Material Particulado (MP),933.3599999999998
-2019,PARAIBA,Óxidos de nitrogênio (NOx),9705.980000000001
-2013,AMAZONAS,Monóxido de carbono (CO),39418887.25
-2019,CEARA,Monóxido de carbono,232
-2013,BAHIA,Óxidos de enxofre (SOx),570525.28
-2015,CEARA,Óxidos de nitrogênio (NOx),40373.01000000001
-2020,AMAPA,Material Particulado (MP),22.11
-2020,AMAPA,Óxidos de enxofre (SOx),0.27
-2014,PERNAMBUCO,Óxidos de nitrogênio (NOx),33821547.99
-2022,SANTA CATARINA,Óxidos de nitrogênio (NOx),2181.41
-2019,PERNAMBUCO,Óxidos de enxofre (SOx),152376.68000000002
-2013,PERNAMBUCO,Material Particulado (MP),1272802.68
-2013,AMAPA,Monóxido de carbono (CO),788.86
-2021,MARANHAO,Óxidos de nitrogênio (NOx),9703.190000000002
-2013,RIO GRANDE DO SUL,Nitrogênio,79
-2020,BAHIA,Monóxido de carbono,0.1
-2013,SAO PAULO,Clorobenzeno,2391
-2014,ESPIRITO SANTO,Monóxido de carbono (CO),329965.1900000001
-2017,PARANA,Óxidos de nitrogênio (NOx),451660.17000000016
-2017,MATO GROSSO DO SUL,Material Particulado (MP),42951.68
-2016,GOIAS,Monóxido de carbono (CO),89660118.57000001
-2015,AMAPA,Material Particulado (MP),46.81
-2013,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),31905.319999999996
-2019,SAO PAULO,Óxidos de enxofre (SOx),150470.84000000014
-2021,AMAPA,Monóxido de carbono (CO),1797.55
-2018,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),195307.34000000005
-2015,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
-2017,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2013,PARANA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",66798.4
-2021,RORAIMA,Material Particulado (MP),5.45
-2018,MARANHAO,Monóxido de carbono (CO),3865.18
-2019,SANTA CATARINA,Óxidos de nitrogênio (NOx),822977645.1099995
-2019,PARANA,Óxidos de nitrogênio (NOx),37396.829999999965
-2017,GOIAS,Monóxido de carbono (CO),102711642.91999997
-2018,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),1606.22
-2013,RIO DE JANEIRO,Compostos orgânicos voláteis não metânicos(COVNM),0
-2014,RIO DE JANEIRO,Dióxido de enxofre,0.15
-2013,SAO PAULO,Outros óxidos de chumbo,0.05
-2014,SANTA CATARINA,Óxidos de nitrogênio (NOx),2539375.0900000003
-2020,RIO GRANDE DO SUL,Material Particulado (MP),327288.7500000002
-2019,BAHIA,Monóxido de carbono (CO),255799.8900000003
-2017,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),1137.61
-2022,RIO GRANDE DO SUL,Monóxido de carbono (CO),5.5600000000000005
-2013,RIO GRANDE DO SUL,Monóxido de carbono (CO),297482.2900000001
-2015,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),31789.98
-2019,PERNAMBUCO,Monóxido de carbono (CO),23022.379999999983
-2013,RONDONIA,Material Particulado (MP),45631.16000000002
-2014,SANTA CATARINA,Óxidos de enxofre (SOx),687732.4600000001
-2013,PARANA,Monóxido de carbono,239564.66000000003
-2017,ALAGOAS,Óxidos de enxofre (SOx),128.92
-2018,DISTRITO FEDERAL,Óxidos de enxofre (SOx),43.49
-2019,TOCANTINS,Óxidos de enxofre (SOx),369.8799999999999
-2019,SERGIPE,Óxidos de nitrogênio (NOx),5999.87
-2013,PERNAMBUCO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",331447.72
-2013,MINAS GERAIS,Outras ligas de cobre em forma bruta;,4.2
-2018,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.04
-2018,SAO PAULO,Óxidos de nitrogênio (NOx),2268078.290000002
-2018,CEARA,Óxidos de nitrogênio (NOx),218680.30000000002
-2019,CEARA,Óxidos de enxofre (SOx),181155.1800000001
-2014,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
-2016,RIO GRANDE DO NORTE,Monóxido de carbono (CO),41198.96000000001
-2018,BAHIA,Óxidos de enxofre (SOx),24226.879999999997
-2016,CEARA,Óxidos de nitrogênio (NOx),924384.7599999999
-2013,GOIAS,Dióxido de enxofre,200797.03000000003
-2022,RONDONIA,Material Particulado (MP),2.25
-2013,ALAGOAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",422837
-2020,PARANA,Monóxido de carbono,54
-2021,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),1703838.6000000003
-2013,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
-2019,MARANHAO,Óxidos de nitrogênio (NOx),7936.030000000001
-2013,SAO PAULO,Monóxido de carbono,370863.31
-2022,AMAZONAS,Óxidos de enxofre (SOx),0.9400000000000001
-2016,SERGIPE,Óxidos de nitrogênio (NOx),8150.37
-2015,BAHIA,Monóxido de carbono,147
-2020,BAHIA,Fluoreto de hidrogênio (ácido fluorídrico),0.1
-2017,CEARA,Óxidos de nitrogênio (NOx),1093821.4
-2021,CEARA,Óxidos de nitrogênio (NOx),154193.3500000001
-2016,AMAPA,Monóxido de carbono (CO),450.38000000000005
-2013,MARANHAO,Outros fluoretos,71.73
-2017,PARAIBA,Óxidos de nitrogênio (NOx),12317.26
-2021,MINAS GERAIS,Óxidos de nitrogênio (NOx),75375.55999999995
-2013,CEARA,Material Particulado (MP),30160.53999999999
-2013,PERNAMBUCO,Óxidos de enxofre (SOx),49966.66
-2015,ACRE,Material Particulado (MP),125.01
-2013,RIO GRANDE DO SUL,Óxido nitroso,4639
-2018,AMAZONAS,Óxidos de nitrogênio (NOx),18945.629999999994
-2017,SANTA CATARINA,Óxidos de enxofre (SOx),109943.03999999995
-2014,RIO DE JANEIRO,Material Particulado (MP),319624.0700000004
-2013,MARANHAO,Dióxido de enxofre,7793.4
-2014,SAO PAULO,Nitrogênio,0.01
-2018,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2016,SAO PAULO,Partículas (PM10),6629.68
-2019,SANTA CATARINA,Material Particulado (MP),13524862.489999922
-2016,PARA,Óxidos de enxofre (SOx),34357.86
-2015,GOIAS,Óxidos de enxofre (SOx),42504.81
-2015,RONDONIA,Monóxido de carbono (CO),107474.3
-2013,GOIAS,Monóxido de carbono,265980
-2021,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),22719.599999999984
-2017,SAO PAULO,Óxidos de nitrogênio (NOx),1678888.4099999995
-2015,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),48270.68000000001
-2013,MARANHAO,Partículas (PM10),641.8100000000002
-2019,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),634.6199999999999
-2022,MATO GROSSO DO SUL,Material Particulado (MP),35.8
-2021,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),127843.73999999999
-2014,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),3784.08
-2013,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
-2015,SAO PAULO,Óxidos de enxofre (SOx),173364.25999999998
-2016,PARAIBA,Óxidos de nitrogênio (NOx),21972.810000000005
-2022,SAO PAULO,Material Particulado (MP),9121.610000000002
-2018,PARANA,Óxidos de enxofre (SOx),16458.55
-2013,PARAIBA,Monóxido de carbono (CO),10642.320000000002
-2018,SERGIPE,Óxidos de enxofre (SOx),6002.46
-2014,PERNAMBUCO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",33948.94
-2021,PIAUI,Material Particulado (MP),1812.6
-2016,SAO PAULO,Monóxido de carbono,0.08
-2013,RIO DE JANEIRO,clorodifluorometano (HCFC-22),81.65
-2017,PARAIBA,Óxidos de enxofre (SOx),5355.880000000001
-2018,PARAIBA,Óxidos de enxofre (SOx),8072.7300000000005
-2015,PARAIBA,Óxidos de enxofre (SOx),14820.650000000001
-2021,TOCANTINS,Material Particulado (MP),32061.159999999996
-2019,CEARA,Material Particulado (MP),219808.54000000007
-2020,PERNAMBUCO,Óxidos de nitrogênio (NOx),1027645.4700000002
-2017,RONDONIA,Material Particulado (MP),31506.55999999999
-2013,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),110805.51999999993
-2015,MATO GROSSO,Óxidos de enxofre (SOx),1199.48
-2017,RONDONIA,Óxidos de enxofre (SOx),639.88
-2014,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),4905.82
-2019,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2018,PIAUI,Material Particulado (MP),40352.87999999999
-2018,SERGIPE,Monóxido de carbono (CO),15900.179999999997
-2022,RIO DE JANEIRO,Material Particulado (MP),56.75
-2020,RIO GRANDE DO SUL,Monóxido de carbono (CO),83058.54000000002
-2019,MATO GROSSO DO SUL,Material Particulado (MP),258359.88999999998
-2022,RIO GRANDE DO SUL,Material Particulado (MP),453.27
-2018,MARANHAO,Óxidos de enxofre (SOx),12959.77
-2013,TOCANTINS,Óxidos de nitrogênio (NOx),1015.9399999999999
-2014,AMAZONAS,Poeiras de zinco,1.65
-2021,PARAIBA,Monóxido de carbono,500
-2019,RORAIMA,Monóxido de carbono (CO),0.89
-2013,RIO GRANDE DO SUL,Material Particulado (MP),521913.49000000005
-2021,PERNAMBUCO,Material Particulado (MP),229778.73000000004
-2020,MARANHAO,Material Particulado (MP),44297.97000000001
-2019,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),67695.2
-2020,RIO GRANDE DO NORTE,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",2.52
-2017,PERNAMBUCO,Óxidos de enxofre (SOx),258059.93
-2019,MARANHAO,Material Particulado (MP),4815.3600000000015
-2020,ACRE,Óxidos de nitrogênio (NOx),6421.7300000000005
-2013,PARANA,Monóxido de carbono (CO),6945066.359999993
-2020,ESPIRITO SANTO,Monóxido de carbono (CO),173773.62000000005
-2014,PERNAMBUCO,Monóxido de carbono (CO),68594.94
-2014,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
-2019,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),1165903481.2199998
-2015,CEARA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1965
-2014,MATO GROSSO DO SUL,Monóxido de carbono,9.25
-2015,ALAGOAS,Óxidos de nitrogênio (NOx),23368.99
-2016,PARANA,Óxidos de nitrogênio (NOx),460719.8500000003
-2016,BAHIA,Monóxido de carbono (CO),253162.52000000005
-2013,BAHIA,Óxidos de nitrogênio (NOx),525418.2000000002
-2020,MATO GROSSO DO SUL,Material Particulado (MP),22337.279999999988
-2018,RONDONIA,Material Particulado (MP),220839.75000000006
-2020,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),164753.01000000007
-2013,PARANA,Óxidos de enxofre (SOx),154795.6500000001
-2015,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",0.15
-2017,MINAS GERAIS,Monóxido de carbono (CO),3321954.2299999995
-2017,PARA,Óxidos de nitrogênio (NOx),9834.889999999998
-2013,SANTA CATARINA,Óxido nitroso,4
-2017,PIAUI,Óxidos de nitrogênio (NOx),48912.1
-2014,SAO PAULO,Óxido nitroso,99390.2
-2013,PARANA,Metanal (formaldeído ou formol),168.01
-2019,RIO DE JANEIRO,Material Particulado (MP),2179982.4399999995
-2017,AMAZONAS,Óxidos de enxofre (SOx),1374.7700000000004
-2020,AMAZONAS,Material Particulado (MP),45553618292.68001
-2015,MARANHAO,Óxidos de nitrogênio (NOx),137426.78000000003
-2015,RORAIMA,Material Particulado (MP),2
-2017,DISTRITO FEDERAL,Material Particulado (MP),636.9599999999998
-2018,RIO DE JANEIRO,Óxidos de enxofre (SOx),60846.809999999976
-2014,AMAPA,Monóxido de carbono (CO),533.63
-2016,RIO GRANDE DO NORTE,Material Particulado (MP),32112.70999999999
-2020,SERGIPE,Material Particulado (MP),2503.0700000000006
-2015,SANTA CATARINA,Óxidos de nitrogênio (NOx),19185.49999999999
-2013,CEARA,Óxidos de nitrogênio (NOx),12726.560000000001
-2015,CEARA,Dióxido de enxofre,99.2
-2015,PIAUI,Óxidos de enxofre (SOx),0.04
-2019,BAHIA,Óxidos de nitrogênio (NOx),51752.66000000005
-2015,GOIAS,Monóxido de carbono (CO),89104502.25000003
-2020,AMAZONAS,Óxidos de nitrogênio (NOx),103703374115.77998
-2022,GOIAS,Material Particulado (MP),1648.04
-2014,SAO PAULO,Eter etilico do etilenoglicol,1
-2016,PARANA,Monóxido de carbono,35.48
-2016,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),52.56
-2017,MARANHAO,Material Particulado (MP),3949.57
-2014,RONDONIA,Óxidos de enxofre (SOx),2926.4200000000005
-2017,RIO DE JANEIRO,Monóxido de carbono (CO),2458472.1699999967
-2019,MARANHAO,Monóxido de carbono (CO),5526.91
-2013,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1246.35
-2014,RIO DE JANEIRO,Óxidos de enxofre (SOx),66825.10999999997
-2016,ACRE,Óxidos de enxofre (SOx),163.08
-2018,ALAGOAS,Monóxido de carbono (CO),51864.85
-2014,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2019,PIAUI,Óxidos de enxofre (SOx),17.820000000000004
-2013,SAO PAULO,Cloroformio (triclorometano),2391
-2019,TOCANTINS,Material Particulado (MP),8414.410000000005
-2016,AMAZONAS,Óxidos de enxofre (SOx),115427056.48
-2020,DISTRITO FEDERAL,Óxidos de enxofre (SOx),19968.309999999998
-2017,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),578.94
-2020,GOIAS,Óxidos de enxofre (SOx),9735.630000000001
-2013,RIO DE JANEIRO,Cloro,1.79
-2018,RIO GRANDE DO SUL,Monóxido de carbono (CO),4395627.390000001
-2013,MATO GROSSO DO SUL,Monóxido de carbono (CO),710036.3200000001
-2018,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),43685.340000000004
-2018,AMAZONAS,Óxidos de enxofre (SOx),1541.46
-2017,DISTRITO FEDERAL,Monóxido de carbono (CO),7653.26
-2022,MATO GROSSO,Óxidos de nitrogênio (NOx),79.75
-2017,PARANA,Monóxido de carbono (CO),1711918.3700000015
-2015,RIO DE JANEIRO,Óxidos de enxofre (SOx),15776151.890000002
-2019,AMAZONAS,Óxidos de nitrogênio (NOx),85492420616.20998
-2017,MATO GROSSO,Monóxido de carbono (CO),251731.05000000005
-2014,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),58.660000000000004
-2022,SANTA CATARINA,Monóxido de carbono (CO),8875.660000000002
-2019,ALAGOAS,Óxidos de enxofre (SOx),12.879999999999999
-2018,MINAS GERAIS,Dióxido de enxofre,1
-2020,RIO DE JANEIRO,Gás natural gasoso,0
-2019,ALAGOAS,Material Particulado (MP),24591.750000000004
-2018,MATO GROSSO DO SUL,Monóxido de carbono,7.85
-2016,SAO PAULO,Monóxido de carbono (CO),1681960.740000003
-2020,PARANA,Monóxido de carbono (CO),1075433.0000000007
-2017,RIO GRANDE DO SUL,Material Particulado (MP),54775.300000000156
-2016,PARA,Material Particulado (MP),19163.279999999995
-2018,MATO GROSSO,Material Particulado (MP),122374.26000000001
-2016,MINAS GERAIS,Desperdício e resíduos de estanho,0
-2013,ALAGOAS,Monóxido de carbono (CO),7762.810000000001
-2016,BAHIA,Óxidos de enxofre (SOx),58157.11000000003
-2013,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),171328.18
-2017,AMAZONAS,Óxidos de nitrogênio (NOx),9988.88
-2019,AMAPA,Material Particulado (MP),17.6
-2015,ESPIRITO SANTO,Material Particulado (MP),2028375.2399999998
-2013,SAO PAULO,Material Particulado (MP),28406453.030000165
-2015,MARANHAO,Material Particulado (MP),21631.819999999996
-2020,RIO DE JANEIRO,Material Particulado (MP),141115.84000000008
-2013,MINAS GERAIS,Monóxido de carbono (CO),278466932.41999996
-2013,PARA,Óxidos de enxofre (SOx),24542.120000000003
-2019,GOIAS,Óxidos de enxofre (SOx),10450.850000000004
-2017,PIAUI,Monóxido de carbono (CO),130829.85
-2020,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",615
-2021,SANTA CATARINA,Monóxido de carbono (CO),903682.4400000001
-2021,ESPIRITO SANTO,Material Particulado (MP),77483.05999999976
-2014,MATO GROSSO DO SUL,Monóxido de carbono (CO),845943.0000000002
-2016,RONDONIA,Material Particulado (MP),15771.709999999997
-2018,MATO GROSSO,Óxidos de nitrogênio (NOx),5149.74
-2013,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),19281.460000000003
-2019,SANTA CATARINA,Óxidos de enxofre (SOx),296340057.46000004
-2015,MATO GROSSO DO SUL,Monóxido de carbono (CO),27340.310000000005
-2017,PARANA,Óxidos de enxofre (SOx),26317.99
-2015,ACRE,Óxidos de nitrogênio (NOx),5115
-2020,TOCANTINS,Óxidos de nitrogênio (NOx),1279.3000000000006
-2019,PARA,Óxidos de nitrogênio (NOx),13513.810000000001
-2014,RIO GRANDE DO SUL,Monóxido de carbono (CO),2854097.7599999993
-2019,SAO PAULO,Material Particulado (MP),3209309.179999993
-2013,CEARA,Monóxido de carbono,3595.2999999999997
-2017,TOCANTINS,Óxidos de enxofre (SOx),15348.240000000003
-2013,TOCANTINS,Poeiras de zinco,0.71
-2013,MINAS GERAIS,Ligas de estanho em forma bruta,8.7
-2019,PARANA,Monóxido de carbono (CO),267483.57999999984
-2017,MATO GROSSO,Óxidos de nitrogênio (NOx),170707.52000000008
-2015,PARANA,Óxidos de enxofre (SOx),20419.739999999987
-2018,PARAIBA,Óxidos de nitrogênio (NOx),10200.72
-2014,PARANA,Monóxido de carbono,329.63
-2015,TOCANTINS,Monóxido de carbono (CO),8342.100000000002
-2014,MINAS GERAIS,Monóxido de carbono (CO),129736064.56000009
-2019,PIAUI,Óxidos de nitrogênio (NOx),47333.95
-2018,PERNAMBUCO,Material Particulado (MP),257066.5500000001
-2017,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),12973.439999999997
-2021,TOCANTINS,Óxidos de enxofre (SOx),55.22999999999999
-2018,PARAIBA,Material Particulado (MP),24116.789999999994
-2018,MINAS GERAIS,Óxidos de nitrogênio (NOx),48135.459999999985
-2017,PERNAMBUCO,Óxidos de nitrogênio (NOx),1307997.7000000002
-2018,SANTA CATARINA,Monóxido de carbono (CO),330801.3100000001
-2020,SANTA CATARINA,Material Particulado (MP),573694.1000000003
-2013,RIO DE JANEIRO,Óxidos de enxofre (SOx),5241723.590000001
-2014,MATO GROSSO,Monóxido de carbono (CO),289585.19000000006
-2015,MATO GROSSO DO SUL,Monóxido de carbono,7.83
-2018,CEARA,Dióxido de enxofre,99.3
-2014,MINAS GERAIS,Dióxido de enxofre,0.5
-2020,ALAGOAS,Monóxido de carbono (CO),40102.03
-2013,RIO DE JANEIRO,Cloreto de hidrogênio (ácido clorídrico),101.08
-2020,PARA,Monóxido de carbono (CO),176390.93000000017
-2013,MARANHAO,Material Particulado (MP),74154.55999999997
-2014,ACRE,Monóxido de carbono (CO),11130.1
-2018,BAHIA,Dióxido de enxofre,0
-2013,TOCANTINS,Desperdícios e resíduos de chumbo,0.12
-2020,TOCANTINS,Monóxido de carbono (CO),5742.090000000002
-2015,GOIAS,Óxidos de nitrogênio (NOx),354550.4699999999
-2015,RONDONIA,Óxidos de enxofre (SOx),1825.4099999999999
-2021,MARANHAO,Monóxido de carbono (CO),14922.029999999999
-2014,SAO PAULO,Partículas (PM10),6552.460000000001
-2017,CEARA,Dióxido de enxofre,99.2
-2021,SANTA CATARINA,Óxidos de nitrogênio (NOx),125089.58
-2015,MINAS GERAIS,Monóxido de carbono,6008
-2018,ACRE,Óxidos de enxofre (SOx),163
-2022,PARANA,Óxidos de enxofre (SOx),0
-2013,RONDONIA,Dióxido de enxofre,18.9
-2020,PIAUI,Óxidos de enxofre (SOx),17.77
-2019,RORAIMA,Material Particulado (MP),5.26
-2016,PERNAMBUCO,Monóxido de carbono (CO),106885.70999999999
-2019,AMAPA,Monóxido de carbono (CO),1695.55
-2015,RONDONIA,Óxidos de nitrogênio (NOx),3481.72
-2021,RONDONIA,Monóxido de carbono (CO),9833.14
-2013,ALAGOAS,Óxidos de enxofre (SOx),230.81
-2014,DISTRITO FEDERAL,Nitrogênio,8426.41
-2013,SAO PAULO,Cloro,1560.7
-2019,BAHIA,Monóxido de carbono,201.37
-2019,PARAIBA,Monóxido de carbono (CO),52878.64000000001
-2015,RIO GRANDE DO SUL,Monóxido de carbono (CO),3110434.5599999973
-2016,BAHIA,Material Particulado (MP),107376.42000000001
-2015,PARA,Óxidos de enxofre (SOx),37340.890000000014
-2019,ACRE,Monóxido de carbono (CO),10092.26
-2016,ESPIRITO SANTO,Material Particulado (MP),68923.28000000003
-2015,MINAS GERAIS,Óxidos de enxofre (SOx),179771.98999999996
-2013,TOCANTINS,Óxidos de enxofre (SOx),347.99
-2018,SAO PAULO,Óxidos de enxofre (SOx),68626.19999999988
-2021,SAO PAULO,Óxidos de enxofre (SOx),227245.2000000001
-2017,PARAIBA,Material Particulado (MP),19966.649999999994
-2018,BAHIA,Monóxido de carbono (CO),139287.22
-2017,TOCANTINS,Monóxido de carbono (CO),8188.520000000001
-2019,ALAGOAS,Óxidos de nitrogênio (NOx),422339.44000000006
-2015,PARA,Óxidos de nitrogênio (NOx),7774.04
-2018,MARANHAO,Material Particulado (MP),4998.590000000003
-2013,RONDONIA,Monóxido de carbono (CO),85931.65999999992
-2017,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1897.1499999999999
-2020,MATO GROSSO DO SUL,Monóxido de carbono,7.82
-2020,GOIAS,Material Particulado (MP),58023.86
-2020,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),2566.0900000000006
-2016,DISTRITO FEDERAL,Monóxido de carbono (CO),1451.8000000000002
-2013,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),563386.89
-2017,RORAIMA,Óxidos de nitrogênio (NOx),23.58
-2021,PARAIBA,Óxidos de nitrogênio (NOx),27886.439999999995
-2016,GOIAS,Óxidos de enxofre (SOx),26010.16999999998
-2020,MINAS GERAIS,Óxidos de enxofre (SOx),27961.05999999999
-2013,SAO PAULO,"Manganês em formas brutas (lingotes, placas, etc.) e semimanufaturadas (barras, perfis, chapas, etc.); pós; desperdícios e resíduos",4
-2022,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),0
-2013,RIO GRANDE DO SUL,Dióxido de enxofre,75445.14
-2014,SAO PAULO,Óxidos de nitrogênio (NOx),5180753.590000001
-2013,DISTRITO FEDERAL,Material Particulado (MP),1229.22
-2015,BAHIA,Óxidos de nitrogênio (NOx),2052866.5100000007
-2013,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),16876557.18
-2018,ACRE,Óxidos de nitrogênio (NOx),5070
-2020,MINAS GERAIS,Monóxido de carbono (CO),2234063.760000001
-2015,AMAZONAS,Monóxido de carbono,67.17999999999999
-2013,BAHIA,Partículas (PM10),1.9
-2015,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),1237.9499999999998
-2017,ACRE,Óxidos de enxofre (SOx),163
-2020,SERGIPE,Óxidos de enxofre (SOx),5083.619999999999
-2015,SANTA CATARINA,Monóxido de carbono (CO),416669.87000000005
-2016,SAO PAULO,Óxidos de nitrogênio (NOx),2092478.85
-2021,RIO GRANDE DO SUL,Material Particulado (MP),4912502.149999994
-2015,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),17006.56
-2016,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
-2022,MINAS GERAIS,Óxidos de nitrogênio (NOx),489.71999999999997
-2013,SAO PAULO,Estireno,20120
-2014,PARANA,Monóxido de carbono (CO),78528805.47000001
-2020,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20844.049999999985
-2020,BAHIA,Óxidos de nitrogênio (NOx),39647.85999999995
-2017,MINAS GERAIS,Óxidos de enxofre (SOx),29581.339999999993
-2014,RIO DE JANEIRO,Monóxido de carbono (CO),1026695.8900000002
-2015,AMAZONAS,Dióxido de enxofre,112.33000000000001
-2019,ESPIRITO SANTO,Monóxido de carbono (CO),2217937.9099999983
-2018,AMAZONAS,Material Particulado (MP),6763.9500000000035
-2021,ALAGOAS,Óxidos de nitrogênio (NOx),4955.22
-2015,PIAUI,Monóxido de carbono (CO),336748.31
-2020,MATO GROSSO DO SUL,Nitrogênio,3.17
-2020,MATO GROSSO,Monóxido de carbono (CO),604767.2600000001
-2013,AMAPA,Óxidos de nitrogênio (NOx),4775.7699999999995
-2018,TOCANTINS,Óxidos de nitrogênio (NOx),5222.859999999999
-2016,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
-2015,SANTA CATARINA,Monóxido de carbono,3600
-2014,RORAIMA,Monóxido de carbono (CO),0.1
-2019,PARAIBA,Óxidos de enxofre (SOx),2587.9500000000003
-2017,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),45812.01000000001
-2019,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),22061.269999999997
-2013,TOCANTINS,Monóxido de carbono (CO),19954.07
-2013,DISTRITO FEDERAL,Monóxido de carbono (CO),146832.34999999998
-2014,PARA,Óxidos de enxofre (SOx),33960.29
-2016,SANTA CATARINA,Óxidos de enxofre (SOx),107527.13999999998
-2015,MINAS GERAIS,Material Particulado (MP),2605324.3899999857
-2015,PARANA,Óxidos de nitrogênio (NOx),358829.31000000023
-2021,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),9127.460000000001
-2020,PIAUI,Monóxido de carbono (CO),5003.950000000001
-2016,DISTRITO FEDERAL,Material Particulado (MP),2492.93
-2021,MINAS GERAIS,Monóxido de carbono (CO),1722749.0600000035
-2021,MATO GROSSO,Monóxido de carbono (CO),188061.43000000002
-2016,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),2899.41
-2013,PIAUI,Óxidos de enxofre (SOx),2.7
-2016,PARA,Óxidos de nitrogênio (NOx),2833.519999999999
-2021,PIAUI,Óxidos de nitrogênio (NOx),661.51
-2014,GOIAS,Material Particulado (MP),1094412.5799999996
-2021,AMAZONAS,Monóxido de carbono (CO),939685947.5099996
-2013,BAHIA,Monóxido de carbono (CO),2396084.77999999
-2014,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
 2016,CEARA,Óxidos de enxofre (SOx),424400.0600000002
-2015,PERNAMBUCO,Óxidos de nitrogênio (NOx),24093949961.35
-2018,RIO GRANDE DO NORTE,Material Particulado (MP),3172987.140000001
-2014,SAO PAULO,Outros fluoretos,21600
-2016,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",320.4
-2022,RONDONIA,Óxidos de enxofre (SOx),10
-2015,MATO GROSSO,Material Particulado (MP),12747.690000000004
-2014,CEARA,Material Particulado (MP),34849.309999999976
-2015,AMAPA,Monóxido de carbono (CO),455.06000000000006
-2021,RONDONIA,Óxidos de nitrogênio (NOx),1622.1699999999998
-2022,RIO GRANDE DO NORTE,Material Particulado (MP),0.3
-2021,RORAIMA,Monóxido de carbono (CO),0.63
-2019,PARA,Óxidos de enxofre (SOx),24117.65999999999
-2019,CEARA,Óxidos de nitrogênio (NOx),91774.04999999992
-2016,MARANHAO,Óxidos de nitrogênio (NOx),37445.04
-2019,CEARA,Dióxido de enxofre,99.5
-2015,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",320.4
-2020,RORAIMA,Material Particulado (MP),5.28
-2014,RIO GRANDE DO SUL,Partículas (PM10),11206.59
-2018,PARA,Óxidos de enxofre (SOx),23417.229999999996
-2015,MATO GROSSO,Óxidos de nitrogênio (NOx),4891.330000000002
-2015,SAO PAULO,Outros óxidos de chumbo,0.03
-2015,SAO PAULO,Material Particulado (MP),4946021.08999999
-2021,PARAIBA,Óxidos de enxofre (SOx),9987.210000000001
-2014,MATO GROSSO,Óxidos de enxofre (SOx),40333.360000000015
-2013,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),58.37
-2019,ACRE,Óxidos de enxofre (SOx),164.77
-2021,SAO PAULO,Monóxido de carbono (CO),21807408.239999987
-2021,GOIAS,Monóxido de carbono (CO),9414772.39
-2019,RIO DE JANEIRO,Monóxido de carbono (CO),268832123.20000017
-2021,RIO GRANDE DO SUL,Monóxido de carbono (CO),2628524.5099999984
-2013,RIO DE JANEIRO,Cinzas e resíduos contendo chumbo,2.18
-2013,RONDONIA,Óxidos de nitrogênio (NOx),20761.95
-2020,TOCANTINS,Óxidos de enxofre (SOx),96.01000000000002
-2022,AMAZONAS,Óxidos de nitrogênio (NOx),3.4299999999999997
-2021,SAO PAULO,Material Particulado (MP),2063923.2400000098
-2013,SAO PAULO,Óxidos de nitrogênio (NOx),22297857.29
-2020,CEARA,Óxidos de enxofre (SOx),706862.12
-2018,PARA,Monóxido de carbono (CO),765600.6900000003
-2020,DISTRITO FEDERAL,Monóxido de carbono (CO),1669.67
-2013,ESPIRITO SANTO,Dióxido de enxofre,17.11
-2019,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",990.92
-2015,SERGIPE,Monóxido de carbono (CO),20903670.640000004
-2014,MARANHAO,Óxidos de nitrogênio (NOx),29554126.400000002
-2016,PIAUI,Material Particulado (MP),2596.3100000000004
-2022,MATO GROSSO,Material Particulado (MP),1827.1999999999998
-2016,AMAZONAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",35.980000000000004
-2013,MINAS GERAIS,Dióxido de enxofre,7439.449999999999
-2020,RORAIMA,Óxidos de nitrogênio (NOx),23.7
-2016,RONDONIA,Monóxido de carbono (CO),125762.04000000001
-2017,SANTA CATARINA,Monóxido de carbono,4100
-2015,AMAZONAS,Óxidos de enxofre (SOx),97306629.57
-2018,MINAS GERAIS,Óxidos de enxofre (SOx),25102.150000000005
-2018,PIAUI,Monóxido de carbono (CO),772585.1000000001
-2016,MATO GROSSO DO SUL,Monóxido de carbono (CO),18962.08
-2018,SANTA CATARINA,Óxidos de enxofre (SOx),112758.69000000003
-2018,GOIAS,Material Particulado (MP),296156.57000000036
-2020,PIAUI,Material Particulado (MP),3354.7200000000007
-2021,SERGIPE,Monóxido de carbono (CO),5679.29
-2014,SERGIPE,Óxidos de enxofre (SOx),4862.89
-2019,AMAZONAS,Material Particulado (MP),840093997.9699998
-2020,MATO GROSSO,Óxidos de enxofre (SOx),454071
-2014,PARAIBA,Material Particulado (MP),1105483.73
-2016,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
-2015,ESPIRITO SANTO,Óxidos de enxofre (SOx),40297.03
-2013,PARA,Material Particulado (MP),284698.79000000015
-2016,DISTRITO FEDERAL,Nitrogênio,8426.41
-2022,PARAIBA,Monóxido de carbono (CO),1
-2013,TOCANTINS,Flúor,0.09
-2018,RORAIMA,Óxidos de enxofre (SOx),7.49
-2017,ALAGOAS,Material Particulado (MP),95612.35000000002
-2022,RIO DE JANEIRO,Monóxido de carbono (CO),0.55
-2022,ESPIRITO SANTO,Monóxido de carbono (CO),0
-2013,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",3342553.7699999996
-2014,MINAS GERAIS,Material Particulado (MP),1825871.2500000075
-2013,AMAZONAS,Óxidos de enxofre (SOx),3589.750000000001
-2018,RONDONIA,Monóxido de carbono (CO),89949.62999999998
-2020,ESPIRITO SANTO,Óxidos de enxofre (SOx),20101.94
-2017,RORAIMA,Material Particulado (MP),4.97
-2017,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),18088.12
-2015,SERGIPE,Óxidos de enxofre (SOx),61060000.62
-2015,MATO GROSSO DO SUL,Nitrogênio,79.78
-2013,MINAS GERAIS,Material Particulado (MP),18817843399.70991
-2020,CEARA,Material Particulado (MP),470795.6400000006
-2021,AMAPA,Óxidos de enxofre (SOx),0.06999999999999999
-2017,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
-2015,ACRE,Óxidos de enxofre (SOx),251
-2015,SAO PAULO,Óxidos de nitrogênio (NOx),2324569.7500000005
-2013,MATO GROSSO,Material Particulado (MP),87144.23
-2013,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
-2021,MATO GROSSO,Óxidos de nitrogênio (NOx),106350.63
-2018,RIO GRANDE DO NORTE,Monóxido de carbono (CO),8116143.43
-2022,CEARA,Material Particulado (MP),24084.420000000002
-2013,SAO PAULO,"1,2 - dicloroetano (dicloreto de etileno)",2391
-2019,GOIAS,Óxidos de nitrogênio (NOx),21210.559999999994
-2013,SANTA CATARINA,Monóxido de carbono (CO),1088870.0900000008
-2017,MARANHAO,Óxidos de enxofre (SOx),14261.58
-2020,ACRE,Material Particulado (MP),295.3299999999999
-2019,PIAUI,Material Particulado (MP),37949.799999999996
-2017,AMAPA,Monóxido de carbono (CO),740.87
-2014,MINAS GERAIS,Monóxido de carbono,6811.2
-2013,SERGIPE,Monóxido de carbono (CO),820.12
-2020,PARANA,Óxidos de nitrogênio (NOx),1403910.6700000002
-2019,MATO GROSSO,Material Particulado (MP),211138.44000000003
-2013,GOIAS,Óxidos de enxofre (SOx),11995.36
-2021,AMAPA,Material Particulado (MP),10.02
-2016,MINAS GERAIS,Óxidos de nitrogênio (NOx),343835.81000000023
-2015,BAHIA,Dióxido de enxofre,1785
-2017,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
-2014,CEARA,Monóxido de carbono (CO),2076409.7700000005
-2020,AMAPA,Monóxido de carbono (CO),1565.79
-2019,RIO GRANDE DO SUL,Monóxido de carbono,12.31
-2014,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",546642.7400000001
-2020,RIO DE JANEIRO,Óxidos de enxofre (SOx),76593.99999999994
-2013,BAHIA,Dióxido de enxofre,1145.3199999999997
-2014,AMAZONAS,Óxidos de enxofre (SOx),50444582.059999995
-2018,CEARA,Material Particulado (MP),275423.04000000027
-2014,PERNAMBUCO,Material Particulado (MP),147502.75999999995
-2014,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),3779.45
-2013,ACRE,Monóxido de carbono (CO),11206.67
-2018,AMAPA,Material Particulado (MP),130
-2015,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2013,SAO PAULO,"1,2- dibromoetano",2391
-2020,RIO DE JANEIRO,Monóxido de carbono (CO),253703.6200000002
-2016,MATO GROSSO,Monóxido de carbono (CO),23876.62999999998
-2019,BAHIA,Material Particulado (MP),53225.85000000002
-2016,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),14154.249999999998
-2018,SANTA CATARINA,Óxidos de nitrogênio (NOx),186725.88999999998
-2017,PIAUI,Material Particulado (MP),39638.99
-2013,SANTA CATARINA,Monóxido de carbono,29119.62
-2015,SAO PAULO,Cloro,551.93
-2015,MARANHAO,Monóxido de carbono (CO),4818.919999999999
-2020,SANTA CATARINA,Óxidos de enxofre (SOx),117391.06999999996
-2021,MATO GROSSO DO SUL,Material Particulado (MP),101517.29000000001
-2013,PARAIBA,Material Particulado (MP),28560.219999999998
-2013,RIO DE JANEIRO,Dióxido de enxofre,604.8299999999999
-2020,CEARA,Dióxido de enxofre,99.8
-2017,ACRE,Óxidos de nitrogênio (NOx),5070
-2017,RONDONIA,Óxidos de nitrogênio (NOx),2809.58
-2021,PARAIBA,Material Particulado (MP),30176.24999999998
-2019,BAHIA,Óxidos de enxofre (SOx),39616.69
-2014,DISTRITO FEDERAL,Monóxido de carbono,8.18
-2014,TOCANTINS,Óxidos de nitrogênio (NOx),4854.170000000001
-2020,MARANHAO,Monóxido de carbono (CO),2553.8400000000015
-2018,SAO PAULO,Material Particulado (MP),4724268.049999982
-2017,PARA,Óxidos de enxofre (SOx),50946.75999999999
-2014,PARA,Monóxido de carbono (CO),37785.460000000014
-2013,DISTRITO FEDERAL,Óxidos de enxofre (SOx),126437.37
-2013,MINAS GERAIS,Mirex (dodecacloro deriv. halog. hidrocarboneto ciclanico),6.99
-2020,DISTRITO FEDERAL,Material Particulado (MP),677.3799999999999
-2015,MINAS GERAIS,Óxidos de nitrogênio (NOx),239210.81000000003
-2014,RONDONIA,Monóxido de carbono (CO),3546535.559999999
-2019,SERGIPE,Óxidos de enxofre (SOx),3656.6800000000003
-2016,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1341.51
-2017,PERNAMBUCO,Material Particulado (MP),137327.96
-2013,PARA,Dióxido de enxofre,266.15999999999997
-2020,CEARA,Monóxido de carbono,232.9
-2013,MINAS GERAIS,Outros óxidos de chumbo,0.62
-2016,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1
-2020,SANTA CATARINA,Óxidos de nitrogênio (NOx),36594.16999999994
-2015,RIO GRANDE DO SUL,Material Particulado (MP),1847754.6400000046
+2017,PARAIBA,Óxidos de enxofre (SOx),5355.880000000001
+2022,PARANA,Óxidos de enxofre (SOx),0
 2015,AMAPA,Óxidos de nitrogênio (NOx),1353.92
-2019,RONDONIA,Óxidos de nitrogênio (NOx),3669.1600000000003
-2013,SAO PAULO,Outros fluoretos,24789.6
-2014,SANTA CATARINA,Material Particulado (MP),179816.45999999996
-2016,AMAZONAS,Monóxido de carbono (CO),79919654.14999998
-2013,DISTRITO FEDERAL,Nitrogênio,8426.41
-2013,PERNAMBUCO,Cloreto de hidrogênio (ácido clorídrico),1042.3
-2014,SAO PAULO,Monóxido de carbono (CO),1906111.6000000024
-2017,RIO DE JANEIRO,Material Particulado (MP),166043.97999999992
-2021,AMAPA,Óxidos de nitrogênio (NOx),0.03
-2021,ALAGOAS,Monóxido de carbono (CO),6890.63
-2016,CEARA,Dióxido de enxofre,99.4
-2017,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),23936.009999999995
-2014,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),434985.04999999993
-2014,AMAPA,Material Particulado (MP),64.94
-2016,SAO PAULO,Dióxido de enxofre,487.15
-2013,PERNAMBUCO,Monóxido de carbono (CO),60779.620000000024
-2019,SERGIPE,Material Particulado (MP),552.58
-2017,MINAS GERAIS,Material Particulado (MP),8881830.54999999
-2018,PERNAMBUCO,Óxidos de nitrogênio (NOx),951798.5200000001
-2017,BAHIA,Monóxido de carbono (CO),70434.72999999997
-2017,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),158467.89999999997
-2020,RONDONIA,Monóxido de carbono (CO),21194.36
-2015,PIAUI,Material Particulado (MP),3591.690000000001
-2015,SAO PAULO,Partículas (PM10),6530.040000000001
-2019,SANTA CATARINA,Monóxido de carbono (CO),284404985.0799999
-2020,ACRE,Monóxido de carbono (CO),100087.77
-2017,ESPIRITO SANTO,Óxidos de enxofre (SOx),30478.879999999994
-2016,ACRE,Monóxido de carbono (CO),18070.79
-2016,AMAZONAS,Dióxido de enxofre,237.73
-2018,PARANA,Monóxido de carbono (CO),119333.84999999998
-2019,AMAPA,Óxidos de enxofre (SOx),0.04
-2013,SERGIPE,Material Particulado (MP),1562.23
-2015,TOCANTINS,Óxidos de nitrogênio (NOx),4360.46
-2013,MARANHAO,Óxidos de enxofre (SOx),2641539.869999999
-2022,SAO PAULO,Óxidos de enxofre (SOx),895.6
+2013,MINAS GERAIS,Dióxido de enxofre,7439.449999999999
+2014,MINAS GERAIS,Dióxido de enxofre,0.5
+2013,ALAGOAS,Partículas (PM10),1320
+2013,MINAS GERAIS,Cloreto de hidrogênio (ácido clorídrico),13753.08
+2018,AMAPA,Material Particulado (MP),130
+2013,SAO PAULO,Outros óxidos de chumbo,0.05
+2019,PARAIBA,Monóxido de carbono (CO),52878.64000000001
+2018,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),8708.519999999993
+2020,PERNAMBUCO,Óxidos de enxofre (SOx),163085.13000000003
+2013,PARANA,Monóxido de carbono,239564.66000000003
+2014,ACRE,Óxidos de enxofre (SOx),95
+2020,ALAGOAS,Óxidos de enxofre (SOx),26.35
+2021,RIO GRANDE DO SUL,Material Particulado (MP),4912502.149999994
+2013,ESPIRITO SANTO,Material Particulado (MP),57500.67000000002
+2020,PIAUI,Monóxido de carbono (CO),5003.950000000001
+2013,SAO PAULO,"1,2 - dicloroetano (dicloreto de etileno)",2391
+2014,PERNAMBUCO,Óxidos de nitrogênio (NOx),33821547.99
+2015,BAHIA,Dióxido de enxofre,1785
+2015,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),31789.98
+2017,BAHIA,Óxidos de nitrogênio (NOx),139265.80000000008
+2021,ESPIRITO SANTO,Material Particulado (MP),77483.05999999976
+2018,AMAZONAS,Óxidos de nitrogênio (NOx),18945.629999999994
+2015,AMAPA,Monóxido de carbono (CO),455.06000000000006
+2014,MARANHAO,Monóxido de carbono (CO),3956.980000000001
+2016,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1
+2021,RORAIMA,Material Particulado (MP),5.45
+2016,SAO PAULO,Material Particulado (MP),4022939.770000008
+2021,PARAIBA,Óxidos de enxofre (SOx),9987.210000000001
+2014,GOIAS,Material Particulado (MP),1094412.5799999996
+2021,RIO DE JANEIRO,Material Particulado (MP),70244.10000000003
+2021,TOCANTINS,Monóxido de carbono (CO),1541.3099999999997
+2014,PARAIBA,Óxidos de nitrogênio (NOx),48277.67999999999
+2017,TOCANTINS,Óxidos de enxofre (SOx),15348.240000000003
+2022,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),15.67
+2013,RIO DE JANEIRO,Cloreto de hidrogênio (ácido clorídrico),101.08000000000001
+2013,RIO DE JANEIRO,Monóxido de carbono,1705.95
+2017,PARANA,Monóxido de carbono,54.25
+2016,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),52.56
+2021,RORAIMA,Óxidos de enxofre (SOx),3.76
+2013,DISTRITO FEDERAL,Monóxido de carbono (CO),146832.34999999998
+2014,AMAZONAS,Cloreto de hidrogênio (ácido clorídrico),0
+2014,SANTA CATARINA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1305.03
+2013,DISTRITO FEDERAL,Material Particulado (MP),1229.22
+2017,PIAUI,Material Particulado (MP),39638.99
+2016,PARAIBA,Óxidos de enxofre (SOx),10765.57
+2019,SANTA CATARINA,Óxidos de enxofre (SOx),296340057.46000004
+2017,RONDONIA,Material Particulado (MP),31506.55999999999
+2018,AMAPA,Monóxido de carbono (CO),1190.87
+2020,RORAIMA,Óxidos de enxofre (SOx),7.54
+2021,SERGIPE,Monóxido de carbono (CO),5679.29
+2020,MINAS GERAIS,Monóxido de carbono (CO),2234063.760000001
+2016,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),2899.41
+2019,ESPIRITO SANTO,Óxidos de enxofre (SOx),28675.19
+2020,RIO GRANDE DO NORTE,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",2.52
+2018,MINAS GERAIS,Monóxido de carbono (CO),2298323.8699999996
+2016,MARANHAO,Óxidos de enxofre (SOx),75009.43
+2013,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),810612.73
+2015,RIO DE JANEIRO,Óxidos de enxofre (SOx),15776151.890000002
+2016,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
+2021,PARANA,Óxidos de nitrogênio (NOx),65172.10000000003
+2013,MATO GROSSO DO SUL,Monóxido de carbono (CO),710036.3200000001
+2013,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),4303.910000000001
+2020,MARANHAO,Óxidos de nitrogênio (NOx),17279.89
+2014,SANTA CATARINA,Óxidos de nitrogênio (NOx),2539375.0900000003
+2019,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37832.65
+2015,ACRE,Material Particulado (MP),125.01
+2021,SERGIPE,Óxidos de nitrogênio (NOx),8593.750000000002
+2014,AMAZONAS,Dióxido de enxofre,612.75
+2013,SANTA CATARINA,Compostos orgânicos voláteis não metânicos(COVNM),65.98
+2013,CEARA,Dióxido de enxofre,127.2
+2016,AMAZONAS,Dióxido de enxofre,237.73000000000002
+2020,TOCANTINS,Material Particulado (MP),9465.17
+2014,BAHIA,Óxidos de enxofre (SOx),1763158.2800000005
+2020,AMAPA,Monóxido de carbono (CO),1565.79
+2014,MINAS GERAIS,Óxidos de enxofre (SOx),59622.450000000004
+2019,MARANHAO,Material Particulado (MP),4815.3600000000015
+2019,SERGIPE,Monóxido de carbono (CO),17240.809999999994
+2016,AMAZONAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",35.980000000000004
+2019,RORAIMA,Material Particulado (MP),5.26
+2022,MARANHAO,Material Particulado (MP),0.01
+2014,BAHIA,Monóxido de carbono,0
+2017,SAO PAULO,Óxidos de enxofre (SOx),62444.66000000002
+2015,AMAPA,Óxidos de enxofre (SOx),98.34
+2017,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),12973.439999999997
+2016,MINAS GERAIS,Desperdícios e resíduos de chumbo,0
+2013,PARA,Outros fluoretos,0.46
+2020,MATO GROSSO DO SUL,Nitrogênio,3.17
+2014,RIO GRANDE DO SUL,Monóxido de carbono,225711.32
+2013,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),171328.18
+2018,MATO GROSSO DO SUL,Material Particulado (MP),14528.190000000002
+2014,AMAPA,Óxidos de nitrogênio (NOx),2315.46
+2021,AMAPA,Óxidos de enxofre (SOx),0.06999999999999999
+2013,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
+2015,SERGIPE,Óxidos de nitrogênio (NOx),9831.46
+2016,CEARA,Monóxido de carbono,23.24
+2014,PIAUI,Óxidos de enxofre (SOx),0.35
+2013,MINAS GERAIS,Poeiras de zinco,145.72
+2014,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",13194.590000000002
+2015,SAO PAULO,Óxidos de nitrogênio (NOx),2324569.7500000005
+2018,CEARA,Material Particulado (MP),275423.04000000027
+2017,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
+2020,SERGIPE,Material Particulado (MP),2503.0700000000006
+2018,SERGIPE,Monóxido de carbono (CO),15900.179999999997
+2013,SANTA CATARINA,Partículas (PM10),13.97
+2014,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),34154.34
+2018,GOIAS,Óxidos de nitrogênio (NOx),387224.0500000002
+2017,MATO GROSSO,Óxidos de enxofre (SOx),10836.130000000003
+2013,PARA,Dióxido de enxofre,266.15999999999997
+2013,BAHIA,Monóxido de carbono,1380.08
+2015,SAO PAULO,Monóxido de carbono,0.11
+2017,RORAIMA,Material Particulado (MP),4.97
+2013,ESPIRITO SANTO,Dióxido de enxofre,17.11
+2020,PARANA,Monóxido de carbono (CO),1075433.0000000007
+2018,PERNAMBUCO,Material Particulado (MP),257066.5500000001
+2018,PARA,Óxidos de nitrogênio (NOx),18810.37
+2021,SANTA CATARINA,Óxidos de enxofre (SOx),128707.19999999997
+2020,BAHIA,Partículas (PM10),0.62
+2013,MINAS GERAIS,Nitrogênio,6823.63
+2014,GOIAS,Outros fluoretos,345328.50000000006
+2014,TOCANTINS,Material Particulado (MP),157721.78000000003
+2021,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),550454.48
+2015,AMAZONAS,Monóxido de carbono (CO),23692378.359999996
+2016,AMAPA,Óxidos de enxofre (SOx),1.5
+2020,TOCANTINS,Óxidos de nitrogênio (NOx),1279.3000000000006
+2022,PARA,Monóxido de carbono (CO),7.6
+2013,RIO DE JANEIRO,Óxido nitroso,108.61999999999999
+2013,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",76.69
+2020,BAHIA,Fluoreto de hidrogênio (ácido fluorídrico),0.1
+2013,SAO PAULO,Óxidos de enxofre (SOx),243647.9000000002
+2015,TOCANTINS,Óxidos de enxofre (SOx),1652.91
+2015,RORAIMA,Material Particulado (MP),2
+2013,SAO PAULO,Diclorometano (cloreto de metileno),2396.68
+2013,SAO PAULO,"1,1,1-tricloroetano (metilcloroformio)",2391
+2013,SAO PAULO,o-diclorobenzeno,2391
+2018,TOCANTINS,Material Particulado (MP),8314.95
+2020,CEARA,Monóxido de carbono (CO),951365.2500000002
+2021,CEARA,Monóxido de carbono (CO),706693.2899999998
+2013,ACRE,Material Particulado (MP),44.02
+2018,RORAIMA,Material Particulado (MP),4.99
+2021,PARANA,Material Particulado (MP),1033217.4600000005
+2013,MARANHAO,Dióxido de enxofre,7793.400000000001
+2018,MATO GROSSO,Óxidos de nitrogênio (NOx),5149.74
+2021,MATO GROSSO,Óxidos de enxofre (SOx),2985.29
+2013,SAO PAULO,Ácido sulfúrico,1496.25
+2021,RONDONIA,Óxidos de nitrogênio (NOx),1622.1699999999998
+2017,MATO GROSSO,Material Particulado (MP),16549.940000000006
+2013,BAHIA,Óxido nitroso,18.85
+2017,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
+2015,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",320.4
+2013,SANTA CATARINA,Óxidos de enxofre (SOx),712482.51
+2017,CEARA,Monóxido de carbono (CO),11767457.889999991
+2014,GOIAS,Monóxido de carbono (CO),515777604.69
+2022,RIO DE JANEIRO,Óxidos de enxofre (SOx),1.6
+2016,SANTA CATARINA,Monóxido de carbono (CO),406622.2500000002
+2018,BAHIA,Material Particulado (MP),202850.47000000032
+2021,DISTRITO FEDERAL,Óxidos de enxofre (SOx),326.07
+2013,PARANA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",66798.40000000001
+2022,RIO GRANDE DO NORTE,Monóxido de carbono (CO),100
+2019,RORAIMA,Óxidos de nitrogênio (NOx),23.69
+2017,PARANA,Óxidos de nitrogênio (NOx),451660.17000000016
+2019,TOCANTINS,Óxidos de nitrogênio (NOx),3690.8800000000006
+2013,SAO PAULO,Monóxido de carbono,370863.31
+2013,PIAUI,Óxidos de nitrogênio (NOx),1.4
 2014,MATO GROSSO,Material Particulado (MP),13019.97
+2015,MINAS GERAIS,Óxidos de nitrogênio (NOx),239210.81000000003
+2014,MINAS GERAIS,Nitrogênio,0.9
+2015,SANTA CATARINA,Monóxido de carbono,3600
+2014,RIO GRANDE DO SUL,Material Particulado (MP),514212.01000000024
+2021,BAHIA,Material Particulado (MP),2114690.3599999994
+2013,AMAZONAS,Óxidos de enxofre (SOx),3589.750000000001
+2021,RONDONIA,Material Particulado (MP),20611.41
+2015,ACRE,Óxidos de nitrogênio (NOx),5115
+2020,BAHIA,Monóxido de carbono,0.1
+2019,DISTRITO FEDERAL,Óxidos de enxofre (SOx),103209114.91000003
+2017,RONDONIA,Óxidos de enxofre (SOx),639.88
+2021,PARAIBA,Material Particulado (MP),30176.24999999998
+2019,BAHIA,Material Particulado (MP),53225.85000000002
+2020,GOIAS,Monóxido de carbono (CO),9090624.970000003
+2013,GOIAS,Óxidos de enxofre (SOx),11995.36
+2014,ACRE,Monóxido de carbono (CO),11130.1
+2014,MATO GROSSO DO SUL,Material Particulado (MP),589691.7500000002
+2017,CEARA,Monóxido de carbono,232.8
+2014,SAO PAULO,Nitrogênio,0.01
+2021,SANTA CATARINA,Monóxido de carbono (CO),903682.4400000001
+2014,GOIAS,Óxidos de enxofre (SOx),10287.43
+2014,RONDONIA,Óxidos de enxofre (SOx),2926.4200000000005
+2013,RONDONIA,Óxidos de nitrogênio (NOx),20761.95
+2015,ACRE,Monóxido de carbono (CO),10368.73
+2021,TOCANTINS,Óxidos de enxofre (SOx),55.22999999999999
+2017,BAHIA,Monóxido de carbono (CO),70434.72999999997
+2014,CEARA,Monóxido de carbono (CO),2076409.7700000005
+2018,RONDONIA,Monóxido de carbono (CO),89949.62999999998
+2018,BAHIA,Óxidos de nitrogênio (NOx),60250.18999999998
+2016,PARA,Óxidos de enxofre (SOx),34357.86
+2020,MINAS GERAIS,Óxidos de enxofre (SOx),27961.05999999999
+2018,RIO DE JANEIRO,Monóxido de carbono (CO),489291.88000000006
+2015,CEARA,Óxidos de enxofre (SOx),66890774.36999999
+2017,PARAIBA,Óxidos de nitrogênio (NOx),12317.26
+2015,CEARA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1965
+2022,CEARA,Óxidos de enxofre (SOx),68237.82999999999
+2017,MATO GROSSO DO SUL,Material Particulado (MP),42951.68
+2016,MINAS GERAIS,Monóxido de carbono (CO),1388139.65
+2013,AMAPA,Óxidos de enxofre (SOx),231.31
+2014,PIAUI,Óxidos de nitrogênio (NOx),121.3
+2015,GOIAS,Material Particulado (MP),215123.31999999995
+2019,MINAS GERAIS,Monóxido de carbono (CO),3255757.199999999
+2016,BAHIA,Óxidos de enxofre (SOx),58157.11000000003
+2014,RIO GRANDE DO NORTE,Material Particulado (MP),9112.640000000003
+2022,BAHIA,Monóxido de carbono (CO),2337399.1300000004
+2022,ESPIRITO SANTO,Óxidos de enxofre (SOx),0
+2018,SAO PAULO,Óxidos de nitrogênio (NOx),2268078.290000002
+2018,PERNAMBUCO,Monóxido de carbono (CO),928480.6800000002
+2019,GOIAS,Óxidos de enxofre (SOx),10450.850000000004
+2014,ALAGOAS,Óxidos de enxofre (SOx),571.61
+2019,SANTA CATARINA,Material Particulado (MP),13524862.489999922
+2020,MATO GROSSO DO SUL,Monóxido de carbono (CO),41481.39
+2018,SERGIPE,Óxidos de nitrogênio (NOx),9293.3
+2013,BAHIA,Compostos orgânicos voláteis não metânicos(COVNM),5.3
+2013,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
+2021,MATO GROSSO DO SUL,Material Particulado (MP),101517.29000000001
+2017,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
+2013,RONDONIA,Monóxido de carbono (CO),85931.65999999992
+2019,MATO GROSSO,Óxidos de nitrogênio (NOx),992741.8300000002
+2021,ACRE,Monóxido de carbono (CO),12105.04
+2013,ALAGOAS,Material Particulado (MP),105704.51
+2014,RIO GRANDE DO SUL,Partículas (PM10),11206.59
+2016,MINAS GERAIS,Monóxido de carbono,6007.6
+2018,PIAUI,Monóxido de carbono (CO),772585.1000000001
+2017,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),1137.61
+2021,SANTA CATARINA,Material Particulado (MP),930904.3300000014
+2015,PARAIBA,Óxidos de enxofre (SOx),14820.650000000001
+2018,DISTRITO FEDERAL,Material Particulado (MP),231.32000000000005
+2021,MINAS GERAIS,Óxidos de enxofre (SOx),37727.20000000001
+2019,SERGIPE,Material Particulado (MP),552.58
+2017,SERGIPE,Óxidos de enxofre (SOx),3804.1400000000003
+2015,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
+2013,PARANA,Metanal (formaldeído ou formol),168.01
+2017,MARANHAO,Monóxido de carbono (CO),5465.14
+2014,PARANA,Monóxido de carbono (CO),78528805.47000001
+2018,DISTRITO FEDERAL,Monóxido de carbono (CO),1328.0500000000002
+2013,DISTRITO FEDERAL,Óxidos de enxofre (SOx),126437.37
+2015,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
+2014,MATO GROSSO DO SUL,Monóxido de carbono,9.25
+2016,MARANHAO,Óxidos de nitrogênio (NOx),37445.04
+2017,ESPIRITO SANTO,Óxidos de enxofre (SOx),30478.879999999994
+2016,SANTA CATARINA,Material Particulado (MP),316035.25000000035
+2015,PARAIBA,Monóxido de carbono (CO),16660.449999999997
+2020,PARANA,Óxidos de nitrogênio (NOx),1403910.6700000002
+2015,BAHIA,Óxidos de enxofre (SOx),617765.4999999998
+2016,MATO GROSSO,Óxidos de enxofre (SOx),536.8999999999999
+2018,PARAIBA,Óxidos de enxofre (SOx),8072.7300000000005
+2020,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),164753.01000000007
+2021,MARANHAO,Óxidos de enxofre (SOx),19128.429999999993
+2014,SERGIPE,Material Particulado (MP),1010.3
+2013,ACRE,Monóxido de carbono (CO),11206.67
+2017,RORAIMA,Monóxido de carbono (CO),30.44
+2013,ALAGOAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",422837
+2019,RORAIMA,Óxidos de enxofre (SOx),7.52
+2015,TOCANTINS,Material Particulado (MP),28005.299999999996
+2021,MINAS GERAIS,Óxidos de nitrogênio (NOx),75375.55999999995
+2013,PARA,Óxidos de enxofre (SOx),24542.120000000003
+2013,PERNAMBUCO,Dióxido de enxofre,1835.1200000000001
+2020,PIAUI,Óxidos de enxofre (SOx),17.77
+2022,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),0
+2019,SANTA CATARINA,Monóxido de carbono (CO),284404985.0799999
+2017,DISTRITO FEDERAL,Material Particulado (MP),636.9599999999998
+2017,AMAZONAS,Material Particulado (MP),14839.660000000003
+2017,MATO GROSSO,Monóxido de carbono (CO),251731.05000000005
+2019,SERGIPE,Óxidos de nitrogênio (NOx),5999.87
+2022,PARAIBA,Material Particulado (MP),13000
+2016,GOIAS,Material Particulado (MP),192774.14
+2013,CEARA,Óxidos de nitrogênio (NOx),12726.560000000001
+2017,DISTRITO FEDERAL,Monóxido de carbono (CO),7653.26
+2014,AMAZONAS,Poeiras de zinco,1.65
+2014,PARANA,Dióxido de enxofre,1
+2020,SAO PAULO,Monóxido de carbono (CO),22894420.48999998
+2015,PARANA,Material Particulado (MP),424948.3500000008
+2014,PARA,Óxidos de nitrogênio (NOx),11728.779999999999
+2021,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),127843.73999999999
+2019,ACRE,Material Particulado (MP),119.06
+2021,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),10904.679999999997
+2015,SAO PAULO,Material Particulado (MP),4946021.08999999
+2021,PARAIBA,Monóxido de carbono (CO),78852.04000000002
+2016,BAHIA,Material Particulado (MP),107376.42000000001
+2015,GOIAS,Óxidos de nitrogênio (NOx),354550.4699999999
+2019,MARANHAO,Óxidos de nitrogênio (NOx),7936.030000000001
+2013,TOCANTINS,Boro; telúrio,0.51
+2015,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
+2016,SERGIPE,Monóxido de carbono (CO),19062304.430000007
+2018,GOIAS,Material Particulado (MP),296156.57000000036
+2017,GOIAS,Óxidos de enxofre (SOx),91741.02
+2014,MATO GROSSO,Monóxido de carbono (CO),289585.19000000006
+2014,ALAGOAS,Material Particulado (MP),103781.99
+2018,MARANHAO,Óxidos de nitrogênio (NOx),9314.499999999998
+2019,ACRE,Óxidos de nitrogênio (NOx),5071.38
+2015,BAHIA,Monóxido de carbono,147
+2013,PARANA,Dióxido de enxofre,5.72
+2014,DISTRITO FEDERAL,Monóxido de carbono,8.18
+2020,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),18809.140000000007
+2016,MARANHAO,Monóxido de carbono (CO),1797.4
+2016,PARAIBA,Monóxido de carbono (CO),8065.44
+2013,ESPIRITO SANTO,Monóxido de carbono (CO),1522828.3000000005
+2015,PARA,Óxidos de nitrogênio (NOx),7774.04
+2019,MINAS GERAIS,Óxidos de enxofre (SOx),25136.580000000005
+2014,RIO DE JANEIRO,Óxidos de enxofre (SOx),66825.10999999997
+2022,SAO PAULO,Monóxido de carbono (CO),304.11999999999995
+2021,ESPIRITO SANTO,Monóxido de carbono (CO),2047346.6599999997
+2018,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),36388.54000000001
+2016,SERGIPE,Óxidos de enxofre (SOx),4405.95
+2013,MINAS GERAIS,Outras ligas de cobre em forma bruta;,4.2
+2015,GOIAS,Monóxido de carbono (CO),89104502.25000003
+2014,AMAZONAS,Óxidos de enxofre (SOx),50444582.059999995
+2019,PARANA,Monóxido de carbono (CO),267483.57999999984
+2015,PERNAMBUCO,Óxidos de nitrogênio (NOx),24093949961.35
+2017,MINAS GERAIS,Desperdícios e resíduos de cromo,30
+2020,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20844.049999999985
+2016,AMAZONAS,Monóxido de carbono (CO),79919654.14999998
+2020,AMAPA,Material Particulado (MP),22.11
+2022,RIO GRANDE DO NORTE,Material Particulado (MP),10.3
+2022,SANTA CATARINA,Óxidos de enxofre (SOx),0.6
+2017,RORAIMA,Óxidos de enxofre (SOx),7.47
+2013,MARANHAO,Material Particulado (MP),74154.55999999997
+2021,MINAS GERAIS,Monóxido de carbono (CO),1722749.0600000035
+2019,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),22061.269999999997
+2021,PERNAMBUCO,Material Particulado (MP),229778.73000000004
+2015,MINAS GERAIS,Monóxido de carbono,6008
+2021,ACRE,Óxidos de enxofre (SOx),304.85
+2020,CEARA,Monóxido de carbono,232.9
+2015,RIO DE JANEIRO,Material Particulado (MP),11979945.319999993
+2020,SAO PAULO,Óxidos de nitrogênio (NOx),1557679.750000001
+2019,PARANA,Material Particulado (MP),69233.78000000006
+2013,TOCANTINS,Óxidos de nitrogênio (NOx),1015.9399999999999
+2022,SAO PAULO,Óxidos de enxofre (SOx),895.61
+2015,PARANA,Monóxido de carbono,87.23
+2017,CEARA,Óxidos de nitrogênio (NOx),1093821.4
+2015,AMAZONAS,Material Particulado (MP),110226846.59999995
+2016,DISTRITO FEDERAL,Monóxido de carbono,8.18
+2014,PARA,Monóxido de carbono (CO),37785.460000000014
+2021,GOIAS,Óxidos de nitrogênio (NOx),21238.659999999993
+2015,RIO GRANDE DO SUL,Material Particulado (MP),1847754.6400000046
+2021,RIO DE JANEIRO,Monóxido de carbono (CO),378217.6800000001
+2017,PARA,Material Particulado (MP),30854.87999999999
+2013,AMAZONAS,Óxidos de nitrogênio (NOx),42038.92999999999
+2020,AMAPA,Óxidos de nitrogênio (NOx),4.25
+2021,SAO PAULO,Outros fluoretos,63948
+2016,MINAS GERAIS,Dióxido de enxofre,1
+2014,SAO PAULO,Outros óxidos de chumbo,0.02
+2019,PARA,Monóxido de carbono (CO),152657.87999999995
+2017,PARA,Óxidos de nitrogênio (NOx),9834.889999999998
+2021,BAHIA,Monóxido de carbono (CO),129409.89999999994
+2015,CEARA,Material Particulado (MP),56253.04000000003
+2020,AMAZONAS,Óxidos de enxofre (SOx),1091602335.9900002
+2013,MATO GROSSO,Monóxido de carbono (CO),291369.92
+2013,SAO PAULO,Estireno,20120
+2013,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),31905.319999999996
+2019,MATO GROSSO,Monóxido de carbono (CO),325094.4500000002
+2018,RONDONIA,Óxidos de nitrogênio (NOx),4071.2000000000007
+2019,TOCANTINS,Óxidos de enxofre (SOx),369.8799999999999
+2014,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
+2022,PERNAMBUCO,Monóxido de carbono (CO),2
+2015,SANTA CATARINA,Óxidos de enxofre (SOx),120347.48
+2019,BAHIA,Óxidos de nitrogênio (NOx),51752.66000000005
+2022,ESPIRITO SANTO,Material Particulado (MP),0
+2016,SAO PAULO,Monóxido de carbono,0.08
+2013,SAO PAULO,"1,2- dibromoetano",2391
+2020,RIO GRANDE DO SUL,Monóxido de carbono (CO),83058.54000000002
+2018,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),378.85
+2016,PARANA,Monóxido de carbono,35.48
+2013,SAO PAULO,Etilbenzeno,8069
+2013,ALAGOAS,Óxidos de enxofre (SOx),230.81
+2020,SAO PAULO,Óxidos de enxofre (SOx),37982.389999999985
+2019,AMAPA,Material Particulado (MP),17.6
+2015,ACRE,Óxidos de enxofre (SOx),251
+2022,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),0
+2016,BAHIA,Monóxido de carbono (CO),253162.52000000005
+2017,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),42482.53999999999
+2019,MINAS GERAIS,Óxidos de nitrogênio (NOx),42774.969999999994
+2022,GOIAS,Monóxido de carbono (CO),1759.4999999999998
+2020,SAO PAULO,Dióxido de enxofre,1.16
+2015,SAO PAULO,Óxidos de enxofre (SOx),173364.25999999998
+2019,PERNAMBUCO,Óxidos de nitrogênio (NOx),655211.06
+2014,CEARA,Material Particulado (MP),34849.309999999976
+2016,RIO DE JANEIRO,Óxidos de enxofre (SOx),48317374.80000001
+2021,PIAUI,Material Particulado (MP),1812.6
+2014,AMAZONAS,Partículas (PM10),139.32999999999998
+2014,SANTA CATARINA,Monóxido de carbono (CO),1283690.2100000002
+2015,MINAS GERAIS,Monóxido de carbono (CO),2796359.3400000012
+2014,MINAS GERAIS,Monóxido de carbono,6811.2
+2014,RIO GRANDE DO NORTE,Monóxido de carbono (CO),11398.570000000007
+2019,PERNAMBUCO,Óxidos de enxofre (SOx),152376.68000000002
+2013,PARAIBA,Monóxido de carbono (CO),10642.320000000002
+2015,CEARA,Monóxido de carbono,309
+2016,ACRE,Óxidos de nitrogênio (NOx),5071.6
+2015,MATO GROSSO DO SUL,Monóxido de carbono,7.83
+2016,PARA,Monóxido de carbono (CO),770070.04
+2020,PERNAMBUCO,Material Particulado (MP),382758.4699999999
+2014,RONDONIA,Óxidos de nitrogênio (NOx),3764.7699999999995
+2020,MATO GROSSO,Óxidos de enxofre (SOx),454071
+2022,RONDONIA,Óxidos de nitrogênio (NOx),8
+2020,SAO PAULO,Monóxido de carbono,0.04
+2014,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",546642.74
+2021,SAO PAULO,Óxidos de nitrogênio (NOx),1302093.0899999996
+2013,AMAZONAS,Dióxido de enxofre,11.45
+2013,PARANA,Cinzas e resíduos contendo chumbo,400
+2014,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),319203.94
+2019,AMAPA,Óxidos de enxofre (SOx),0.04
+2016,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2014,RIO GRANDE DO SUL,Óxido nitroso,552
+2021,TOCANTINS,Material Particulado (MP),32061.159999999996
+2017,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),23936.009999999995
+2018,CEARA,Óxidos de enxofre (SOx),331686.00000000023
+2015,MATO GROSSO,Óxidos de enxofre (SOx),1199.48
+2014,MINAS GERAIS,Óxidos de nitrogênio (NOx),177505.00000000012
+2019,MARANHAO,Óxidos de enxofre (SOx),18231.530000000002
+2013,BAHIA,Material Particulado (MP),57664.09
+2014,TOCANTINS,Monóxido de carbono (CO),4535.190000000001
+2018,PERNAMBUCO,Óxidos de nitrogênio (NOx),951798.5200000001
+2013,PIAUI,Material Particulado (MP),2650.4700000000003
+2016,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),10286.369999999999
+2013,PIAUI,Óxidos de enxofre (SOx),2.7
+2016,AMAPA,Material Particulado (MP),10.56
+2016,RONDONIA,Material Particulado (MP),15771.709999999997
+2021,ACRE,Material Particulado (MP),361.96000000000004
+2016,SERGIPE,Óxidos de nitrogênio (NOx),8150.37
+2013,SERGIPE,Monóxido de carbono (CO),820.12
+2018,BAHIA,Dióxido de enxofre,0
+2013,MARANHAO,Óxidos de enxofre (SOx),2641539.869999999
+2021,SAO PAULO,Óxidos de enxofre (SOx),227245.2000000001
+2017,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),45812.01000000001
+2016,CEARA,Monóxido de carbono (CO),117820.44
+2017,TOCANTINS,Monóxido de carbono (CO),8188.520000000001
+2018,MINAS GERAIS,Óxidos de enxofre (SOx),25102.150000000005
+2020,MATO GROSSO DO SUL,Monóxido de carbono,7.82
+2019,PERNAMBUCO,Monóxido de carbono (CO),23022.379999999983
+2013,PARA,Monóxido de carbono (CO),621677.3800000001
+2022,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),100
+2014,SANTA CATARINA,Material Particulado (MP),179816.45999999996
+2022,AMAZONAS,Monóxido de carbono (CO),0.81
+2018,TOCANTINS,Monóxido de carbono (CO),8567.95
+2018,AMAZONAS,Material Particulado (MP),6763.9500000000035
+2014,TOCANTINS,Óxidos de nitrogênio (NOx),4854.170000000001
+2014,ALAGOAS,Monóxido de carbono (CO),15053.72
+2015,AMAZONAS,Partículas (PM10),154.23
+2020,PARAIBA,Material Particulado (MP),33486.57
+2018,RIO GRANDE DO SUL,Monóxido de carbono (CO),4395627.390000001
+2020,AMAPA,Óxidos de enxofre (SOx),0.27
+2015,PERNAMBUCO,Óxidos de enxofre (SOx),167153107713.04007
+2021,MARANHAO,Monóxido de carbono (CO),14922.029999999999
+2018,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),1606.22
+2016,SAO PAULO,Monóxido de carbono (CO),1682129.740000003
+2018,SANTA CATARINA,Óxidos de enxofre (SOx),112758.69000000003
+2016,ACRE,Monóxido de carbono (CO),18070.79
+2022,RIO GRANDE DO SUL,Monóxido de carbono (CO),5.5600000000000005
+2014,AMAPA,Monóxido de carbono (CO),533.63
+2013,RONDONIA,Óxidos de enxofre (SOx),5832.37
+2022,GOIAS,Óxidos de nitrogênio (NOx),388.91
+2015,MINAS GERAIS,Dióxido de enxofre,0.6
+2020,RORAIMA,Material Particulado (MP),5.28
+2013,MATO GROSSO,Material Particulado (MP),87144.23
+2013,MATO GROSSO,Óxidos de nitrogênio (NOx),257813.41000000006
+2019,AMAZONAS,Material Particulado (MP),840093997.9699998
+2020,RONDONIA,Óxidos de enxofre (SOx),1022.2
+2017,ALAGOAS,Material Particulado (MP),95612.35000000002
+2013,SANTA CATARINA,Cloreto de hidrogênio (ácido clorídrico) em solução aquosa,120
+2019,MATO GROSSO,Material Particulado (MP),211138.44000000003
+2020,TOCANTINS,Monóxido de carbono (CO),5742.090000000002
+2014,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
+2021,MARANHAO,Material Particulado (MP),12922.11
+2015,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),2664.0099999999998
+2013,RONDONIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",610.77
+2019,RONDONIA,Óxidos de nitrogênio (NOx),3669.1600000000003
+2019,PIAUI,Óxidos de nitrogênio (NOx),47333.95
+2021,GOIAS,Material Particulado (MP),68216.96
+2015,MATO GROSSO,Material Particulado (MP),12747.690000000004
+2021,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),1703838.6000000003
+2016,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
+2016,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
+2020,MATO GROSSO,Monóxido de carbono (CO),604767.2600000001
+2019,MATO GROSSO DO SUL,Material Particulado (MP),258359.88999999998
+2021,AMAZONAS,Material Particulado (MP),563448.1400000001
+2021,GOIAS,Óxidos de enxofre (SOx),8543.240000000003
+2013,PERNAMBUCO,Cloreto de hidrogênio (ácido clorídrico),1042.3
+2016,PARAIBA,Material Particulado (MP),19214.439999999995
+2019,PARAIBA,Óxidos de enxofre (SOx),2587.9500000000003
+2019,RIO GRANDE DO SUL,Material Particulado (MP),47725.16999999986
+2020,RIO GRANDE DO NORTE,Material Particulado (MP),4344674.129999997
+2013,SANTA CATARINA,Monóxido de carbono,29119.620000000003
+2014,GOIAS,Cinzas e resíduos contendo chumbo,0.13
+2013,TOCANTINS,Óxidos de enxofre (SOx),347.99
+2014,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
+2016,MATO GROSSO,Material Particulado (MP),10623.350000000006
+2020,CEARA,Óxidos de enxofre (SOx),706862.12
+2018,AMAZONAS,Monóxido de carbono (CO),25705.909999999985
+2021,AMAZONAS,Óxidos de nitrogênio (NOx),2540368.669999999
+2021,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),9127.460000000001
+2015,MATO GROSSO,Óxidos de nitrogênio (NOx),4891.330000000002
+2018,CEARA,Monóxido de carbono,232.9
+2014,MINAS GERAIS,Partículas (PM10),0.01
+2017,RIO GRANDE DO SUL,Monóxido de carbono (CO),55022255.00999998
+2016,MATO GROSSO DO SUL,Material Particulado (MP),12740.210000000006
+2014,BAHIA,Monóxido de carbono (CO),293690.07000000007
+2014,MARANHAO,Óxidos de nitrogênio (NOx),29554126.400000002
+2019,PIAUI,Material Particulado (MP),37949.799999999996
+2015,TOCANTINS,Óxidos de nitrogênio (NOx),4360.46
+2013,AMAZONAS,Partículas (PM10),0.95
+2015,SAO PAULO,Monóxido de carbono (CO),4497945.759999998
+2015,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),39054.87000000001
+2021,CEARA,Óxidos de enxofre (SOx),403999.19000000035
+2014,BAHIA,Material Particulado (MP),16066330.200000001
+2016,TOCANTINS,Monóxido de carbono (CO),7909.410000000001
+2013,BAHIA,Dióxido de enxofre,1145.32
+2022,DISTRITO FEDERAL,Material Particulado (MP),2.27
+2022,CEARA,Monóxido de carbono (CO),13920.64
+2022,DISTRITO FEDERAL,Monóxido de carbono (CO),0
+2019,PARAIBA,Material Particulado (MP),15006104.129999999
+2020,PARANA,Material Particulado (MP),3521840.7699999977
+2013,PARA,Material Particulado (MP),284698.79000000015
+2017,MINAS GERAIS,Óxidos de nitrogênio (NOx),903195.55
+2013,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),16876557.18
+2014,AMAZONAS,Óxidos de nitrogênio (NOx),52592617.58000001
+2016,PARANA,Monóxido de carbono (CO),77980043.21000001
+2016,GOIAS,Óxidos de enxofre (SOx),26010.16999999998
+2015,AMAZONAS,Óxidos de nitrogênio (NOx),50193885.45
+2018,RIO DE JANEIRO,Material Particulado (MP),15038094.749999998
+2019,GOIAS,Óxidos de nitrogênio (NOx),21210.559999999994
+2017,SANTA CATARINA,Óxidos de enxofre (SOx),109943.03999999995
+2015,RONDONIA,Material Particulado (MP),15825.399999999989
+2020,MATO GROSSO,Óxidos de nitrogênio (NOx),773548.0200000003
+2017,CEARA,Material Particulado (MP),1328455.800000001
+2013,TOCANTINS,Monóxido de carbono (CO),19954.07
+2013,SERGIPE,Óxidos de nitrogênio (NOx),8932.089999999998
+2016,PIAUI,Óxidos de enxofre (SOx),49.16
+2018,RORAIMA,Monóxido de carbono (CO),0.86
+2015,SERGIPE,Óxidos de enxofre (SOx),61060000.62
+2013,PERNAMBUCO,Monóxido de carbono,558
+2013,MINAS GERAIS,Mirex (dodecacloro deriv. halog. hidrocarboneto ciclanico),6.99
+2013,MINAS GERAIS,Ácido nítrico,2932.77
+2021,MATO GROSSO,Material Particulado (MP),171504.86999999997
+2019,BAHIA,Monóxido de carbono (CO),255799.89000000028
+2020,PARANA,Óxidos de enxofre (SOx),12656.790000000003
+2016,PERNAMBUCO,Óxidos de enxofre (SOx),226502.50000000003
+2022,BAHIA,Material Particulado (MP),67.74000000000001
+2013,MARANHAO,Monóxido de carbono (CO),4345.79
+2013,MINAS GERAIS,Monóxido de carbono (CO),278466932.41999996
+2018,RONDONIA,Material Particulado (MP),220839.75000000006
+2015,RONDONIA,Óxidos de nitrogênio (NOx),3481.72
+2020,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",25
+2016,PIAUI,Material Particulado (MP),2596.3100000000004
+2020,PARA,Óxidos de nitrogênio (NOx),15119.039999999999
+2020,SANTA CATARINA,Óxidos de nitrogênio (NOx),36594.16999999994
+2016,TOCANTINS,Material Particulado (MP),187623.71
+2018,BAHIA,Óxidos de enxofre (SOx),24226.879999999997
+2016,PERNAMBUCO,Material Particulado (MP),162660.44999999992
+2022,MINAS GERAIS,Material Particulado (MP),1271.22
+2014,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),52120.31000000001
+2016,GOIAS,Monóxido de carbono (CO),89660118.57000001
+2019,AMAZONAS,Óxidos de enxofre (SOx),2214827636.4000015
+2014,PARA,Óxidos de enxofre (SOx),33960.29
+2013,PARANA,Partículas (PM10),428.99999999999994
+2013,RIO GRANDE DO SUL,clorodifluorometano (HCFC-22),13.6
+2019,TOCANTINS,Material Particulado (MP),8424.410000000005
+2019,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),67695.2
+2019,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),634.6199999999999
+2019,ALAGOAS,Óxidos de nitrogênio (NOx),422339.44000000006
+2022,ESPIRITO SANTO,Monóxido de carbono (CO),0
+2014,SERGIPE,Óxidos de enxofre (SOx),4862.89
+2019,RONDONIA,Monóxido de carbono (CO),703318647.6
+2017,PARANA,Óxidos de enxofre (SOx),26317.99
+2018,TOCANTINS,Óxidos de enxofre (SOx),238229.05999999997
+2022,AMAZONAS,Material Particulado (MP),51.379999999999995
+2013,RIO GRANDE DO SUL,Dióxido de enxofre,75445.14
+2018,SAO PAULO,Óxidos de enxofre (SOx),68626.19999999988
+2013,CEARA,Monóxido de carbono (CO),2195820.409999999
+2021,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",3000
+2014,SAO PAULO,Partículas (PM10),6552.460000000001
+2020,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37463.41999999999
+2013,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
+2016,ALAGOAS,Monóxido de carbono (CO),7947.18
+2013,RIO GRANDE DO SUL,Monóxido de carbono (CO),297482.2900000001
+2021,MATO GROSSO,Monóxido de carbono (CO),188061.43000000002
+2020,MATO GROSSO DO SUL,Dióxido de enxofre,25.9
+2018,AMAPA,Óxidos de enxofre (SOx),0
+2019,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),437961287.53999996
+2013,RONDONIA,Dióxido de enxofre,18.9
+2017,SAO PAULO,Dióxido de enxofre,110
+2019,CEARA,Monóxido de carbono,232
+2013,MINAS GERAIS,Ligas de estanho em forma bruta,8.7
+2014,SAO PAULO,Óxidos de nitrogênio (NOx),5180753.590000001
+2013,BAHIA,Óxidos de nitrogênio (NOx),525418.2000000002
+2020,BAHIA,Óxidos de enxofre (SOx),17400.69000000001
+2015,MATO GROSSO DO SUL,Monóxido de carbono (CO),27340.310000000005
+2013,RIO DE JANEIRO,Partículas (PM10),61.89
+2018,ACRE,Monóxido de carbono (CO),10093.63
+2020,RIO DE JANEIRO,Óxidos de enxofre (SOx),76593.99999999994
+2021,AMAPA,Material Particulado (MP),10.02
+2015,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1523.01
+2017,PIAUI,Óxidos de nitrogênio (NOx),48912.1
+2019,CEARA,Dióxido de enxofre,99.5
+2013,TOCANTINS,Flúor,0.09
+2016,SAO PAULO,Óxidos de nitrogênio (NOx),2092478.85
+2020,DISTRITO FEDERAL,Óxidos de enxofre (SOx),19968.309999999998
+2018,ESPIRITO SANTO,Óxidos de enxofre (SOx),33311.75
+2013,SANTA CATARINA,Dióxido de enxofre,2028.4299999999998
+2013,SAO PAULO,Benzeno,86812
+2022,AMAZONAS,Óxidos de nitrogênio (NOx),3.4299999999999997
+2019,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20388.679999999986
+2013,PARA,Óxidos de nitrogênio (NOx),13758.559999999996
+2013,AMAPA,Monóxido de carbono (CO),788.86
+2015,MATO GROSSO,Monóxido de carbono (CO),173787.9600000001
+2013,MARANHAO,Outros fluoretos,71.73
+2020,GOIAS,Óxidos de enxofre (SOx),9735.630000000001
+2022,MATO GROSSO DO SUL,Monóxido de carbono (CO),116.43
+2016,SANTA CATARINA,Monóxido de carbono,3600
+2014,MINAS GERAIS,Material Particulado (MP),1825871.2500000075
+2016,RIO GRANDE DO SUL,Monóxido de carbono (CO),3216886.029999997
+2020,MATO GROSSO,Material Particulado (MP),212436.98
+2018,DISTRITO FEDERAL,Óxidos de enxofre (SOx),43.49
+2020,ACRE,Óxidos de enxofre (SOx),191.38
+2013,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1325278.03
+2021,PARANA,Monóxido de carbono (CO),366432.3099999999
+2017,PARA,Óxidos de enxofre (SOx),50946.75999999999
+2020,MARANHAO,Óxidos de enxofre (SOx),23726.979999999996
+2021,PIAUI,Monóxido de carbono (CO),9629.26
+2021,ESPIRITO SANTO,Óxidos de enxofre (SOx),19204.029999999995
+2020,ALAGOAS,Monóxido de carbono (CO),40102.03
+2016,MATO GROSSO,Monóxido de carbono (CO),23876.62999999998
+2017,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),18088.12
+2018,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),43685.340000000004
+2018,PARAIBA,Óxidos de nitrogênio (NOx),10200.72
+2013,SAO PAULO,Outros fluoretos,24789.6
+2017,MINAS GERAIS,Material Particulado (MP),8881830.54999999
+2015,RONDONIA,Monóxido de carbono (CO),107474.3
+2016,RONDONIA,Óxidos de enxofre (SOx),7572.780000000001
+2015,PIAUI,Material Particulado (MP),3591.690000000001
+2013,TOCANTINS,Poeiras de zinco,0.71
+2019,CEARA,Monóxido de carbono (CO),1379016.270000001
+2020,SERGIPE,Monóxido de carbono (CO),4519244.669999999
+2014,SERGIPE,Monóxido de carbono (CO),1575.1200000000001
+2016,SAO PAULO,Partículas (PM10),6629.68
+2021,BAHIA,Óxidos de nitrogênio (NOx),129577.77000000005
+2016,MINAS GERAIS,Óxidos de nitrogênio (NOx),343835.8100000002
+2019,RORAIMA,Monóxido de carbono (CO),0.89
+2014,SANTA CATARINA,Óxidos de enxofre (SOx),687732.4600000001
+2019,AMAZONAS,Óxidos de nitrogênio (NOx),85492420616.20998
+2013,RIO GRANDE DO NORTE,Monóxido de carbono (CO),13697.310000000005
+2020,SERGIPE,Óxidos de enxofre (SOx),5083.619999999999
+2017,MINAS GERAIS,Monóxido de carbono (CO),3321954.2299999995
+2018,SANTA CATARINA,Óxidos de nitrogênio (NOx),186725.88999999998
+2013,GOIAS,Monóxido de carbono (CO),85472209.69
+2014,PIAUI,Material Particulado (MP),4786.200000000002
+2018,ACRE,Material Particulado (MP),87.54
+2020,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),376364.16999999987
+2014,RIO GRANDE DO SUL,Dióxido de enxofre,11602.279999999999
+2019,SAO PAULO,Monóxido de carbono (CO),33325593.869999964
+2014,RIO GRANDE DO SUL,Monóxido de carbono (CO),2854097.7599999993
+2016,CEARA,Material Particulado (MP),1490570.8000000003
+2014,PARAIBA,Óxidos de enxofre (SOx),16400.62
+2021,TOCANTINS,Óxidos de nitrogênio (NOx),1264.1699999999998
+2020,CEARA,Material Particulado (MP),470795.6400000006
+2018,PARANA,Óxidos de nitrogênio (NOx),31499.62
+2018,PARAIBA,Monóxido de carbono (CO),25540.459999999992
+2015,MATO GROSSO DO SUL,Material Particulado (MP),207156.13000000003
+2014,PARAIBA,Material Particulado (MP),1105483.73
+2022,CEARA,Material Particulado (MP),24084.43
+2020,AMAZONAS,Material Particulado (MP),45553618292.68001
+2017,DISTRITO FEDERAL,Monóxido de carbono,8.18
+2017,MINAS GERAIS,Monóxido de carbono,7.8
+2015,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2013,SAO PAULO,Tolueno,29415
+2020,RIO DE JANEIRO,Material Particulado (MP),141115.84000000008
+2015,TOCANTINS,Monóxido de carbono (CO),8342.100000000002
+2015,BAHIA,Monóxido de carbono (CO),696356.7400000002
+2014,MINAS GERAIS,Monóxido de carbono (CO),129736064.56000009
+2013,MATO GROSSO DO SUL,Monóxido de carbono,9.469999999999999
+2021,PIAUI,Óxidos de enxofre (SOx),5.209999999999999
+2018,ACRE,Óxidos de nitrogênio (NOx),5070
+2022,RIO DE JANEIRO,Monóxido de carbono (CO),0.55
+2022,PARANA,Monóxido de carbono (CO),7254.579999999999
+2015,CEARA,Monóxido de carbono (CO),113745672.10000002
+2018,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),20534.940000000002
+2016,AMAPA,Óxidos de nitrogênio (NOx),20.5
+2017,MARANHAO,Material Particulado (MP),3949.57
+2016,RIO GRANDE DO NORTE,Material Particulado (MP),32112.70999999999
+2022,MATO GROSSO DO SUL,Material Particulado (MP),60.6
+2018,SERGIPE,Óxidos de enxofre (SOx),6002.46
+2019,PARAIBA,Óxidos de nitrogênio (NOx),9705.980000000001
+2018,MATO GROSSO,Monóxido de carbono (CO),128436.67999999998
+2019,ESPIRITO SANTO,Material Particulado (MP),30467.219999999987
+2017,PERNAMBUCO,Óxidos de enxofre (SOx),258059.93
+2015,MARANHAO,Óxidos de nitrogênio (NOx),137426.78000000003
+2018,ALAGOAS,Óxidos de enxofre (SOx),569.94
+2019,SERGIPE,Óxidos de enxofre (SOx),3656.6800000000003
+2014,ALAGOAS,Óxidos de nitrogênio (NOx),1114.3899999999999
+2021,PIAUI,Óxidos de nitrogênio (NOx),661.51
+2013,TOCANTINS,Desperdícios e resíduos de chumbo,0.12
+2019,BAHIA,Monóxido de carbono,201.37
+2018,BAHIA,Monóxido de carbono (CO),139287.22
+2016,ALAGOAS,Óxidos de enxofre (SOx),179.31
+2016,CEARA,Dióxido de enxofre,99.4
+2019,ALAGOAS,Material Particulado (MP),24591.750000000004
+2022,MINAS GERAIS,Óxidos de nitrogênio (NOx),490.08
+2014,DISTRITO FEDERAL,Material Particulado (MP),233.73999999999998
+2020,BAHIA,Material Particulado (MP),142357.16999999998
+2018,AMAZONAS,Óxidos de enxofre (SOx),1541.46
+2015,PARANA,Óxidos de enxofre (SOx),20419.739999999987
+2013,MINAS GERAIS,Óxidos de enxofre (SOx),211252.47000000012
+2013,SANTA CATARINA,Óxido nitroso,4
+2014,DISTRITO FEDERAL,Monóxido de carbono (CO),949568.05
+2014,PARAIBA,Monóxido de carbono (CO),12572.299999999997
+2016,SANTA CATARINA,Óxidos de enxofre (SOx),107527.13999999998
+2019,BAHIA,Óxidos de enxofre (SOx),39616.69
+2015,PERNAMBUCO,Material Particulado (MP),84102891374.01004
+2013,AMAPA,Óxidos de nitrogênio (NOx),4775.7699999999995
+2021,SERGIPE,Material Particulado (MP),1497.07
+2015,SAO PAULO,Cloro,551.93
+2013,MINAS GERAIS,Partículas (PM10),26102.589999999997
+2020,BAHIA,Monóxido de carbono (CO),2056466.2200000007
+2021,AMAZONAS,Monóxido de carbono (CO),939685947.5099996
+2016,TOCANTINS,Óxidos de enxofre (SOx),1046.2199999999998
+2022,AMAZONAS,Óxidos de enxofre (SOx),0.9400000000000001
+2014,SAO PAULO,Cloro,394.22999999999996
+2020,PARA,Monóxido de carbono (CO),176390.93000000017
+2013,RIO GRANDE DO SUL,Monóxido de carbono,4163.57
+2022,SANTA CATARINA,Monóxido de carbono (CO),8875.660000000002
+2017,ALAGOAS,Monóxido de carbono (CO),5197.509999999999
+2016,RORAIMA,Material Particulado (MP),2
+2018,MATO GROSSO,Material Particulado (MP),122374.26000000001
+2019,MATO GROSSO DO SUL,Monóxido de carbono (CO),265815.16000000003
+2013,SAO PAULO,Cloro,1560.7
+2014,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),58.660000000000004
+2014,SAO PAULO,"Manganês em formas brutas (lingotes, placas, etc.) e semimanufaturadas (barras, perfis, chapas, etc.); pós; desperdícios e resíduos",4
+2021,PARAIBA,Monóxido de carbono,500
+2013,MINAS GERAIS,Material Particulado (MP),18817843399.70991
+2019,RIO GRANDE DO NORTE,Material Particulado (MP),2723276.3600000003
+2021,RIO GRANDE DO NORTE,Material Particulado (MP),3840861.080000001
+2021,RORAIMA,Monóxido de carbono (CO),0.63
+2013,RIO DE JANEIRO,Óxidos de enxofre (SOx),5241723.590000001
+2019,RONDONIA,Material Particulado (MP),27466.80000000001
+2020,ACRE,Óxidos de nitrogênio (NOx),6421.7300000000005
+2014,RORAIMA,Monóxido de carbono (CO),0.1
+2022,MINAS GERAIS,Monóxido de carbono (CO),89623.39
+2022,MINAS GERAIS,Óxidos de enxofre (SOx),6.57
+2016,MINAS GERAIS,Desperdício e resíduos de estanho,0
+2016,SAO PAULO,Dióxido de enxofre,487.15
+2018,ESPIRITO SANTO,Monóxido de carbono (CO),257101.96000000008
+2014,RIO DE JANEIRO,Material Particulado (MP),319624.0700000004
+2019,TOCANTINS,Monóxido de carbono (CO),6111.330000000002
+2017,ESPIRITO SANTO,Material Particulado (MP),67858.93
+2019,SANTA CATARINA,Óxidos de nitrogênio (NOx),822977645.1099995
+2015,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),17006.56
+2018,RONDONIA,Óxidos de enxofre (SOx),791.06
+2018,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2014,SAO PAULO,Monóxido de carbono (CO),1906111.6000000024
+2015,SANTA CATARINA,Óxidos de nitrogênio (NOx),19185.49999999999
+2017,PERNAMBUCO,Monóxido de carbono (CO),87842.55
+2013,AMAPA,Material Particulado (MP),131.76
+2015,ESPIRITO SANTO,Material Particulado (MP),2028375.2399999998
+2016,MATO GROSSO DO SUL,Monóxido de carbono (CO),18962.08
+2015,BAHIA,Óxidos de nitrogênio (NOx),2052866.5100000007
+2019,PERNAMBUCO,Material Particulado (MP),96295.42999999995
+2014,SERGIPE,Óxidos de nitrogênio (NOx),8014.289999999999
+2020,GOIAS,Óxidos de nitrogênio (NOx),17240.280000000006
+2014,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),434985.04999999993
+2015,DISTRITO FEDERAL,Monóxido de carbono,8.18
+2022,SANTA CATARINA,Material Particulado (MP),7022.820000000001
+2017,MATO GROSSO,Óxidos de nitrogênio (NOx),170707.52000000008
+2015,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
+2019,RONDONIA,Óxidos de enxofre (SOx),320.03
+2021,MATO GROSSO,Óxidos de nitrogênio (NOx),106350.63
+2013,BAHIA,Partículas (PM10),1.9
+2015,MARANHAO,Monóxido de carbono (CO),4818.919999999999
+2014,MATO GROSSO,Óxidos de nitrogênio (NOx),293483.2900000001
+2013,PERNAMBUCO,Óxidos de nitrogênio (NOx),143069.81999999998
+2017,PIAUI,Monóxido de carbono (CO),130829.85
+2013,ACRE,Óxidos de nitrogênio (NOx),5000
+2020,PERNAMBUCO,Monóxido de carbono (CO),16529552.21
+2020,MARANHAO,Material Particulado (MP),44297.97000000001
+2014,SAO PAULO,Eter etilico do etilenoglicol,1
+2016,SAO PAULO,Cloro,551.88
+2022,PARAIBA,Monóxido de carbono (CO),1
+2013,GOIAS,Monóxido de carbono,265980
+2017,AMAPA,Material Particulado (MP),22
+2018,PARAIBA,Material Particulado (MP),24116.789999999994
+2014,ESPIRITO SANTO,Monóxido de carbono (CO),329965.1900000001
+2021,BAHIA,Óxidos de enxofre (SOx),44026.189999999995
+2015,CEARA,Óxidos de nitrogênio (NOx),40373.01000000001
+2015,AMAPA,Material Particulado (MP),46.81
+2016,AMAPA,Monóxido de carbono (CO),450.38000000000005
+2017,CEARA,Dióxido de enxofre,99.2
+2013,RIO DE JANEIRO,Cinzas e resíduos contendo chumbo,2.18
+2019,RIO DE JANEIRO,Material Particulado (MP),2179982.4399999995
+2016,GOIAS,Óxidos de nitrogênio (NOx),225583.6
+2021,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),22719.599999999984
+2013,PARANA,Óxidos de nitrogênio (NOx),1296948.2000000004
+2018,PARANA,Óxidos de enxofre (SOx),16458.55
+2013,SAO PAULO,Partículas (PM10),1396187.3799999992
+2017,DISTRITO FEDERAL,Nitrogênio,8426.41
+2013,MARANHAO,Partículas (PM10),641.81
+2019,PIAUI,Monóxido de carbono (CO),817795.2100000001
+2021,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),736.1
+2013,BAHIA,Óxidos de enxofre (SOx),570525.28
+2016,RIO DE JANEIRO,Material Particulado (MP),50761378.56000002
+2016,DISTRITO FEDERAL,Nitrogênio,8426.41
+2013,BAHIA,Monóxido de carbono (CO),2396084.77999999
+2016,MATO GROSSO DO SUL,Monóxido de carbono,7.83
+2018,PARANA,Monóxido de carbono (CO),119333.84999999998
+2013,PERNAMBUCO,Material Particulado (MP),1272802.68
+2014,PARANA,Óxidos de nitrogênio (NOx),874421.9500000003
+2016,AMAZONAS,Monóxido de carbono,105.23
+2013,RIO DE JANEIRO,Compostos orgânicos voláteis não metânicos(COVNM),0
+2013,PARANA,Compostos orgânicos voláteis não metânicos(COVNM),303.3
+2021,PARAIBA,Óxidos de nitrogênio (NOx),27886.439999999995
+2015,PARANA,Óxidos de nitrogênio (NOx),358829.3100000003
+2014,PARA,Material Particulado (MP),280749.8999999999
+2013,CEARA,Material Particulado (MP),30160.53999999999
+2017,PERNAMBUCO,Óxidos de nitrogênio (NOx),1307997.7000000002
+2022,CEARA,Óxidos de nitrogênio (NOx),4910.94
+2018,RORAIMA,Óxidos de enxofre (SOx),7.49
+2021,SAO PAULO,Material Particulado (MP),2063923.3600000099
+2020,PARA,Material Particulado (MP),12998.880000000008
+2021,RIO GRANDE DO SUL,Monóxido de carbono (CO),2628524.5099999984
+2013,RIO GRANDE DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",464.17
+2017,MINAS GERAIS,Dióxido de enxofre,1.71
+2019,MINAS GERAIS,Partículas (PM10),11.790000000000001
+2021,GOIAS,Monóxido de carbono (CO),9414772.39
+2016,AMAZONAS,Material Particulado (MP),44625202.11999999
+2022,MATO GROSSO,Óxidos de nitrogênio (NOx),79.75
+2013,MINAS GERAIS,Outros óxidos de chumbo,0.62
+2013,SAO PAULO,Cloroformio (triclorometano),2391
+2015,SAO PAULO,Outros óxidos de chumbo,0.03
+2015,PARAIBA,Óxidos de nitrogênio (NOx),1653940.26
+2021,PERNAMBUCO,Monóxido de carbono (CO),108013.19999999994
+2014,AMAPA,Material Particulado (MP),64.94
+2014,ESPIRITO SANTO,Material Particulado (MP),166815.17999999996
+2014,PERNAMBUCO,Óxidos de enxofre (SOx),302076.94000000006
+2022,PARA,Material Particulado (MP),3.69
+2020,AMAZONAS,Óxidos de nitrogênio (NOx),103703374115.77998
+2017,RONDONIA,Monóxido de carbono (CO),319688.70000000007
+2022,RONDONIA,Monóxido de carbono (CO),30
+2018,CEARA,Dióxido de enxofre,99.3
+2019,GOIAS,Material Particulado (MP),62697.24000000005
+2015,BAHIA,Material Particulado (MP),281968.6999999998
+2014,PERNAMBUCO,Material Particulado (MP),147502.75999999995
+2015,AMAZONAS,Óxidos de enxofre (SOx),97306629.57
+2013,CEARA,Monóxido de carbono,3595.2999999999997
+2014,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),4905.82
+2015,SANTA CATARINA,Material Particulado (MP),209791.1
+2020,PARAIBA,Óxidos de enxofre (SOx),3645.9199999999996
+2017,PARANA,Material Particulado (MP),2673172.3799999976
+2014,MATO GROSSO,Óxidos de enxofre (SOx),40333.360000000015
+2015,PIAUI,Óxidos de nitrogênio (NOx),120.43
+2014,SAO PAULO,Óxido nitroso,99390.2
+2020,PARAIBA,Óxidos de nitrogênio (NOx),13264.29
+2014,PERNAMBUCO,Monóxido de carbono (CO),68594.94
+2014,AMAZONAS,Monóxido de carbono (CO),20195283.070000004
+2013,RIO DE JANEIRO,clorodifluorometano (HCFC-22),81.65
+2013,MINAS GERAIS,Monóxido de carbono,6873.74
+2015,ESPIRITO SANTO,Óxidos de enxofre (SOx),40297.03
+2017,MATO GROSSO DO SUL,Monóxido de carbono,7.84
+2013,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),1218.6
+2015,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),1.43
+2015,MINAS GERAIS,Partículas (PM10),0.01
+2015,PARAIBA,Material Particulado (MP),2438449.739999999
+2019,PARANA,Óxidos de nitrogênio (NOx),37396.829999999965
+2019,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),28330.39000000001
+2015,RIO GRANDE DO NORTE,Material Particulado (MP),33403.67999999998
+2018,ACRE,Óxidos de enxofre (SOx),163
+2015,SAO PAULO,Dióxido de enxofre,489.73
+2021,AMAPA,Óxidos de nitrogênio (NOx),0.03
+2018,ESPIRITO SANTO,Material Particulado (MP),35107.61999999999
+2018,SANTA CATARINA,Monóxido de carbono (CO),330801.3100000001
+2021,DISTRITO FEDERAL,Material Particulado (MP),478.2799999999999
+2020,BAHIA,Óxidos de nitrogênio (NOx),39647.85999999995
+2017,GOIAS,Monóxido de carbono (CO),102711642.91999997
+2013,PERNAMBUCO,Monóxido de carbono (CO),60779.620000000024
+2014,CEARA,Óxidos de enxofre (SOx),1553.1399999999999
+2018,SERGIPE,Material Particulado (MP),933.3599999999998
+2018,MARANHAO,Óxidos de enxofre (SOx),12959.77
+2014,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),3779.45
+2021,PARA,Monóxido de carbono (CO),187129.0900000001
+2018,PARA,Óxidos de enxofre (SOx),23417.229999999996
+2017,ESPIRITO SANTO,Monóxido de carbono (CO),270176.7700000001
+2017,RIO DE JANEIRO,Óxidos de enxofre (SOx),45356.429999999986
+2021,DISTRITO FEDERAL,Monóxido de carbono (CO),13487.840000000002
+2014,RONDONIA,Monóxido de carbono (CO),3546535.559999999
+2014,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
+2018,RIO DE JANEIRO,Óxidos de enxofre (SOx),60846.809999999976
+2017,TOCANTINS,Óxidos de nitrogênio (NOx),14312.179999999997
+2019,ALAGOAS,Monóxido de carbono (CO),10336.25
+2016,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
+2013,PERNAMBUCO,Partículas (PM10),1.51
+2013,RIO GRANDE DO SUL,Óxido nitroso,4639
+2017,SANTA CATARINA,Material Particulado (MP),558341.590000002
+2015,ESPIRITO SANTO,Monóxido de carbono (CO),241449.73000000004
+2013,SERGIPE,Material Particulado (MP),1562.23
+2017,ACRE,Óxidos de nitrogênio (NOx),5070
+2016,TOCANTINS,Óxidos de nitrogênio (NOx),2788.7799999999997
+2018,MINAS GERAIS,Dióxido de enxofre,1
+2019,ESPIRITO SANTO,Monóxido de carbono (CO),2217937.9099999983
+2020,RONDONIA,Óxidos de nitrogênio (NOx),2900.3999999999996
+2013,MATO GROSSO DO SUL,Dióxido de enxofre,1.96
+2017,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.01
+2013,SAO PAULO,Naftaleno,2391
+2020,ACRE,Material Particulado (MP),295.3299999999999
+2015,ALAGOAS,Monóxido de carbono (CO),13467.38
+2014,SAO PAULO,Outros fluoretos,21600
+2022,RONDONIA,Material Particulado (MP),2.25
+2022,SANTA CATARINA,Óxidos de nitrogênio (NOx),2181.41
+2016,PARAIBA,Óxidos de nitrogênio (NOx),21972.810000000005
+2021,PERNAMBUCO,Óxidos de enxofre (SOx),460775.0600000001
+2020,MINAS GERAIS,Óxidos de nitrogênio (NOx),81124.74000000003
+2015,RONDONIA,Óxidos de enxofre (SOx),1825.4099999999999
+2013,PARAIBA,Óxidos de enxofre (SOx),14303.310000000001
+2014,AMAZONAS,Monóxido de carbono,1693.6
+2013,ACRE,Óxidos de enxofre (SOx),88
+2018,ALAGOAS,Material Particulado (MP),118043.39
+2015,MINAS GERAIS,Material Particulado (MP),2605324.3899999857
+2017,PARANA,Monóxido de carbono (CO),1711918.3700000015
+2018,CEARA,Monóxido de carbono (CO),1937737.8700000017
+2013,RIO DE JANEIRO,Monóxido de carbono (CO),1273588.94
+2017,RIO GRANDE DO NORTE,Monóxido de carbono (CO),42786.22000000001
+2013,AMAZONAS,Monóxido de carbono (CO),39418887.25
+2019,SAO PAULO,Óxidos de nitrogênio (NOx),2751433.3100000015
+2019,ALAGOAS,Óxidos de enxofre (SOx),12.879999999999999
+2018,RORAIMA,Óxidos de nitrogênio (NOx),23.63
+2014,AMAPA,Óxidos de enxofre (SOx),148.76
+2015,MINAS GERAIS,Óxidos de enxofre (SOx),179771.98999999996
+2013,RIO DE JANEIRO,Dióxido de enxofre,604.8299999999999
+2018,PIAUI,Óxidos de nitrogênio (NOx),50586.42
+2014,CEARA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",5.57
+2017,MARANHAO,Óxidos de enxofre (SOx),14261.58
+2013,RONDONIA,Material Particulado (MP),45631.16000000002
+2013,SAO PAULO,"Manganês em formas brutas (lingotes, placas, etc.) e semimanufaturadas (barras, perfis, chapas, etc.); pós; desperdícios e resíduos",4
+2014,GOIAS,Dióxido de enxofre,1718.4
+2013,RIO DE JANEIRO,Cloro,1.79
+2019,CEARA,Material Particulado (MP),219808.54000000007
+2014,RONDONIA,Material Particulado (MP),1690746.3700000003
+2014,PIAUI,Monóxido de carbono (CO),15.33
+2021,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37297.94
+2014,SANTA CATARINA,Monóxido de carbono,3208.1
+2019,SAO PAULO,Material Particulado (MP),3209309.1799999936
+2013,MATO GROSSO,Óxidos de enxofre (SOx),45699.93000000001
+2020,ESPIRITO SANTO,Óxidos de enxofre (SOx),20101.94
+2016,RONDONIA,Óxidos de nitrogênio (NOx),1213.66
+2021,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1834.5700000000002
+2013,RIO DE JANEIRO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",12609.160000000002
+2017,SANTA CATARINA,Monóxido de carbono (CO),371131.1600000002
+2013,TOCANTINS,Material Particulado (MP),18799.089999999997
+2014,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1307.27
+2017,SERGIPE,Monóxido de carbono (CO),15465.289999999992
+2013,PERNAMBUCO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",331447.72
+2018,SANTA CATARINA,Material Particulado (MP),339375.22000000015
+2016,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),55400.29
+2022,BAHIA,Óxidos de enxofre (SOx),0.49
+2017,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),158467.89999999997
+2020,RIO DE JANEIRO,Gás natural gasoso,0
+2014,BAHIA,Óxidos de nitrogênio (NOx),2529202.209999998
+2017,MINAS GERAIS,Óxidos de enxofre (SOx),29581.339999999993
+2014,DISTRITO FEDERAL,Nitrogênio,8426.41
+2017,MARANHAO,Óxidos de nitrogênio (NOx),7505.52
+2015,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
+2014,CEARA,Dióxido de enxofre,99.33
+2015,PARANA,Monóxido de carbono (CO),76180698.59000003
+2020,ACRE,Monóxido de carbono (CO),100087.77
+2013,PARANA,Óxidos de enxofre (SOx),154795.6500000001
+2017,RIO DE JANEIRO,Monóxido de carbono (CO),2458472.1699999967
+2018,RIO GRANDE DO NORTE,Monóxido de carbono (CO),8116143.43
+2013,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1246.35
+2018,CEARA,Óxidos de nitrogênio (NOx),218680.30000000002
+2013,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),27247.18
+2015,PIAUI,Monóxido de carbono (CO),336748.31
+2015,MATO GROSSO DO SUL,Nitrogênio,79.78
+2015,AMAZONAS,Dióxido de enxofre,112.33
+2015,SANTA CATARINA,Monóxido de carbono (CO),416669.87000000005
+2021,MINAS GERAIS,Material Particulado (MP),659620.2600000042
+2020,CEARA,Óxidos de nitrogênio (NOx),118796.15999999995
+2021,RONDONIA,Monóxido de carbono (CO),9833.14
+2016,ESPIRITO SANTO,Óxidos de enxofre (SOx),32940.32
+2018,TOCANTINS,Óxidos de nitrogênio (NOx),5222.859999999999
+2016,AMAZONAS,Óxidos de enxofre (SOx),115427056.48
+2015,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),1237.9499999999998
+2015,ALAGOAS,Óxidos de enxofre (SOx),98.62
+2018,PIAUI,Material Particulado (MP),40352.87999999999
+2019,PIAUI,Óxidos de enxofre (SOx),17.820000000000004
+2019,PARA,Óxidos de enxofre (SOx),24117.65999999999
+2013,RIO GRANDE DO SUL,Nitrogênio,79
+2017,PARAIBA,Monóxido de carbono (CO),35556.41
+2014,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",906
+2019,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.01
+2014,MARANHAO,Material Particulado (MP),1007813.8300000002
+2015,GOIAS,Óxidos de enxofre (SOx),42504.81
+2013,SAO PAULO,Material Particulado (MP),28406453.030000165
+2020,PARA,Óxidos de enxofre (SOx),19243.48999999999
+2017,RIO GRANDE DO SUL,Material Particulado (MP),54775.300000000156
+2016,ALAGOAS,Material Particulado (MP),61456.64999999998
+2014,SAO PAULO,Monóxido de carbono,396.25
+2020,RIO DE JANEIRO,Monóxido de carbono (CO),253703.6200000002
+2016,PARANA,Óxidos de nitrogênio (NOx),460719.8500000003
+2020,MARANHAO,Monóxido de carbono (CO),2553.8400000000015
+2014,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",0
+2013,ALAGOAS,Monóxido de carbono,3316
+2016,ALAGOAS,Óxidos de nitrogênio (NOx),67682.17000000001
+2014,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2013,PARANA,Monóxido de carbono (CO),6945066.359999993
+2019,RIO GRANDE DO SUL,Monóxido de carbono (CO),79897497.23000012
+2016,ESPIRITO SANTO,Monóxido de carbono (CO),261480.90000000002
+2015,SERGIPE,Monóxido de carbono (CO),20903670.640000004
+2014,ACRE,Material Particulado (MP),61.08
+2021,ALAGOAS,Óxidos de nitrogênio (NOx),4955.22
+2022,RIO DE JANEIRO,Material Particulado (MP),56.75
+2022,MATO GROSSO,Monóxido de carbono (CO),164.71
+2013,MINAS GERAIS,Amoniaco em soluçao aquosa,137.94
+2016,SERGIPE,Material Particulado (MP),755.44
+2018,PIAUI,Óxidos de enxofre (SOx),15.61
+2021,SAO PAULO,Monóxido de carbono (CO),21807621.439999986
+2017,PERNAMBUCO,Material Particulado (MP),137327.96
+2019,AMAZONAS,Monóxido de carbono (CO),79464133319.15996
+2016,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
+2016,PARANA,Óxidos de enxofre (SOx),17672.500000000004
+2016,ACRE,Óxidos de enxofre (SOx),163.08
+2020,PARAIBA,Monóxido de carbono (CO),53563.92
+2015,RIO GRANDE DO NORTE,Monóxido de carbono (CO),65082.45
+2013,ALAGOAS,Monóxido de carbono (CO),7762.810000000001
+2014,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
+2021,PARA,Óxidos de enxofre (SOx),34411.19999999999
+2013,ESPIRITO SANTO,Óxidos de enxofre (SOx),38612.31
+2020,ALAGOAS,Material Particulado (MP),9981.55
+2020,PERNAMBUCO,Óxidos de nitrogênio (NOx),1027645.4700000002
+2020,RONDONIA,Material Particulado (MP),20273.839999999993
+2017,SERGIPE,Material Particulado (MP),183735.24000000002
+2017,ALAGOAS,Óxidos de nitrogênio (NOx),107675.87
+2015,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),167868383.9
+2014,CEARA,Óxidos de nitrogênio (NOx),9457.05
+2016,RONDONIA,Monóxido de carbono (CO),125762.04000000001
+2014,TOCANTINS,Óxidos de enxofre (SOx),132.55999999999997
+2015,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1
+2017,SANTA CATARINA,Monóxido de carbono,4100
+2020,SERGIPE,Óxidos de nitrogênio (NOx),4611.429999999999
+2014,SAO PAULO,Óxidos de enxofre (SOx),234200.63999999998
+2016,CEARA,Óxidos de nitrogênio (NOx),924384.7599999999
+2013,AMAZONAS,Material Particulado (MP),4944758.0600000005
+2016,MINAS GERAIS,Óxidos de enxofre (SOx),125963.63
+2015,PERNAMBUCO,Monóxido de carbono (CO),102892.67000000004
+2017,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1897.1499999999999
+2013,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),110805.51999999993
+2020,TOCANTINS,Óxidos de enxofre (SOx),96.01000000000002
+2015,SAO PAULO,Eter etilico do etilenoglicol,1
+2017,SAO PAULO,Óxidos de nitrogênio (NOx),1678888.4099999995
+2022,SAO PAULO,Material Particulado (MP),9484.420000000002
+2016,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),490008142.65
+2022,SAO PAULO,Óxidos de nitrogênio (NOx),1395.98
+2013,RIO DE JANEIRO,Fluoreto de hidrogênio (ácido fluorídrico),0.37
+2019,MINAS GERAIS,Material Particulado (MP),1015962.8100000037
+2020,ESPIRITO SANTO,Material Particulado (MP),29619.46999999998
+2017,AMAZONAS,Monóxido de carbono (CO),13302.070000000003
+2019,GOIAS,Monóxido de carbono (CO),8308353.99
+2017,RIO GRANDE DO NORTE,Material Particulado (MP),37738.04999999997
+2017,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),19894.78
+2018,MARANHAO,Monóxido de carbono (CO),3865.18
+2014,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
+2014,PARANA,Óxidos de enxofre (SOx),24807.979999999992
+2013,RIO GRANDE DO SUL,Material Particulado (MP),521913.49000000005
+2017,RONDONIA,Óxidos de nitrogênio (NOx),2809.58
+2016,PIAUI,Óxidos de nitrogênio (NOx),168.19
+2013,SAO PAULO,"Xilenos (O-xileno, m-xileno ou p-xileno)",4004
+2016,SAO PAULO,Óxidos de enxofre (SOx),90861.39999999986
+2014,MARANHAO,Óxidos de enxofre (SOx),51202538.470000006
+2022,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),3.25
+2017,PARA,Monóxido de carbono (CO),120173.46999999997
+2016,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),38764.35999999999
+2014,MATO GROSSO DO SUL,Monóxido de carbono (CO),845943.0000000002
+2019,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),12892.77
+2016,PIAUI,Monóxido de carbono (CO),618769.86
+2013,MATO GROSSO,Dióxido de enxofre,0.51
+2020,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),487.47999999999996
+2020,RORAIMA,Monóxido de carbono (CO),531.04
+2013,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",3342553.7699999996
+2018,GOIAS,Monóxido de carbono (CO),93944044.96
+2019,AMAPA,Monóxido de carbono (CO),1695.55
+2013,DISTRITO FEDERAL,Monóxido de carbono,8.18
+2020,RONDONIA,Monóxido de carbono (CO),21194.36
+2015,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),1322.68
+2014,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
+2015,PARA,Material Particulado (MP),42444.469999999994
+2016,DISTRITO FEDERAL,Monóxido de carbono (CO),1451.8000000000002
+2014,RIO DE JANEIRO,Monóxido de carbono (CO),1026695.8900000002
+2020,PARANA,Monóxido de carbono,54
+2015,RIO GRANDE DO SUL,Dióxido de enxofre,0.6799999999999999
+2019,MINAS GERAIS,Dióxido de enxofre,1.6400000000000001
+2016,SANTA CATARINA,Óxidos de nitrogênio (NOx),30656.339999999993
+2016,DISTRITO FEDERAL,Material Particulado (MP),2492.93
+2016,MINAS GERAIS,Material Particulado (MP),11353508.19999999
+2017,GOIAS,Óxidos de nitrogênio (NOx),822712.0599999997
+2020,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),2391.3100000000004
+2014,PERNAMBUCO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",33948.94
+2019,PARA,Material Particulado (MP),17962.65
+2021,CEARA,Óxidos de nitrogênio (NOx),154193.3500000001
+2019,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),1165903481.2199998
+2021,MARANHAO,Óxidos de nitrogênio (NOx),9703.190000000002
+2018,ALAGOAS,Óxidos de nitrogênio (NOx),44416.04999999999
+2018,MATO GROSSO DO SUL,Monóxido de carbono,7.85
+2013,SAO PAULO,Nitrogênio,85392.01
+2015,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),48270.68000000001
+2016,MATO GROSSO DO SUL,Óxidos de nitrogênio (NOx),14154.249999999998
+2018,PARA,Material Particulado (MP),19149.66
+2021,SANTA CATARINA,Óxidos de nitrogênio (NOx),125089.58
+2017,MATO GROSSO DO SUL,Monóxido de carbono (CO),24884.01
+2021,ALAGOAS,Óxidos de enxofre (SOx),686.05
+2014,RIO DE JANEIRO,Dióxido de enxofre,0.15
+2020,AMAZONAS,Monóxido de carbono (CO),173362236255.4901
+2019,CEARA,Óxidos de enxofre (SOx),181155.1800000001
+2014,SANTA CATARINA,Dióxido de enxofre,0.19
+2014,PERNAMBUCO,Dióxido de enxofre,1.43
+2013,SAO PAULO,Clorobenzeno,2391
+2013,SAO PAULO,Monóxido de carbono (CO),15339839.189999996
+2016,RIO GRANDE DO SUL,Material Particulado (MP),2893846.7999999914
+2019,RIO DE JANEIRO,Monóxido de carbono (CO),268832123.20000017
+2020,MATO GROSSO DO SUL,Material Particulado (MP),22337.279999999988
+2018,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),3510.4300000000003
+2013,PARAIBA,Óxidos de nitrogênio (NOx),30820.760000000002
+2022,MATO GROSSO,Material Particulado (MP),1827.1999999999998
+2018,SAO PAULO,Material Particulado (MP),4724268.049999982
+2013,SAO PAULO,Óxidos de nitrogênio (NOx),22297857.29
+2019,MATO GROSSO,Óxidos de enxofre (SOx),392153.27
+2021,MATO GROSSO DO SUL,Monóxido de carbono (CO),296465.63999999996
+2014,ACRE,Óxidos de nitrogênio (NOx),5043
+2017,ALAGOAS,Óxidos de enxofre (SOx),128.92
+2014,SAO PAULO,Material Particulado (MP),5008448.029999988
+2015,PARA,Óxidos de enxofre (SOx),37340.890000000014
+2018,MARANHAO,Material Particulado (MP),4998.590000000003
+2015,SERGIPE,Material Particulado (MP),6755.280000000001
+2018,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.04
+2016,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",320.4
+2014,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),180367.09000000005
+2022,GOIAS,Óxidos de enxofre (SOx),144.87
+2015,MARANHAO,Material Particulado (MP),21631.819999999996
+2013,PARANA,Material Particulado (MP),26442129.730000064
+2016,PARA,Óxidos de nitrogênio (NOx),2833.519999999999
+2021,AMAPA,Monóxido de carbono (CO),1797.55
+2020,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),2566.0900000000006
+2018,RIO GRANDE DO NORTE,Material Particulado (MP),3172987.140000001
+2022,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),0
+2020,RORAIMA,Óxidos de nitrogênio (NOx),23.7
+2017,ACRE,Monóxido de carbono (CO),10390.51
+2019,SAO PAULO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",990.92
+2017,SAO PAULO,Monóxido de carbono (CO),1365998.4500000037
+2013,SANTA CATARINA,Óxidos de nitrogênio (NOx),3079251.569999998
+2013,GOIAS,Material Particulado (MP),1329728.6700000006
 2017,CEARA,Óxidos de enxofre (SOx),587328.2100000003
 2015,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
-2014,MATO GROSSO,Óxidos de nitrogênio (NOx),293483.2900000001
-2015,RIO GRANDE DO NORTE,Monóxido de carbono (CO),65082.45
-2013,PIAUI,Óxidos de nitrogênio (NOx),1.4
-2013,ALAGOAS,Monóxido de carbono,3316
-2022,SANTA CATARINA,Óxidos de enxofre (SOx),0.6
-2013,SANTA CATARINA,Óxidos de enxofre (SOx),712482.51
-2018,BAHIA,Óxidos de nitrogênio (NOx),60250.18999999998
-2019,MATO GROSSO,Óxidos de nitrogênio (NOx),992741.8300000002
-2020,ALAGOAS,Material Particulado (MP),9981.55
-2017,ALAGOAS,Monóxido de carbono (CO),5197.509999999999
-2015,ESPIRITO SANTO,Monóxido de carbono (CO),241449.73000000004
-2019,ACRE,Material Particulado (MP),119.06
-2021,ACRE,Monóxido de carbono (CO),12105.04
-2017,PARANA,Monóxido de carbono,54.25
-2022,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),0
-2015,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
-2015,BAHIA,Óxidos de enxofre (SOx),617765.4999999998
-2018,ACRE,Monóxido de carbono (CO),10093.63
-2013,RIO GRANDE DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",464.17
-2022,MINAS GERAIS,Óxidos de enxofre (SOx),6.53
-2015,SERGIPE,Óxidos de nitrogênio (NOx),9831.46
-2014,GOIAS,Óxidos de enxofre (SOx),10287.43
-2021,ESPIRITO SANTO,Monóxido de carbono (CO),2047346.6599999997
-2015,PERNAMBUCO,Óxidos de enxofre (SOx),167153107713.04007
-2015,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1523.01
-2017,MINAS GERAIS,Compostos orgânicos voláteis não metânicos(COVNM),0.01
-2017,SERGIPE,Monóxido de carbono (CO),15465.289999999992
-2016,SAO PAULO,Eter etilico do etilenoglicol,1
-2022,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),3.25
-2020,PARAIBA,Monóxido de carbono (CO),53563.92
-2016,MINAS GERAIS,Material Particulado (MP),11353508.19999999
-2019,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37832.65
-2019,TOCANTINS,Óxidos de nitrogênio (NOx),3690.8800000000006
-2020,MARANHAO,Óxidos de nitrogênio (NOx),17279.89
-2018,GOIAS,Óxidos de nitrogênio (NOx),387224.0500000002
-2017,RIO DE JANEIRO,Óxidos de enxofre (SOx),45356.429999999986
-2013,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),1218.6
-2022,MATO GROSSO,Óxidos de enxofre (SOx),0.24
-2013,PARANA,Compostos orgânicos voláteis não metânicos(COVNM),303.3
-2013,ALAGOAS,Material Particulado (MP),105704.51
-2016,RIO GRANDE DO SUL,Monóxido de carbono (CO),3216886.029999997
-2015,AMAZONAS,Óxidos de nitrogênio (NOx),50193885.45
-2019,AMAZONAS,Monóxido de carbono (CO),79464133319.15996
-2021,MATO GROSSO DO SUL,Monóxido de carbono (CO),296465.63999999996
-2013,ESPIRITO SANTO,Óxidos de enxofre (SOx),38612.31
-2015,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),167868383.9
-2021,SERGIPE,Óxidos de nitrogênio (NOx),8593.750000000002
-2013,SAO PAULO,Nitrogênio,85392.01
-2013,PARANA,Partículas (PM10),428.99999999999994
-2021,PARANA,Monóxido de carbono (CO),366432.3099999999
-2018,PARA,Óxidos de nitrogênio (NOx),18810.37
-2021,AMAZONAS,Óxidos de enxofre (SOx),206805.23
-2017,MATO GROSSO,Óxidos de enxofre (SOx),10836.130000000003
-2014,PERNAMBUCO,Dióxido de enxofre,1.43
-2015,SAO PAULO,Monóxido de carbono,0.11
-2013,SAO PAULO,Ácido sulfúrico,1496.25
-2020,PARAIBA,Material Particulado (MP),33486.57
-2017,BAHIA,Óxidos de nitrogênio (NOx),139265.80000000008
-2018,MATO GROSSO,Óxidos de enxofre (SOx),495.37000000000006
-2014,PIAUI,Material Particulado (MP),4786.200000000002
-2015,ACRE,Monóxido de carbono (CO),10368.73
-2013,ALAGOAS,Óxidos de nitrogênio (NOx),11302.48
-2013,SERGIPE,Óxidos de enxofre (SOx),10884.750000000002
-2020,PIAUI,Óxidos de nitrogênio (NOx),396.57000000000005
-2017,CEARA,Material Particulado (MP),1328455.800000001
-2017,CEARA,Monóxido de carbono (CO),11767457.889999991
-2014,PARA,Óxidos de nitrogênio (NOx),11728.779999999999
-2013,RIO DE JANEIRO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",12609.160000000002
-2014,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",906
-2013,SAO PAULO,"Xilenos (O-xileno, m-xileno ou p-xileno)",4004
-2018,RORAIMA,Monóxido de carbono (CO),0.86
-2020,ACRE,Óxidos de enxofre (SOx),191.38
-2021,SERGIPE,Óxidos de enxofre (SOx),4882.669999999999
-2016,SAO PAULO,"Álcool etílico não desnaturado, com teor alcoólico em volume menor que 80%",1
-2021,PERNAMBUCO,Óxidos de nitrogênio (NOx),736303.8699999996
-2018,PARA,Material Particulado (MP),19149.66
-2015,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
-2015,DISTRITO FEDERAL,Nitrogênio,8426.41
-2014,MARANHAO,Óxidos de enxofre (SOx),51202538.470000006
-2016,MATO GROSSO DO SUL,Dióxido de enxofre,0
-2014,CEARA,Dióxido de enxofre,99.33
-2018,AMAPA,Óxidos de enxofre (SOx),0
-2013,BAHIA,Material Particulado (MP),57664.09
-2015,PERNAMBUCO,Monóxido de carbono (CO),102892.67000000004
-2020,SERGIPE,Monóxido de carbono (CO),4519244.669999999
-2020,RORAIMA,Óxidos de enxofre (SOx),7.54
-2016,PARANA,Material Particulado (MP),2160194.6200000024
-2016,RONDONIA,Óxidos de nitrogênio (NOx),1213.66
-2019,TOCANTINS,Monóxido de carbono (CO),6111.330000000002
-2013,DISTRITO FEDERAL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",439.99
-2018,AMAPA,Monóxido de carbono (CO),1190.87
-2014,PARANA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",150
-2015,AMAZONAS,Partículas (PM10),154.23
-2015,PARAIBA,Material Particulado (MP),2438449.739999999
-2015,CEARA,Material Particulado (MP),56253.04000000003
-2019,AMAPA,Óxidos de nitrogênio (NOx),1.11
-2017,DISTRITO FEDERAL,Monóxido de carbono,8.18
-2016,RORAIMA,Material Particulado (MP),2
-2020,MATO GROSSO,Material Particulado (MP),212436.98
-2014,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",0
-2013,AMAZONAS,Partículas (PM10),0.95
-2015,MINAS GERAIS,Desperdícios e resíduos de chumbo,0.01
-2022,AMAZONAS,Monóxido de carbono (CO),0.81
-2014,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
-2015,RIO DE JANEIRO,Material Particulado (MP),11979945.31999999
-2019,PARA,Material Particulado (MP),17962.65
-2020,ESPIRITO SANTO,Material Particulado (MP),29619.46999999998
-2021,AMAZONAS,Óxidos de nitrogênio (NOx),2540368.669999999
-2016,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),490008142.65000004
-2015,CEARA,Óxidos de enxofre (SOx),66890774.36999999
-2021,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37297.94
-2013,TOCANTINS,Monóxido de carbono,410.51
-2013,SAO PAULO,Cinzas e resíduos contendo chumbo,0.2
-2021,MATO GROSSO,Material Particulado (MP),171504.86999999997
-2022,SANTA CATARINA,Material Particulado (MP),7022.820000000001
-2020,ESPIRITO SANTO,Óxidos de nitrogênio (NOx),37463.41999999999
-2022,MINAS GERAIS,Monóxido de carbono (CO),89623.11
-2016,ALAGOAS,Monóxido de carbono (CO),7947.18
-2013,SAO PAULO,Partículas (PM10),1396187.3799999992
-2014,PIAUI,Óxidos de enxofre (SOx),0.35
-2019,RIO GRANDE DO SUL,Material Particulado (MP),47725.16999999986
-2019,AMAZONAS,Óxidos de enxofre (SOx),2214827636.4000015
-2013,PIAUI,Material Particulado (MP),2650.4700000000003
-2014,AMAZONAS,Monóxido de carbono (CO),20195283.070000004
-2013,RIO DE JANEIRO,Partículas (PM10),61.89
-2017,SAO PAULO,Óxidos de enxofre (SOx),62444.66000000002
-2016,PARAIBA,Óxidos de enxofre (SOx),10765.57
-2015,PARANA,Material Particulado (MP),424948.3500000008
-2016,MATO GROSSO DO SUL,Material Particulado (MP),12740.210000000006
-2013,RIO GRANDE DO SUL,Monóxido de carbono,4163.57
-2014,RIO GRANDE DO SUL,Óxido nitroso,552
-2019,PARAIBA,Material Particulado (MP),15006104.129999999
-2020,PARAIBA,Óxidos de nitrogênio (NOx),13264.29
-2021,MINAS GERAIS,Óxidos de enxofre (SOx),37727.20000000001
-2014,CEARA,Monóxido de carbono,318.48
-2015,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),2664.0099999999998
-2013,MINAS GERAIS,Monóxido de carbono,6873.74
-2013,MATO GROSSO DO SUL,Monóxido de carbono,9.469999999999999
-2021,SANTA CATARINA,Material Particulado (MP),930904.3300000014
-2021,SAO PAULO,Óxidos de nitrogênio (NOx),1302092.0899999996
-2019,RIO DE JANEIRO,Óxidos de enxofre (SOx),1159125.6200000008
-2015,MATO GROSSO,Monóxido de carbono (CO),173787.9600000001
-2016,ALAGOAS,Material Particulado (MP),61456.64999999998
-2013,SAO PAULO,Óxidos de enxofre (SOx),243647.9000000002
-2014,GOIAS,Óxidos de nitrogênio (NOx),804606.0799999998
-2014,AMAZONAS,Cloreto de hidrogênio (ácido clorídrico),0
-2022,AMAZONAS,Material Particulado (MP),51.379999999999995
-2022,ESPIRITO SANTO,Óxidos de enxofre (SOx),0
-2016,PERNAMBUCO,Óxidos de enxofre (SOx),226502.50000000003
+2014,DISTRITO FEDERAL,Óxidos de enxofre (SOx),191.39
+2022,PARANA,Material Particulado (MP),3272.05
+2019,MARANHAO,Monóxido de carbono (CO),5526.91
+2013,MINAS GERAIS,Óxidos de nitrogênio (NOx),207256.08000000005
+2016,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),2059.9700000000003
+2017,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2021,RORAIMA,Óxidos de nitrogênio (NOx),20.57
+2019,DISTRITO FEDERAL,Material Particulado (MP),63511076.510000005
+2020,DISTRITO FEDERAL,Material Particulado (MP),677.3799999999999
+2016,RIO DE JANEIRO,Monóxido de carbono (CO),53486148.18999998
+2015,PARA,Monóxido de carbono (CO),153225.03
+2019,ACRE,Óxidos de enxofre (SOx),164.77
+2013,RIO GRANDE DO NORTE,Material Particulado (MP),8026.030000000003
+2014,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
+2015,RIO GRANDE DO SUL,Monóxido de carbono (CO),3110434.5599999973
+2018,GOIAS,Óxidos de enxofre (SOx),12233.610000000004
+2013,MATO GROSSO DO SUL,Material Particulado (MP),547790.64
+2019,DISTRITO FEDERAL,Monóxido de carbono (CO),330506128.2
+2020,DISTRITO FEDERAL,Monóxido de carbono (CO),1669.67
+2017,AMAPA,Monóxido de carbono (CO),740.87
+2013,SAO PAULO,Dióxido de enxofre,759508.47
+2016,AMAZONAS,Partículas (PM10),217.64000000000001
+2018,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20895.41999999999
+2016,BAHIA,Óxidos de nitrogênio (NOx),252565.94000000018
 2015,MARANHAO,Óxidos de enxofre (SOx),383954.5799999999
-2016,PARANA,Óxidos de enxofre (SOx),17672.500000000004
-2018,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),36388.54000000001
-2022,SAO PAULO,Óxidos de nitrogênio (NOx),1101.19
-2014,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",13194.590000000002
-2019,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),437961287.53999996
-2018,BAHIA,Material Particulado (MP),202850.47000000032
-2018,AMAZONAS,Monóxido de carbono (CO),25705.909999999985
-2021,DISTRITO FEDERAL,Óxidos de enxofre (SOx),326.07
-2015,CEARA,Monóxido de carbono,309
-2021,MARANHAO,Óxidos de enxofre (SOx),19128.43
-2022,MARANHAO,Material Particulado (MP),0.01
-2017,MINAS GERAIS,Monóxido de carbono,7.8
-2016,PERNAMBUCO,Material Particulado (MP),162660.44999999992
-2018,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),378.85
-2013,RIO DE JANEIRO,Óxido nitroso,108.61999999999999
-2016,AMAZONAS,Monóxido de carbono,105.22999999999999
-2016,SANTA CATARINA,Monóxido de carbono (CO),406622.2500000002
-2019,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),20388.679999999986
-2021,ACRE,Óxidos de enxofre (SOx),304.85
-2015,RIO GRANDE DO SUL,Dióxido de enxofre,0.6799999999999999
-2022,DISTRITO FEDERAL,Monóxido de carbono (CO),0
+2016,RIO GRANDE DO NORTE,Monóxido de carbono (CO),41198.96000000001
+2013,MATO GROSSO DO SUL,Óxidos de enxofre (SOx),563386.89
+2013,MARANHAO,Óxidos de nitrogênio (NOx),1410236.2400000002
+2019,ACRE,Monóxido de carbono (CO),10092.26
+2013,TOCANTINS,Monóxido de carbono,410.51
+2020,SANTA CATARINA,Monóxido de carbono (CO),384591.75000000023
+2016,RIO GRANDE DO SUL,Óxidos de nitrogênio (NOx),23779.579999999987
+2020,PIAUI,Óxidos de nitrogênio (NOx),396.57000000000005
+2015,SAO PAULO,Partículas (PM10),6530.040000000001
+2015,SAO PAULO,Cloreto de hidrogênio (ácido clorídrico),52.56
+2017,PARAIBA,Material Particulado (MP),19966.649999999994
+2018,MINAS GERAIS,Óxidos de nitrogênio (NOx),48135.459999999985
+2021,AMAZONAS,Óxidos de enxofre (SOx),206805.23
+2018,MATO GROSSO DO SUL,Monóxido de carbono (CO),85698.46
+2018,RIO DE JANEIRO,Óxidos de nitrogênio (NOx),195307.34000000005
+2013,PIAUI,Monóxido de carbono (CO),386.01
+2019,CEARA,Óxidos de nitrogênio (NOx),91774.04999999992
+2021,PERNAMBUCO,Óxidos de nitrogênio (NOx),736303.8699999996
+2020,ESPIRITO SANTO,Monóxido de carbono (CO),173773.62000000005
+2019,MATO GROSSO DO SUL,Dióxido de enxofre,0
+2021,RIO DE JANEIRO,Óxidos de enxofre (SOx),207849.82000000004
+2017,ACRE,Material Particulado (MP),128.83
+2013,RIO GRANDE DO NORTE,Monóxido de carbono,623.41
+2021,PARA,Material Particulado (MP),27649.140000000003
+2020,ALAGOAS,Óxidos de nitrogênio (NOx),4985.35
+2016,SAO PAULO,Eter etilico do etilenoglicol,1
+2022,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),100
+2020,RIO GRANDE DO SUL,Óxidos de enxofre (SOx),19559.539999999994
+2015,DISTRITO FEDERAL,Nitrogênio,8426.41
+2013,PARAIBA,Material Particulado (MP),28560.219999999998
+2013,SANTA CATARINA,Material Particulado (MP),1058659.81
+2015,DISTRITO FEDERAL,Monóxido de carbono (CO),1377.7700000000002
+2014,SAO PAULO,Dióxido de enxofre,6809.7300000000005
+2013,ESPIRITO SANTO,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",56.4
+2020,SAO PAULO,Material Particulado (MP),3690303.959999973
+2015,DISTRITO FEDERAL,Material Particulado (MP),342.30999999999995
+2022,GOIAS,Material Particulado (MP),1772.6499999999996
+2013,SERGIPE,Óxidos de enxofre (SOx),10884.750000000002
+2021,PARA,Óxidos de nitrogênio (NOx),14894.480000000007
+2014,PARANA,Monóxido de carbono,329.63
+2016,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
+2017,SAO PAULO,Material Particulado (MP),5132729.83999998
+2020,RIO GRANDE DO SUL,Material Particulado (MP),327288.7500000002
+2015,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),7272.790000000001
+2013,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),58.37
+2013,GOIAS,Dióxido de enxofre,200797.03000000003
+2020,CEARA,Dióxido de enxofre,99.8
+2020,SANTA CATARINA,Material Particulado (MP),573694.1000000003
+2017,SANTA CATARINA,Óxidos de nitrogênio (NOx),40731.28999999999
+2016,DISTRITO FEDERAL,Óxidos de enxofre (SOx),1341.51
+2014,GOIAS,Óxidos de nitrogênio (NOx),804606.0799999998
+2013,MINAS GERAIS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",1964.33
+2015,AMAZONAS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",25.150000000000002
+2017,BAHIA,Óxidos de enxofre (SOx),19947.159999999996
+2013,RIO DE JANEIRO,Material Particulado (MP),9130167.83
+2017,PIAUI,Óxidos de enxofre (SOx),6.99
+2017,SERGIPE,Óxidos de nitrogênio (NOx),7114.81
+2015,AMAZONAS,Monóxido de carbono,67.17999999999999
+2020,MINAS GERAIS,Material Particulado (MP),730803.7200000032
+2017,BAHIA,Material Particulado (MP),66494.01999999997
+2021,RIO GRANDE DO NORTE,Monóxido de carbono (CO),8910759.810000002
+2013,PERNAMBUCO,Óxidos de enxofre (SOx),49966.66
+2017,ACRE,Óxidos de enxofre (SOx),163
+2019,RIO GRANDE DO NORTE,Monóxido de carbono (CO),3862564.68
+2013,SAO PAULO,"1,1,2,2-Tetracloroetano",2391
+2020,BAHIA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",615
+2017,TOCANTINS,Material Particulado (MP),166610.29000000007
+2018,MINAS GERAIS,Material Particulado (MP),6781145.8099999195
+2018,PARA,Monóxido de carbono (CO),765600.6900000003
+2018,PERNAMBUCO,Óxidos de enxofre (SOx),166751.88000000006
+2022,BAHIA,Óxidos de nitrogênio (NOx),23.47
+2022,PIAUI,Material Particulado (MP),0.01
+2016,PARANA,Material Particulado (MP),2160194.6200000024
+2013,GOIAS,Óxidos de nitrogênio (NOx),967694.2400000001
+2018,MATO GROSSO,Óxidos de enxofre (SOx),495.37000000000006
+2019,PARANA,Óxidos de enxofre (SOx),17553.840000000004
+2014,ESPIRITO SANTO,Óxidos de enxofre (SOx),38460.97000000001
+2013,MINAS GERAIS,Desperdício e resíduos de estanho,0.05
+2018,SAO PAULO,Monóxido de carbono (CO),3016312.1099999985
+2017,AMAZONAS,Óxidos de enxofre (SOx),1374.7700000000004
+2019,RIO GRANDE DO NORTE,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",88.81
+2013,ALAGOAS,Óxidos de nitrogênio (NOx),11302.48
+2019,RIO GRANDE DO SUL,Monóxido de carbono,12.31
+2016,MARANHAO,Material Particulado (MP),6698.800000000002
+2017,RORAIMA,Óxidos de nitrogênio (NOx),23.58
+2014,AMAZONAS,Material Particulado (MP),104900242.84
+2017,RIO GRANDE DO NORTE,Óxidos de enxofre (SOx),578.94
+2021,PARANA,Monóxido de carbono,66.24
+2019,RIO DE JANEIRO,Óxidos de enxofre (SOx),1159125.620000001
+2017,AMAZONAS,Óxidos de nitrogênio (NOx),9988.88
+2019,PARA,Óxidos de nitrogênio (NOx),13513.810000000001
+2015,MATO GROSSO DO SUL,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",0.15
+2019,MATO GROSSO DO SUL,Monóxido de carbono,7.81
+2022,MATO GROSSO,Óxidos de enxofre (SOx),0.24
+2013,SANTA CATARINA,Monóxido de carbono (CO),1088870.0900000008
+2016,PARA,Material Particulado (MP),19163.279999999995
+2013,CEARA,Óxidos de enxofre (SOx),1939.01
+2022,RIO GRANDE DO SUL,Material Particulado (MP),453.27
+2016,PERNAMBUCO,Óxidos de nitrogênio (NOx),983244.1700000002
+2013,MATO GROSSO DO SUL,Partículas (PM10),233.2
+2013,SAO PAULO,Compostos orgânicos voláteis não metânicos(COVNM),19281.460000000003
+2021,SERGIPE,Óxidos de enxofre (SOx),4882.669999999999
+2015,ALAGOAS,Óxidos de nitrogênio (NOx),23368.99
+2017,GOIAS,Material Particulado (MP),546212.2600000002
+2018,PARANA,Material Particulado (MP),150571.65999999992
+2016,PERNAMBUCO,Monóxido de carbono (CO),106885.70999999999
+2016,AMAZONAS,Óxidos de nitrogênio (NOx),14391454.579999996
+2021,RONDONIA,Óxidos de enxofre (SOx),2755.1900000000005
+2021,ALAGOAS,Material Particulado (MP),3490.1799999999994
+2015,ALAGOAS,Material Particulado (MP),110991.20000000003
+2016,MATO GROSSO,Óxidos de nitrogênio (NOx),5900.640000000002
+2013,PERNAMBUCO,Óxido nitroso,7977.21
+2017,TOCANTINS,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",20
+2022,PARANA,Óxidos de nitrogênio (NOx),517.6300000000001
+2021,ALAGOAS,Monóxido de carbono (CO),6890.63
+2020,GOIAS,Material Particulado (MP),58023.86
+2016,DISTRITO FEDERAL,Óxidos de nitrogênio (NOx),2884.0699999999993
+2021,CEARA,Material Particulado (MP),256848.8700000004
+2018,RIO GRANDE DO SUL,Material Particulado (MP),96290.86999999994
+2016,ESPIRITO SANTO,Material Particulado (MP),68923.28000000003
+2013,DISTRITO FEDERAL,Dióxido de enxofre,1020.99
+2015,CEARA,Dióxido de enxofre,99.2
+2015,PIAUI,Óxidos de enxofre (SOx),0.04
+2013,SAO PAULO,"1,1,2-Tricloroetano",2391
+2014,PARANA,"Dióxido de carbono (gás carbônico, anidrido carbônico); gelo seco",150
+2019,SAO PAULO,Óxidos de enxofre (SOx),150470.84000000014
+2017,RIO DE JANEIRO,Material Particulado (MP),166043.97999999992
+2014,CEARA,Monóxido de carbono,318.48
+2014,RIO GRANDE DO NORTE,Óxidos de nitrogênio (NOx),3784.08
+2016,ACRE,Material Particulado (MP),9478.060000000001
+2018,ALAGOAS,Monóxido de carbono (CO),51864.85
+2013,DISTRITO FEDERAL,Nitrogênio,8426.41
+2020,RIO GRANDE DO NORTE,Monóxido de carbono (CO),3977266.1700000004
+2022,RONDONIA,Óxidos de enxofre (SOx),10
+2020,PIAUI,Material Particulado (MP),3354.7200000000007
+2020,SANTA CATARINA,Óxidos de enxofre (SOx),117391.06999999996
+2014,PARANA,Material Particulado (MP),862128.4200000016
+2015,RIO DE JANEIRO,Monóxido de carbono (CO),38547041.92999998
+2019,AMAPA,Óxidos de nitrogênio (NOx),1.11
+2021,PARANA,Óxidos de enxofre (SOx),14664.65
+2021,ACRE,Óxidos de nitrogênio (NOx),7141.39
