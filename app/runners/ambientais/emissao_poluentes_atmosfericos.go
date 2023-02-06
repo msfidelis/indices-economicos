@@ -2,11 +2,11 @@ package ambientais
 
 import (
 	"crawlers/pkg/logger"
-	"crawlers/pkg/upload"
 	"crypto/tls"
 	"encoding/json"
 	"net/http"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 	"sync"
@@ -144,6 +144,11 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 		index.Data = append(index.Data, item)
 	}
 
+	// Sort do data
+	sort.Slice(index.Data, func(i, j int) bool {
+		return index.Data[i].Referencia < index.Data[j].Referencia
+	})
+
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Convertendo a Struct do Schema em formato JSON")
@@ -227,7 +232,7 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 		Str("S3Key", s3KeyCSV).
 		Msg("Fazendo Upload para o S3")
 
-	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+	// err = upload.S3(fileNameOutputCSV, s3KeyCSV)
 
 	if err != nil {
 		l.Fatal().
@@ -238,7 +243,7 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 			Msg("Erro ao fazer upload do arquivo para o S3")
 	}
 
-	err = upload.S3(file_path, s3KeyJSON)
+	// err = upload.S3(file_path, s3KeyJSON)
 
 	if err != nil {
 		l.Fatal().
@@ -286,6 +291,12 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 	go func() {
 		defer wg.Done()
 		RunnerPoluentesAtmosfericosEstadosResumido(index)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		RunnerPoluentesAtmosfericosAnualConsolidado(index)
 	}()
 
 	wg.Wait()

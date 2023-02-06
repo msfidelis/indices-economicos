@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sort"
 	"time"
 
 	"github.com/gocarina/gocsv"
@@ -68,6 +69,11 @@ func RunnerPoluentesAtmosfericosEstados(emissores PoluentesAtmosfericosEmpresas)
 	for _, i := range ordenado {
 		index.Data = append(index.Data, i)
 	}
+
+	// Sort do data
+	sort.Slice(index.Data, func(i, j int) bool {
+		return index.Data[i].Referencia < index.Data[j].Referencia
+	})
 
 	l.Info().
 		Str("Runner", runnerName).
