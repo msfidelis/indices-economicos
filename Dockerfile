@@ -25,5 +25,6 @@ RUN mkdir -p ./data/selic
 RUN mkdir -p ./data/sociais/
 RUN mkdir -p ./data/ambientais/
 RUN mkdir -p ./data/idh/raw/
+RUN mkdir -p ./data/ambientais/raw/
 
 CMD ["./main"]
