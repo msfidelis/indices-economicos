@@ -129,15 +129,8 @@ func RunnerPIBAcumuladoAno() {
 			Valor: valor,
 		}
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Agregando Item ao Slice")
-
 		pib.Data = append(pib.Data, item)
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Item Agregado ao Slice")
 	}
 
 	l.Info().
@@ -190,15 +183,7 @@ func RunnerPIBAcumuladoAno() {
 			Valor: v,
 		}
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Agregando Item ao Slice")
-
 		pib.Data = append(pib.Data, item)
-
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Item Agregado ao Slice")
 	}
 
 	sort.Slice(pib.Data, func(i, j int) bool {

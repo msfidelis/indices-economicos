@@ -114,10 +114,6 @@ func Runner() {
 
 				igpm.Data = append(igpm.Data, item)
 
-				l.Info().
-					Str("Runner", runnerName).
-					Msg("Item Agregado ao Slice")
-
 			}
 
 		})

@@ -194,15 +194,7 @@ func RunnerPIBPerCapta() {
 			Valor: valor,
 		}
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Agregando Item ao Slice")
-
 		pib.Data = append(pib.Data, item)
-
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Item Agregado ao Slice")
 	}
 
 	l.Info().

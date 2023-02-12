@@ -138,15 +138,7 @@ func RunnerPercentualAoAno() {
 			Valor:  valor,
 		}
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Agregando Item ao Slice")
-
 		selic.Data = append(selic.Data, item)
-
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Item Agregado ao Slice")
 	}
 
 	l.Info().

@@ -137,10 +137,6 @@ func RunnerPoluentesAtmosfericosEmpresas() {
 			Quantidade:        valor,
 		}
 
-		l.Info().
-			Str("Runner", runnerName).
-			Msg("Agregando Item ao Slice")
-
 		index.Data = append(index.Data, item)
 	}
 

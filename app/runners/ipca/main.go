@@ -108,15 +108,8 @@ func Runner() {
 					Str("Runner", runnerName).
 					Msg("Descartando os headers da tabela")
 			} else {
-				l.Info().
-					Str("Runner", runnerName).
-					Msg("Agregando Item ao Slice")
 
 				ipca.Data = append(ipca.Data, item)
-
-				l.Info().
-					Str("Runner", runnerName).
-					Msg("Item Agregado ao Slice")
 
 			}
 

@@ -100,15 +100,7 @@ func Runner() {
 				Valor: valor / 100,
 			}
 
-			l.Info().
-				Str("Runner", runnerName).
-				Msg("Agregando Item ao Slice")
-
 			gini.Data = append(gini.Data, item)
-
-			l.Info().
-				Str("Runner", runnerName).
-				Msg("Item Agregado ao Slice")
 
 		})
 

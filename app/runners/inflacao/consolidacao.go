@@ -257,12 +257,6 @@ func RunnerConsolidacao() {
 		item.IPCAAcumuladoAno = ip.AcumuladoAno
 		item.IPCAAcumulado12Meses = ip.Acumulado12Meses
 
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "IPCA").
-			Str("Periodo", ip.Referencia).
-			Msg("Agregando os Item ao Consolidado")
-
 		consolidado[ip.Referencia] = item
 	}
 
@@ -276,12 +270,6 @@ func RunnerConsolidacao() {
 		item.IPCA15Variacao = ip.Variacao
 		item.IPCA15AcumuladoAno = ip.AcumuladoAno
 		item.IPCA15Acumulado12Meses = ip.Acumulado12Meses
-
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "IPCA15").
-			Str("Periodo", ip.Referencia).
-			Msg("Agregando os Item ao Consolidado")
 
 		consolidado[ip.Referencia] = item
 	}
@@ -297,12 +285,6 @@ func RunnerConsolidacao() {
 		item.INPCAcumuladoAno = in.AcumuladoAno
 		item.INPCAcumulado12Meses = in.Acumulado12Meses
 
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "INPC").
-			Str("Periodo", in.Referencia).
-			Msg("Agregando os Item ao Consolidado")
-
 		consolidado[in.Referencia] = item
 	}
 
@@ -315,12 +297,6 @@ func RunnerConsolidacao() {
 		item := consolidado[in.Referencia]
 		item.IPAVariacao = in.Variacao
 		item.IPAAcumuladoAno = in.AcumuladoAno
-
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "IPA").
-			Str("Periodo", in.Referencia).
-			Msg("Agregando os Item ao Consolidado")
 
 		consolidado[in.Referencia] = item
 	}
@@ -335,12 +311,6 @@ func RunnerConsolidacao() {
 		item.IPCVariacao = in.Variacao
 		item.IPCAcumuladoAno = in.AcumuladoAno
 
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "IPC-FIPE").
-			Str("Periodo", in.Referencia).
-			Msg("Agregando os Item ao Consolidado")
-
 		consolidado[in.Referencia] = item
 	}
 
@@ -354,12 +324,6 @@ func RunnerConsolidacao() {
 		item.INCCVariacao = in.Variacao
 		item.INCCAcumuladoAno = in.AcumuladoAno
 
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "INCC").
-			Str("Periodo", in.Referencia).
-			Msg("Agregando os Item ao Consolidado")
-
 		consolidado[in.Referencia] = item
 	}
 
@@ -367,12 +331,6 @@ func RunnerConsolidacao() {
 
 		item := consolidado[in.Referencia]
 		item.SalarioMinimo = in.Valor
-
-		l.Info().
-			Str("Runner", runnerName).
-			Str("Dataset", "Salario Minimo").
-			Str("Periodo", in.Referencia).
-			Msg("Agregando os Item ao Consolidado")
 
 		consolidado[in.Referencia] = item
 	}
