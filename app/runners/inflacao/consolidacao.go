@@ -35,6 +35,8 @@ type Data struct {
 	IPCAcumuladoAno        float64 `json:"ipc_fipe_acumulado_ano" csv:"ipc_fipe_acumulado_ano"`
 	INCCVariacao           float64 `json:"incc_variacao" csv:"incc_variacao"`
 	INCCAcumuladoAno       float64 `json:"incc_acumulado_ano" csv:"incc_acumulado_ano"`
+	INCCMVariacao          float64 `json:"incc_m_variacao" csv:"incc_m_variacao"`
+	INCCMcumuladoAno       float64 `json:"incc_m_acumulado_ano" csv:"incc_m_acumulado_ano"`
 	SalarioMinimo          float64 `json:"salario_minimo" csv:"salario_minimo"`
 	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
@@ -60,6 +62,7 @@ func RunnerConsolidacao() {
 	ipaFile := "./data/inflacao/ipa.json"
 	ipcFile := "./data/inflacao/ipc-fipe.json"
 	inccFile := "./data/inflacao/incc.json"
+	inccMFile := "./data/inflacao/incc-m.json"
 	salarioMinimoFile := "./data/inflacao/salario_minimo.json"
 
 	file_path := "./data/inflacao/inflacao.json"
@@ -181,7 +184,7 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
-	INCC := INCC{}
+	INCCDI := INCC{}
 	fileINCC, err := ioutil.ReadFile(inccFile)
 
 	if err != nil {
@@ -192,12 +195,32 @@ func RunnerConsolidacao() {
 			Msg("Erro ao ler o arquivo")
 	}
 
-	err = json.Unmarshal([]byte(fileINCC), &INCC)
+	err = json.Unmarshal([]byte(fileINCC), &INCCDI)
 	if err != nil {
 		l.Fatal().
 			Str("Runner", runnerName).
 			Str("Error", err.Error()).
 			Str("Arquivo", inccFile).
+			Msg("converter para struct")
+	}
+
+	INCCM := INCC{}
+	fileINCCM, err := ioutil.ReadFile(inccMFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", inccMFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileINCCM), &INCCM)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", inccMFile).
 			Msg("converter para struct")
 	}
 
@@ -316,13 +339,26 @@ func RunnerConsolidacao() {
 
 	l.Info().
 		Str("Runner", runnerName).
-		Msg("Agregando os Items de INCC ao Consolidado")
+		Msg("Agregando os Items de INCC-DI ao Consolidado")
 
-	for _, in := range INCC.Data {
+	for _, in := range INCCDI.Data {
 
 		item := consolidado[in.Referencia]
 		item.INCCVariacao = in.Variacao
 		item.INCCAcumuladoAno = in.AcumuladoAno
+
+		consolidado[in.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de INCC-M ao Consolidado")
+
+	for _, in := range INCCM.Data {
+
+		item := consolidado[in.Referencia]
+		item.INCCMVariacao = in.Variacao
+		item.INCCMcumuladoAno = in.AcumuladoAno
 
 		consolidado[in.Referencia] = item
 	}
