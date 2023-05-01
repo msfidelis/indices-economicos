@@ -469,7 +469,18 @@ func RunnerConsolidacao() {
 	// Calculando o Juros Reais // IPCA vs SELIC - TROCAR PARA O SELIC ANUAL
 	for k, i := range inflacao.Data {
 		if i.IPCAAcumulado12Meses != 0 && i.SelicAno != 0 {
-			i.JurosReais = (((1 + i.SelicAno/100) / (1 + i.IPCAAcumulado12Meses/100)) - 1) * 100
+			juros_reais := (((1 + i.SelicAno/100) / (1 + i.IPCAAcumulado12Meses/100)) - 1) * 100
+			juros_str := strconv.FormatFloat(juros_reais, 'f', 2, 64)
+			juros_reais, err := strconv.ParseFloat(strings.TrimSpace(juros_str), 64)
+			if err != nil {
+				l.Fatal().
+					Str("Runner", runnerName).
+					Str("Error", err.Error()).
+					Str("Valor recuperado", juros_str).
+					Msg("Erro ao converter o valor para Float64")
+			}
+
+			i.JurosReais = juros_reais
 		}
 		inflacao.Data[k] = i
 	}
