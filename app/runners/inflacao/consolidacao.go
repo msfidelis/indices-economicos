@@ -3,6 +3,7 @@ package inflacao
 import (
 	"crawlers/pkg/logger"
 	"crawlers/pkg/upload"
+	"crawlers/runners/selic"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -37,6 +38,7 @@ type Data struct {
 	INCCAcumuladoAno       float64 `json:"incc_acumulado_ano" csv:"incc_acumulado_ano"`
 	INCCMVariacao          float64 `json:"incc_m_variacao" csv:"incc_m_variacao"`
 	INCCMcumuladoAno       float64 `json:"incc_m_acumulado_ano" csv:"incc_m_acumulado_ano"`
+	SelicMeta              float64 `json:"selic_meta" csv:"selic_meta"`
 	SalarioMinimo          float64 `json:"salario_minimo" csv:"salario_minimo"`
 	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
@@ -51,6 +53,8 @@ type Inflacao struct {
 func RunnerConsolidacao() {
 	l := logger.Instance()
 
+	time.Sleep(20 * time.Second)
+
 	runnerName := "Inflação - Consolidacao"
 
 	unidadeMedida := "%"
@@ -64,6 +68,7 @@ func RunnerConsolidacao() {
 	inccFile := "./data/inflacao/incc.json"
 	inccMFile := "./data/inflacao/incc-m.json"
 	salarioMinimoFile := "./data/inflacao/salario_minimo.json"
+	selicFile := "./data/selic/selic-meta.json"
 
 	file_path := "./data/inflacao/inflacao.json"
 	fileNameOutputCSV := "./data/inflacao/inflacao.csv"
@@ -244,6 +249,26 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	selic := selic.SELICMeta{}
+	fileSelic, err := ioutil.ReadFile(selicFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", selicFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileSelic), &selic)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", selicFile).
+			Msg("converter para struct")
+	}
+
 	// Construção do map de referencias
 	l.Info().
 		Str("Runner", runnerName).
@@ -267,6 +292,18 @@ func RunnerConsolidacao() {
 		}
 
 		consolidado[ip.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items a Meta Selic ao Consolidado")
+
+	for _, sl := range selic.Data {
+
+		item := consolidado[sl.Periodo]
+		item.SelicMeta = sl.Valor
+
+		consolidado[sl.Periodo] = item
 	}
 
 	l.Info().
@@ -385,6 +422,15 @@ func RunnerConsolidacao() {
 	sort.Slice(inflacao.Data, func(i, j int) bool {
 		return inflacao.Data[i].Referencia < inflacao.Data[j].Referencia
 	})
+
+	for k, _ := range inflacao.Data {
+		item := inflacao.Data[k]
+		if item.SelicMeta == 0 && k != 0 {
+			it := inflacao.Data[k-1]
+			item.SelicMeta = it.SelicMeta
+			inflacao.Data[k] = item
+		}
+	}
 
 	l.Info().
 		Str("Runner", runnerName).
