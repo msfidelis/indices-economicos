@@ -39,6 +39,8 @@ type Data struct {
 	INCCMVariacao          float64 `json:"incc_m_variacao" csv:"incc_m_variacao"`
 	INCCMcumuladoAno       float64 `json:"incc_m_acumulado_ano" csv:"incc_m_acumulado_ano"`
 	SelicMeta              float64 `json:"selic_meta" csv:"selic_meta"`
+	SelicAno               float64 `json:"selic_ano" csv:"selic_ano"`
+	JurosReais             float64 `json:"juros_reais" csv:"juros_reais"`
 	SalarioMinimo          float64 `json:"salario_minimo" csv:"salario_minimo"`
 	ConsolidacaoAno        bool    `json:"consolidado_ano" csv:"consolidado_ano"`
 }
@@ -69,6 +71,7 @@ func RunnerConsolidacao() {
 	inccMFile := "./data/inflacao/incc-m.json"
 	salarioMinimoFile := "./data/inflacao/salario_minimo.json"
 	selicFile := "./data/selic/selic-meta.json"
+	selicAnoFile := "./data/selic/selic-percentual-ano.json"
 
 	file_path := "./data/inflacao/inflacao.json"
 	fileNameOutputCSV := "./data/inflacao/inflacao.csv"
@@ -249,7 +252,7 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
-	selic := selic.SELICMeta{}
+	selicMeta := selic.SELICMeta{}
 	fileSelic, err := ioutil.ReadFile(selicFile)
 
 	if err != nil {
@@ -260,12 +263,32 @@ func RunnerConsolidacao() {
 			Msg("Erro ao ler o arquivo")
 	}
 
-	err = json.Unmarshal([]byte(fileSelic), &selic)
+	err = json.Unmarshal([]byte(fileSelic), &selicMeta)
 	if err != nil {
 		l.Fatal().
 			Str("Runner", runnerName).
 			Str("Error", err.Error()).
 			Str("Arquivo", selicFile).
+			Msg("converter para struct")
+	}
+
+	selicAno := selic.SELIC{}
+	fileSelicAno, err := ioutil.ReadFile(selicAnoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", selicAnoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileSelicAno), &selicAno)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", selicAnoFile).
 			Msg("converter para struct")
 	}
 
@@ -298,12 +321,22 @@ func RunnerConsolidacao() {
 		Str("Runner", runnerName).
 		Msg("Agregando os Items a Meta Selic ao Consolidado")
 
-	for _, sl := range selic.Data {
+	for _, sl := range selicMeta.Data {
 
 		item := consolidado[sl.Periodo]
 		item.SelicMeta = sl.Valor
 
 		consolidado[sl.Periodo] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items ao Acumulo Selic ao Consolidado")
+
+	for _, sl := range selicAno.Data {
+		item := consolidado[sl.MesAno]
+		item.SelicAno = sl.Valor
+		consolidado[sl.MesAno] = item
 	}
 
 	l.Info().
@@ -423,6 +456,7 @@ func RunnerConsolidacao() {
 		return inflacao.Data[i].Referencia < inflacao.Data[j].Referencia
 	})
 
+	// Preenchendo os intervalos de 45 dias da meta selic
 	for k, _ := range inflacao.Data {
 		item := inflacao.Data[k]
 		if item.SelicMeta == 0 && k != 0 {
@@ -430,6 +464,14 @@ func RunnerConsolidacao() {
 			item.SelicMeta = it.SelicMeta
 			inflacao.Data[k] = item
 		}
+	}
+
+	// Calculando o Juros Reais // IPCA vs SELIC - TROCAR PARA O SELIC ANUAL
+	for k, i := range inflacao.Data {
+		if i.IPCAAcumulado12Meses != 0 && i.SelicAno != 0 {
+			i.JurosReais = (((1 + i.SelicAno/100) / (1 + i.IPCAAcumulado12Meses/100)) - 1) * 100
+		}
+		inflacao.Data[k] = i
 	}
 
 	l.Info().

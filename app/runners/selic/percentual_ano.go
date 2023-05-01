@@ -107,7 +107,7 @@ func RunnerPercentualAoAno() {
 		l.Info().
 			Str("Runner", runnerName).
 			Str("Data recuperado", d.Data).
-			Msg("Convertendo a data para o formato Jan/06")
+			Msg("Convertendo a data para o formato 2006-01")
 
 		splitData := strings.Split(d.Data, "/")
 		dataRebuilded := fmt.Sprintf("%s/%s/%s", splitData[2], splitData[1], splitData[0])
@@ -125,7 +125,7 @@ func RunnerPercentualAoAno() {
 				Msg("Erro ao converter o Layout de data")
 		}
 
-		formatedDate := t.Format("Jan/06")
+		formatedDate := t.Format("2006-01")
 
 		l.Info().
 			Str("Runner", runnerName).
