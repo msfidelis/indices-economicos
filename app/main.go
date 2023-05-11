@@ -2,16 +2,7 @@ package main
 
 import (
 	"crawlers/pkg/logger"
-	"crawlers/runners/ambientais"
-	"crawlers/runners/gini"
-	"crawlers/runners/idh"
-	"crawlers/runners/igpm"
-	"crawlers/runners/inflacao"
-	"crawlers/runners/inpc"
-	"crawlers/runners/ipca"
-	"crawlers/runners/pib"
-	"crawlers/runners/selic"
-	"crawlers/runners/sociais"
+	"crawlers/runners/precos"
 	"os"
 	"sync"
 )
@@ -36,103 +27,113 @@ func main() {
 
 	// Inflação
 	l.Info().
-		Msg("Iniciando o Runner de Inflação")
+		Msg("Iniciando o Runner de Preços")
 
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		inflacao.Runner()
+		precos.Runner()
 	}()
 
-	// IDH
-	l.Info().
-		Msg("Iniciando o Runner de coeficiente de IDH")
+	// // Inflação
+	// l.Info().
+	// 	Msg("Iniciando o Runner de Inflação")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		idh.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	inflacao.Runner()
+	// }()
 
-	// PIB
-	l.Info().
-		Msg("Iniciando o Runner de PIB")
+	// // IDH
+	// l.Info().
+	// 	Msg("Iniciando o Runner de coeficiente de IDH")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		pib.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	idh.Runner()
+	// }()
 
-	// IPCA
-	l.Info().
-		Msg("Iniciando o Runner de IPCA")
+	// // PIB
+	// l.Info().
+	// 	Msg("Iniciando o Runner de PIB")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		ipca.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	pib.Runner()
+	// }()
 
-	// INPC
-	l.Info().
-		Msg("Iniciando o Runner de INPC")
+	// // IPCA
+	// l.Info().
+	// 	Msg("Iniciando o Runner de IPCA")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		inpc.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	ipca.Runner()
+	// }()
 
-	// IGP-M
-	l.Info().
-		Msg("Iniciando o Runner de IGP-M")
+	// // INPC
+	// l.Info().
+	// 	Msg("Iniciando o Runner de INPC")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		igpm.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	inpc.Runner()
+	// }()
 
-	// SELIC
-	l.Info().
-		Msg("Iniciando o Runner de Selic")
+	// // IGP-M
+	// l.Info().
+	// 	Msg("Iniciando o Runner de IGP-M")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		selic.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	igpm.Runner()
+	// }()
 
-	// GINI
-	l.Info().
-		Msg("Iniciando o Runner de coeficiente de Gini")
+	// // SELIC
+	// l.Info().
+	// 	Msg("Iniciando o Runner de Selic")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		gini.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	selic.Runner()
+	// }()
 
-	// Sociais
-	l.Info().
-		Msg("Iniciando o Runner de Indicadores Sociais")
+	// // GINI
+	// l.Info().
+	// 	Msg("Iniciando o Runner de coeficiente de Gini")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		sociais.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	gini.Runner()
+	// }()
 
-	// Ambientais
-	l.Info().
-		Msg("Iniciando o Runner de Indicadores Ambientais")
+	// // Sociais
+	// l.Info().
+	// 	Msg("Iniciando o Runner de Indicadores Sociais")
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		ambientais.Runner()
-	}()
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	sociais.Runner()
+	// }()
+
+	// // Ambientais
+	// l.Info().
+	// 	Msg("Iniciando o Runner de Indicadores Ambientais")
+
+	// wg.Add(1)
+	// go func() {
+	// 	defer wg.Done()
+	// 	ambientais.Runner()
+	// }()
 
 	wg.Wait()
 
