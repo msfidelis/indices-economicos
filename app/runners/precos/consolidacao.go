@@ -40,6 +40,16 @@ type Data struct {
 	Soja           float64 `json:"soja_farelo_preco_tonelada" csv:"soja_farelo_preco_tonelada"`
 	SojaReferencia string  `json:"soja_farelo_referencia" csv:"soja_farelo_referencia"`
 
+	BovinoDianteiro  float64 `json:"carne_bovina_dianteira_kg" csv:"carne_bovina_dianteira_kg"`
+	BovinoTraseiro   float64 `json:"carne_bovina_traseira_kg" csv:"carne_bovina_traseira_kg"`
+	BovinoReferencia string  `json:"carne_bovina_referencia" csv:"carne_bovina_referencia"`
+
+	SuinaCarcaca    float64 `json:"carne_suina_carcaca_kg" csv:"carne_suina_carcaca_kg"`
+	SuinaLombo      float64 `json:"carne_suina_lombo_kg" csv:"carne_suina_lombo_kg"`
+	SuinaPaleta     float64 `json:"carne_suina_paleta_kg" csv:"carne_suina_paleta_kg"`
+	SuinaPernil     float64 `json:"carne_suina_pernil_kg" csv:"carne_suina_pernil_kg"`
+	SuinaReferencia string  `json:"carne_suina_referencia" csv:"carne_suina_referencia"`
+
 	ConsolidacaoAno bool `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
@@ -71,6 +81,13 @@ func RunnerConsolidacao() {
 	milhoFile := "./data/precos/milho-60kg.json"
 	sojaFile := "./data/precos/soja-tonelada.json"
 
+	carneBovinaDianteiraFile := "./data/precos/carne-bovina-dianteira.json"
+	carneBovinaTraseiraFile := "./data/precos/carne-bovina-traseira.json"
+	carneSuinaCarcacaFile := "./data/precos/carne-suina-carcaca.json"
+	carneSuinaLomboFile := "./data/precos/carne-suina-lombo.json"
+	carneSuinaPaletaFile := "./data/precos/carne-suina-paleta.json"
+	carneSuinaPernilFile := "./data/precos/carne-suina-pernil.json"
+
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Iniciando o Runner para Efetuar o Crawler")
@@ -82,6 +99,132 @@ func RunnerConsolidacao() {
 	now := time.Now()
 	precos.Atualizacao = now
 	precos.Fonte = fonte
+
+	// Carne Bovina Dianteira
+	bovDianteira := BovinaDianteiraKg{}
+	fileCarneBovinaDianteira, err := ioutil.ReadFile(carneBovinaDianteiraFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneBovinaDianteiraFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneBovinaDianteira), &bovDianteira)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneBovinaDianteiraFile).
+			Msg("converter para struct")
+	}
+
+	// Carne Bovina Traseira
+	bovTraseira := BovinaTraseiraKg{}
+	fileCarneBovinaTraseira, err := ioutil.ReadFile(carneBovinaTraseiraFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneBovinaTraseiraFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneBovinaTraseira), &bovTraseira)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneBovinaTraseiraFile).
+			Msg("converter para struct")
+	}
+
+	// Carne Suina Carcaça
+	suinaCarcaca := SuinaCarcacaKg{}
+	fileCarneSuinaCarcaca, err := ioutil.ReadFile(carneSuinaCarcacaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaCarcacaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneSuinaCarcaca), &suinaCarcaca)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaCarcacaFile).
+			Msg("converter para struct")
+	}
+
+	// Carne Suina Lombo
+	suinaLombo := SuinaLomboKg{}
+	fileCarneSuinaLombo, err := ioutil.ReadFile(carneSuinaLomboFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaLomboFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneSuinaLombo), &suinaLombo)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaLomboFile).
+			Msg("converter para struct")
+	}
+
+	// Carne Suina Paleta
+	suinaPaleta := SuinaPaletaKg{}
+	fileCarneSuinaPaleta, err := ioutil.ReadFile(carneSuinaPaletaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaPaletaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneSuinaPaleta), &suinaPaleta)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaPaletaFile).
+			Msg("converter para struct")
+	}
+
+	// Carne Suina Pernil
+	suinaPernil := SuinaPernilKg{}
+	fileCarneSuinaPernil, err := ioutil.ReadFile(carneSuinaPernilFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaPernilFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileCarneSuinaPernil), &suinaPernil)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", carneSuinaPernilFile).
+			Msg("converter para struct")
+	}
 
 	// Cana
 	cana := Cana{}
@@ -319,6 +462,54 @@ func RunnerConsolidacao() {
 		item := consolidado[ip.Referencia]
 		item.Soja = ip.Valor
 		item.SojaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Bovina Traseira
+	for _, ip := range bovTraseira.Data {
+		item := consolidado[ip.Referencia]
+		item.BovinoTraseiro = ip.Valor
+		item.BovinoReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Bovina Dianteira
+	for _, ip := range bovDianteira.Data {
+		item := consolidado[ip.Referencia]
+		item.BovinoDianteiro = ip.Valor
+		item.BovinoReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Suina Carcaça
+	for _, ip := range suinaCarcaca.Data {
+		item := consolidado[ip.Referencia]
+		item.SuinaCarcaca = ip.Valor
+		item.SuinaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Suina Lombo
+	for _, ip := range suinaLombo.Data {
+		item := consolidado[ip.Referencia]
+		item.SuinaLombo = ip.Valor
+		item.SuinaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Suina Paleta
+	for _, ip := range suinaPaleta.Data {
+		item := consolidado[ip.Referencia]
+		item.SuinaPaleta = ip.Valor
+		item.SuinaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Carne Suina Pernil
+	for _, ip := range suinaPernil.Data {
+		item := consolidado[ip.Referencia]
+		item.SuinaPernil = ip.Valor
+		item.SuinaReferencia = "atacado"
 		consolidado[ip.Referencia] = item
 	}
 
