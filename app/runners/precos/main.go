@@ -4,6 +4,8 @@ func Runner() {
 	RunnerMilho()
 	RunnerSoja()
 	RunnerTrigo()
+	RunnerCafe()
+	RunnerCana()
 	RunnerFarinhaDeTrigo()
 	RunnerFeijao()
 	RunnerOleoDeSoja()
@@ -18,4 +20,8 @@ func Runner() {
 	RunnerBovinaTraseira()
 	RunnerSuinaCarcaca()
 	RunnerSuinaLombo()
+	RunnerSuinaPaleta()
+	RunnerSuinaPernil()
+
+	RunnerConsolidacao()
 }
