@@ -6,6 +6,7 @@ func Runner() {
 	// RunnerTrigo()
 	// RunnerCafe()
 	// RunnerCana()
+	// RunnerLeite()
 	// RunnerFarinhaDeTrigo()
 	// RunnerFeijao()
 	// RunnerOleoDeSoja()

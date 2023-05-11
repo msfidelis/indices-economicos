@@ -50,6 +50,18 @@ type Data struct {
 	SuinaPernil     float64 `json:"carne_suina_pernil_kg" csv:"carne_suina_pernil_kg"`
 	SuinaReferencia string  `json:"carne_suina_referencia" csv:"carne_suina_referencia"`
 
+	Frango           float64 `json:"frango_kg" csv:"frango_kg"`
+	FrangoReferencia string  `json:"frango_referencia" csv:"frango_referencia"`
+
+	Leite           float64 `json:"leite_litro" csv:"leite_litro"`
+	LeiteReferencia string  `json:"leite_referencia" csv:"leite_referencia"`
+
+	Trigo           float64 `json:"trigo_60kg" csv:"trigo_60kg"`
+	TrigoReferencia string  `json:"trigo_referencia" csv:"trigo_referencia"`
+
+	OleoDeSoja           float64 `json:"oleo_de_soja_20_latas" csv:"oleo_de_soja_20_latas"`
+	OleoDeSojaReferencia string  `json:"oleo_de_soja_referencia" csv:"oleo_de_soja_referencia"`
+
 	ConsolidacaoAno bool `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
@@ -80,13 +92,17 @@ func RunnerConsolidacao() {
 	feijaoFile := "./data/precos/cafe.json"
 	milhoFile := "./data/precos/milho-60kg.json"
 	sojaFile := "./data/precos/soja-tonelada.json"
-
 	carneBovinaDianteiraFile := "./data/precos/carne-bovina-dianteira.json"
 	carneBovinaTraseiraFile := "./data/precos/carne-bovina-traseira.json"
 	carneSuinaCarcacaFile := "./data/precos/carne-suina-carcaca.json"
 	carneSuinaLomboFile := "./data/precos/carne-suina-lombo.json"
 	carneSuinaPaletaFile := "./data/precos/carne-suina-paleta.json"
 	carneSuinaPernilFile := "./data/precos/carne-suina-pernil.json"
+
+	frangoFile := "./data/precos/frango-resfriado.json"
+	leiteFile := "./data/precos/leite.json"
+	trigoFile := "./data/precos/trigo-60kg.json"
+	oleoSojaFile := "./data/precos/oleodesoja-20latas.json"
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -373,6 +389,90 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	// Frango
+	frango := FrangoResfriado{}
+	fileFrango, err := ioutil.ReadFile(frangoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", frangoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileFrango), &frango)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", frangoFile).
+			Msg("converter para struct")
+	}
+
+	// Leite
+	leite := Leite{}
+	fileLeite, err := ioutil.ReadFile(leiteFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", leiteFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileLeite), &leite)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", leiteFile).
+			Msg("converter para struct")
+	}
+
+	// Trigo
+	trigo := Trigo60Kg{}
+	fileTrigo, err := ioutil.ReadFile(trigoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", trigoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileTrigo), &trigo)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", trigoFile).
+			Msg("converter para struct")
+	}
+
+	// Oleo de Soja
+	oleoDeSoja := OleoDeSoja50Kg{}
+	fileOleoDeSoja, err := ioutil.ReadFile(oleoSojaFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", oleoSojaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileOleoDeSoja), &oleoDeSoja)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", oleoSojaFile).
+			Msg("converter para struct")
+	}
+
 	// Construção do map de referencias
 	l.Info().
 		Str("Runner", runnerName).
@@ -510,6 +610,38 @@ func RunnerConsolidacao() {
 		item := consolidado[ip.Referencia]
 		item.SuinaPernil = ip.Valor
 		item.SuinaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Frango
+	for _, ip := range frango.Data {
+		item := consolidado[ip.Referencia]
+		item.Frango = ip.Valor
+		item.FrangoReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Leite
+	for _, ip := range leite.Data {
+		item := consolidado[ip.Referencia]
+		item.Leite = ip.Valor
+		item.LeiteReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Trigo
+	for _, ip := range trigo.Data {
+		item := consolidado[ip.Referencia]
+		item.Trigo = ip.Valor
+		item.TrigoReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Oleo de Soja
+	for _, ip := range oleoDeSoja.Data {
+		item := consolidado[ip.Referencia]
+		item.OleoDeSoja = ip.Valor
+		item.OleoDeSojaReferencia = "atacado"
 		consolidado[ip.Referencia] = item
 	}
 
