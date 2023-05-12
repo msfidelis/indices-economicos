@@ -14,27 +14,27 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-type DataFeijao30kg struct {
+type DataFeijaoPreto30kg struct {
 	Referencia string  `json:"referencia" csv:"referencia"`
 	Valor      float64 `json:"valor" csv:"valor"`
 	ModoVenda  string  `json:"modo_venda" csv:"modo_venda"`
 	Kg         float64 `json:"kg" csv:"kg"`
 }
 
-type Feijao30Kg struct {
-	Atualizacao time.Time        `json:"data_atualizacao"`
-	Fonte       string           `json:"fonte"`
-	Data        []DataFeijao30kg `json:"data"`
+type FeijaoPreto30Kg struct {
+	Atualizacao time.Time             `json:"data_atualizacao"`
+	Fonte       string                `json:"fonte"`
+	Data        []DataFeijaoPreto30kg `json:"data"`
 }
 
-func RunnerFeijao() {
-	runnerName := "Preços - Feijao 30KG"
+func RunnerFeijaoPreto() {
+	runnerName := "Preços - FeijaoPreto 30KG"
 	domain := "www.ipeadata.gov.br"
-	url := "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=37643&module=M"
-	file_path := "./data/precos/feijao-30kg.json"
-	fileNameOutputCSV := "./data/precos/feijao-30kg.csv"
-	s3KeyJSON := "precos/feijao-30kg.json"
-	s3KeyCSV := "precos/feijao-30kg.csv"
+	url := "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=37644&module=M"
+	file_path := "./data/precos/feijaopreto-30kg.json"
+	fileNameOutputCSV := "./data/precos/feijaopreto-30kg.csv"
+	s3KeyJSON := "precos/feijaopreto-30kg.json"
+	s3KeyCSV := "precos/feijaopreto-30kg.csv"
 
 	l := logger.Instance()
 
@@ -46,15 +46,15 @@ func RunnerFeijao() {
 		colly.AllowedDomains(domain),
 	)
 
-	feijao := &Feijao30Kg{}
+	feijaopreto := &FeijaoPreto30Kg{}
 
 	l.Info().
 		Str("Runner", runnerName).
 		Msg("Atualizando campo da data/hora da atualização dos dados")
 
 	now := time.Now()
-	feijao.Atualizacao = now
-	feijao.Fonte = url
+	feijaopreto.Atualizacao = now
+	feijaopreto.Fonte = url
 
 	c.OnHTML(".dxgvTable", func(e *colly.HTMLElement) {
 
@@ -100,14 +100,14 @@ func RunnerFeijao() {
 				Float64("Valor", valor).
 				Msg("Item normalizado")
 
-			item := DataFeijao30kg{
+			item := DataFeijaoPreto30kg{
 				Referencia: referencia,
 				Valor:      valor,
 				ModoVenda:  "atacado",
 				Kg:         30.00,
 			}
 
-			feijao.Data = append(feijao.Data, item)
+			feijaopreto.Data = append(feijaopreto.Data, item)
 
 		})
 
@@ -115,7 +115,7 @@ func RunnerFeijao() {
 			Str("Runner", runnerName).
 			Msg("Convertendo a Struct do Schema em formato JSON")
 
-		b, err := json.Marshal(feijao)
+		b, err := json.Marshal(feijaopreto)
 		if err != nil {
 			l.Fatal().
 				Str("Runner", runnerName).
@@ -164,7 +164,7 @@ func RunnerFeijao() {
 		}
 		defer csvFile.Close()
 
-		csvOutput, err := gocsv.MarshalString(&feijao.Data)
+		csvOutput, err := gocsv.MarshalString(&feijaopreto.Data)
 		if err != nil {
 			l.Fatal().
 				Str("Runner", runnerName).

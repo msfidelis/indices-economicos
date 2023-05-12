@@ -32,6 +32,7 @@ type Data struct {
 	CafeReferencia string  `json:"cafe_referencia" csv:"cafe_referencia"`
 
 	Feijao           float64 `json:"feijao_preco_30kg" csv:"feijao_preco_30kg"`
+	FeijaoPreto      float64 `json:"feijao_preto_preco_30kg" csv:"feijao_preto_preco_30kg"`
 	FeijaoReferencia string  `json:"feijao_referencia" csv:"feijao_referencia"`
 
 	Milho           float64 `json:"milho_preco_60kg" csv:"milho_preco_60kg"`
@@ -95,7 +96,8 @@ func RunnerConsolidacao() {
 	arrozTipo1File := "./data/precos/arroztipo1-30kg.json"
 	arrozTipo2File := "./data/precos/arroztipo2-30kg.json"
 	cafeFile := "./data/precos/cafe.json"
-	feijaoFile := "./data/precos/cafe.json"
+	feijaoFile := "./data/precos/feijao-30kg.json"
+	feijaoPretoFile := "./data/precos/feijaopreto-30kg.json"
 	milhoFile := "./data/precos/milho-60kg.json"
 	sojaFile := "./data/precos/soja-tonelada.json"
 	carneBovinaDianteiraFile := "./data/precos/carne-bovina-dianteira.json"
@@ -357,6 +359,27 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	// Feijao
+	feijaoPreto := FeijaoPreto30Kg{}
+	fileFeijaoPreto, err := ioutil.ReadFile(feijaoPretoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", feijaoPretoFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileFeijaoPreto), &feijaoPreto)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", feijaoPretoFile).
+			Msg("converter para struct")
+	}
+
 	// Milho
 	milho := Milho60Kg{}
 	fileMilho, err := ioutil.ReadFile(milhoFile)
@@ -605,7 +628,7 @@ func RunnerConsolidacao() {
 	for _, ip := range cana.Data {
 		item := consolidado[ip.Referencia]
 		item.CanaDeAcucar = ip.Valor
-		item.CanaDeAcucarReferencia = "produtor"
+		item.CanaDeAcucarReferencia = "agricultor"
 
 		consolidado[ip.Referencia] = item
 	}
@@ -639,6 +662,14 @@ func RunnerConsolidacao() {
 	for _, ip := range feijao.Data {
 		item := consolidado[ip.Referencia]
 		item.Feijao = ip.Valor
+		item.FeijaoReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	//Feijao Preto
+	for _, ip := range feijaoPreto.Data {
+		item := consolidado[ip.Referencia]
+		item.FeijaoPreto = ip.Valor
 		item.FeijaoReferencia = "atacado"
 		consolidado[ip.Referencia] = item
 	}

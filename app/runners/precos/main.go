@@ -9,6 +9,7 @@ func Runner() {
 	RunnerLeite()
 	RunnerFarinhaDeTrigo()
 	RunnerFeijao()
+	RunnerFeijaoPreto()
 	RunnerOleoDeSoja()
 	RunnerArrozTipo1()
 	RunnerArrozTipo2()
