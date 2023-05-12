@@ -62,6 +62,12 @@ type Data struct {
 	OleoDeSoja           float64 `json:"oleo_de_soja_20_latas" csv:"oleo_de_soja_20_latas"`
 	OleoDeSojaReferencia string  `json:"oleo_de_soja_referencia" csv:"oleo_de_soja_referencia"`
 
+	OvosTipo1      float64 `json:"ovos_extra_tipo_1_30_duzias" csv:"ovos_extra_tipo_1_30_duzias"`
+	OvosTipo2      float64 `json:"ovos_grandes_tipo_2_30_duzias" csv:"ovos_grandes_tipo_2_30_duzias"`
+	OvosTipo3      float64 `json:"ovos_medios_tipo_3_30_duzias" csv:"ovos_medios_tipo_3_30_duzias"`
+	OvosTipo4      float64 `json:"ovos_pequenos_tipo_4_30_duzias" csv:"ovos_pequenos_tipo_4_30_duzias"`
+	OvosReferencia string  `json:"ovos_referencia" csv:"ovos_referencia"`
+
 	ConsolidacaoAno bool `json:"consolidado_ano" csv:"consolidado_ano"`
 }
 
@@ -98,11 +104,15 @@ func RunnerConsolidacao() {
 	carneSuinaLomboFile := "./data/precos/carne-suina-lombo.json"
 	carneSuinaPaletaFile := "./data/precos/carne-suina-paleta.json"
 	carneSuinaPernilFile := "./data/precos/carne-suina-pernil.json"
-
 	frangoFile := "./data/precos/frango-resfriado.json"
 	leiteFile := "./data/precos/leite.json"
 	trigoFile := "./data/precos/trigo-60kg.json"
 	oleoSojaFile := "./data/precos/oleodesoja-20latas.json"
+
+	ovosTipo1File := "./data/precos/ovoextratipo1-30duzias.json"
+	ovosTipo2File := "./data/precos/ovograndetipo2-30duzias.json"
+	ovosTipo3File := "./data/precos/ovomediotipo3-30duzias.json"
+	ovosTipo4File := "./data/precos/ovopequenotipo4-30duzias.json"
 
 	l.Info().
 		Str("Runner", runnerName).
@@ -473,6 +483,90 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
+	// Ovos Tipo 1
+	ovos1 := OvoExtraTipo130Duzias{}
+	fileOvos1, err := ioutil.ReadFile(ovosTipo1File)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo1File).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileOvos1), &ovos1)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo1File).
+			Msg("converter para struct")
+	}
+
+	// Ovos Tipo 2
+	ovos2 := OvoGrandeTipo230Duzias{}
+	fileOvos2, err := ioutil.ReadFile(ovosTipo2File)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo2File).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileOvos2), &ovos2)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo2File).
+			Msg("converter para struct")
+	}
+
+	// Ovos Tipo 3
+	ovos3 := OvoMedioTipo330Duzias{}
+	fileOvos3, err := ioutil.ReadFile(ovosTipo3File)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo3File).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileOvos3), &ovos3)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo3File).
+			Msg("converter para struct")
+	}
+
+	// Ovos Tipo 4
+	ovos4 := OvoPequenoTipo430Duzias{}
+	fileOvos4, err := ioutil.ReadFile(ovosTipo4File)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo4File).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileOvos4), &ovos4)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ovosTipo4File).
+			Msg("converter para struct")
+	}
+
 	// Construção do map de referencias
 	l.Info().
 		Str("Runner", runnerName).
@@ -642,6 +736,38 @@ func RunnerConsolidacao() {
 		item := consolidado[ip.Referencia]
 		item.OleoDeSoja = ip.Valor
 		item.OleoDeSojaReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Ovo Tipo 1
+	for _, ip := range ovos1.Data {
+		item := consolidado[ip.Referencia]
+		item.OvosTipo1 = ip.Valor
+		item.OvosReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Ovo Tipo 2
+	for _, ip := range ovos2.Data {
+		item := consolidado[ip.Referencia]
+		item.OvosTipo2 = ip.Valor
+		item.OvosReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Ovo Tipo 3
+	for _, ip := range ovos3.Data {
+		item := consolidado[ip.Referencia]
+		item.OvosTipo3 = ip.Valor
+		item.OvosReferencia = "atacado"
+		consolidado[ip.Referencia] = item
+	}
+
+	// Ovo Tipo 4
+	for _, ip := range ovos4.Data {
+		item := consolidado[ip.Referencia]
+		item.OvosTipo4 = ip.Valor
+		item.OvosReferencia = "atacado"
 		consolidado[ip.Referencia] = item
 	}
 
