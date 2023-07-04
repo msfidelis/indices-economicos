@@ -41,14 +41,14 @@ func main() {
 
 	if batch_index == "1" || batch_index == "" {
 
-		// Preços
+		// SELIC
 		l.Info().
-			Msg("Iniciando o Runner de Preços")
+			Msg("Iniciando o Runner de Selic")
 
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			precos.Runner()
+			selic.Runner()
 		}()
 
 		// Inflação
@@ -128,14 +128,15 @@ func main() {
 	}
 
 	if batch_index == "3" || batch_index == "" {
-		// SELIC
+
+		// Preços
 		l.Info().
-			Msg("Iniciando o Runner de Selic")
+			Msg("Iniciando o Runner de Preços")
 
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			selic.Runner()
+			precos.Runner()
 		}()
 
 		// PIB
