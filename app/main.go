@@ -24,16 +24,20 @@ func main() {
 
 	batch_index := os.Getenv("AWS_BATCH_JOB_ARRAY_INDEX")
 
-	if batch_index == "0" {
-
-		l.Warn().
-			Msg("Skipping Index")
-
-		os.Exit(0)
-	}
-
 	l.Info().
 		Msg("Iniciando o processo de Crawling dos dados abertos")
+
+	if batch_index == "0" || batch_index == "" {
+		// Ambientais
+		l.Info().
+			Msg("Iniciando o Runner de Indicadores Ambientais")
+
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			ambientais.Runner()
+		}()
+	}
 
 	if batch_index == "1" || batch_index == "" {
 
@@ -55,26 +59,6 @@ func main() {
 		go func() {
 			defer wg.Done()
 			inflacao.Runner()
-		}()
-
-		// IDH
-		l.Info().
-			Msg("Iniciando o Runner de coeficiente de IDH")
-
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			idh.Runner()
-		}()
-
-		// PIB
-		l.Info().
-			Msg("Iniciando o Runner de PIB")
-
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			pib.Runner()
 		}()
 
 		// IPCA
@@ -107,24 +91,18 @@ func main() {
 			igpm.Runner()
 		}()
 
-		// SELIC
+	}
+
+	if batch_index == "2" || batch_index == "" {
+
+		// IDH
 		l.Info().
-			Msg("Iniciando o Runner de Selic")
+			Msg("Iniciando o Runner de coeficiente de IDH")
 
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			selic.Runner()
-		}()
-
-		// GINI
-		l.Info().
-			Msg("Iniciando o Runner de coeficiente de Gini")
-
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			gini.Runner()
+			idh.Runner()
 		}()
 
 		// Sociais
@@ -137,16 +115,38 @@ func main() {
 			sociais.Runner()
 		}()
 
-		// Ambientais
+		// GINI
 		l.Info().
-			Msg("Iniciando o Runner de Indicadores Ambientais")
+			Msg("Iniciando o Runner de coeficiente de Gini")
 
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			ambientais.Runner()
+			gini.Runner()
 		}()
 
+	}
+
+	if batch_index == "3" || batch_index == "" {
+		// SELIC
+		l.Info().
+			Msg("Iniciando o Runner de Selic")
+
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			selic.Runner()
+		}()
+
+		// PIB
+		l.Info().
+			Msg("Iniciando o Runner de PIB")
+
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			pib.Runner()
+		}()
 	}
 
 	wg.Wait()
