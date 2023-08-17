@@ -17,11 +17,22 @@ import (
 )
 
 type Data struct {
-	Referencia             string  `json:"referencia" csv:"referencia"`
-	Ano                    string  `json:"ano" csv:"ano"`
-	Mes                    string  `json:"mes" csv:"mes"`
-	AnoMes                 int64   `json:"ano_mes" csv:"ano_mes"`
-	IPCAVariacao           float64 `json:"ipca_variacao" csv:"ipca_variacao"`
+	Referencia              string  `json:"referencia" csv:"referencia"`
+	Ano                     string  `json:"ano" csv:"ano"`
+	Mes                     string  `json:"mes" csv:"mes"`
+	AnoMes                  int64   `json:"ano_mes" csv:"ano_mes"`
+	IPCAVariacao            float64 `json:"ipca_variacao" csv:"ipca_variacao"`
+	IPCAVariacaoAlimentacao float64 `json:"ipca_variacao_alimentacao" csv:"ipca_variacao_alimentacao"`
+
+	IPCAVariacaoHabitacao   float64 `json:"ipca_variacao_habitacao" csv:"ipca_variacao_habitacao"`
+	IPCAVariacaoResidencia  float64 `json:"ipca_variacao_artigos_residencia" csv:"ipca_variacao_artigos_residencia"`
+	IPCAVariacaoVestuario   float64 `json:"ipca_variacao_vestuario" csv:"ipca_variacao_vestuario"`
+	IPCAVariacaoTransporte  float64 `json:"ipca_variacao_transporte" csv:"ipca_variacao_transporte"`
+	IPCAVariacaoSaude       float64 `json:"ipca_variacao_saude" csv:"ipca_variacao_saude"`
+	IPCAVariacaoPessoais    float64 `json:"ipca_variacao_despesas_pessoais" csv:"ipca_variacao_despesas_pessoais"`
+	IPCAVariacaoEducacao    float64 `json:"ipca_variacao_educacao" csv:"ipca_variacao_educacao"`
+	IPCAVariacaoComunicacao float64 `json:"ipca_variacao_comunicacao" csv:"ipca_variacao_comunicacao"`
+
 	IPCAAcumuladoAno       float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
 	IPCAAcumulado12Meses   float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
 	IPCA15Variacao         float64 `json:"ipca15_variacao" csv:"ipca15_variacao"`
@@ -63,6 +74,7 @@ func RunnerConsolidacao() {
 	fonte := "https://servicodados.ibge.gov.br"
 
 	ipcaFile := "./data/inflacao/ipca.json"
+	ipcaDetalhadoFile := "./data/inflacao/ipca_detalhado.json"
 	ipca15File := "./data/inflacao/ipca15.json"
 	inpcFile := "./data/inflacao/inpc.json"
 	ipaFile := "./data/inflacao/ipa.json"
@@ -104,6 +116,26 @@ func RunnerConsolidacao() {
 	}
 
 	err = json.Unmarshal([]byte(fileIPCA), &IPCA)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("converter para struct")
+	}
+
+	IPCADetalhado := IPCADetalhado{}
+	fileIPCADetalhado, err := ioutil.ReadFile(ipcaDetalhadoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPCADetalhado), &IPCADetalhado)
 	if err != nil {
 		l.Fatal().
 			Str("Runner", runnerName).
@@ -349,6 +381,26 @@ func RunnerConsolidacao() {
 		item.IPCAVariacao = ip.Variacao
 		item.IPCAAcumuladoAno = ip.AcumuladoAno
 		item.IPCAAcumulado12Meses = ip.Acumulado12Meses
+
+		consolidado[ip.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPCA Detalhado ao Consolidado")
+
+	for _, ip := range IPCADetalhado.Data {
+
+		item := consolidado[ip.Referencia]
+		item.IPCAVariacaoAlimentacao = ip.VariacaoAlimentacao
+		item.IPCAVariacaoComunicacao = ip.VariacaoComunicacao
+		item.IPCAVariacaoEducacao = ip.VariacaoEducacao
+		item.IPCAVariacaoHabitacao = ip.VariacaoHabitacao
+		item.IPCAVariacaoPessoais = ip.VariacaoPessoais
+		item.IPCAVariacaoResidencia = ip.VariacaoArtigosResidencia
+		item.IPCAVariacaoSaude = ip.VariacaoSaude
+		item.IPCAVariacaoTransporte = ip.VariacaoTransporte
+		item.IPCAVariacaoVestuario = ip.VariacaoVestuario
 
 		consolidado[ip.Referencia] = item
 	}
