@@ -17,13 +17,13 @@ import (
 )
 
 type Data struct {
-	Referencia              string  `json:"referencia" csv:"referencia"`
-	Ano                     string  `json:"ano" csv:"ano"`
-	Mes                     string  `json:"mes" csv:"mes"`
-	AnoMes                  int64   `json:"ano_mes" csv:"ano_mes"`
+	Referencia string `json:"referencia" csv:"referencia"`
+	Ano        string `json:"ano" csv:"ano"`
+	Mes        string `json:"mes" csv:"mes"`
+	AnoMes     int64  `json:"ano_mes" csv:"ano_mes"`
+
 	IPCAVariacao            float64 `json:"ipca_variacao" csv:"ipca_variacao"`
 	IPCAVariacaoAlimentacao float64 `json:"ipca_variacao_alimentacao" csv:"ipca_variacao_alimentacao"`
-
 	IPCAVariacaoHabitacao   float64 `json:"ipca_variacao_habitacao" csv:"ipca_variacao_habitacao"`
 	IPCAVariacaoResidencia  float64 `json:"ipca_variacao_artigos_residencia" csv:"ipca_variacao_artigos_residencia"`
 	IPCAVariacaoVestuario   float64 `json:"ipca_variacao_vestuario" csv:"ipca_variacao_vestuario"`
@@ -33,8 +33,28 @@ type Data struct {
 	IPCAVariacaoEducacao    float64 `json:"ipca_variacao_educacao" csv:"ipca_variacao_educacao"`
 	IPCAVariacaoComunicacao float64 `json:"ipca_variacao_comunicacao" csv:"ipca_variacao_comunicacao"`
 
-	IPCAAcumuladoAno       float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
-	IPCAAcumulado12Meses   float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
+	IPCAAcumuladoAno            float64 `json:"ipca_acumulado_ano" csv:"ipca_acumulado_ano"`
+	IPCAAcumuladoAnoAlimentacao float64 `json:"ipca_acumulado_ano_alimentacao" csv:"ipca_acumulado_ano_alimentacao"`
+	IPCAAcumuladoAnoHabitacao   float64 `json:"ipca_acumulado_ano_habitacao" csv:"ipca_acumulado_ano_habitacao"`
+	IPCAAcumuladoAnoResidencia  float64 `json:"ipca_acumulado_ano_artigos_residencia" csv:"ipca_acumulado_ano_artigos_residencia"`
+	IPCAAcumuladoAnoVestuario   float64 `json:"ipca_acumulado_ano_vestuario" csv:"ipca_acumulado_ano_vestuario"`
+	IPCAAcumuladoAnoTransporte  float64 `json:"ipca_acumulado_ano_transporte" csv:"ipca_acumulado_ano_transporte"`
+	IPCAAcumuladoAnoSaude       float64 `json:"ipca_acumulado_ano_saude" csv:"ipca_acumulado_ano_saude"`
+	IPCAAcumuladoAnoPessoais    float64 `json:"ipca_acumulado_ano_despesas_pessoais" csv:"ipca_acumulado_ano_despesas_pessoais"`
+	IPCAAcumuladoAnoEducacao    float64 `json:"ipca_acumulado_ano_educacao" csv:"ipca_acumulado_ano_educacao"`
+	IPCAAcumuladoAnoComunicacao float64 `json:"ipca_acumulado_ano_comunicacao" csv:"ipca_acumulado_ano_comunicacao"`
+
+	IPCAAcumulado12Meses            float64 `json:"ipca_acumulado_doze_meses" csv:"ipca_acumulado_doze_meses"`
+	IPCAAcumulado12MesesAlimentacao float64 `json:"ipca_acumulado_doze_meses_alimentacao" csv:"ipca_acumulado_doze_meses_alimentacao"`
+	IPCAAcumulado12MesesHabitacao   float64 `json:"ipca_acumulado_doze_meses_habitacao" csv:"ipca_acumulado_doze_meses_habitacao"`
+	IPCAAcumulado12MesesResidencia  float64 `json:"ipca_acumulado_doze_meses_artigos_residencia" csv:"ipca_acumulado_doze_meses_artigos_residencia"`
+	IPCAAcumulado12MesesVestuario   float64 `json:"ipca_acumulado_doze_meses_vestuario" csv:"ipca_acumulado_doze_meses_vestuario"`
+	IPCAAcumulado12MesesTransporte  float64 `json:"ipca_acumulado_doze_meses_transporte" csv:"ipca_acumulado_doze_meses_transporte"`
+	IPCAAcumulado12MesesSaude       float64 `json:"ipca_acumulado_doze_meses_saude" csv:"ipca_acumulado_doze_meses_saude"`
+	IPCAAcumulado12MesesPessoais    float64 `json:"ipca_acumulado_doze_meses_despesas_pessoais" csv:"ipca_acumulado_doze_meses_despesas_pessoais"`
+	IPCAAcumulado12MesesEducacao    float64 `json:"ipca_acumulado_doze_meses_educacao" csv:"ipca_acumulado_doze_meses_educacao"`
+	IPCAAcumulado12MesesComunicacao float64 `json:"ipca_acumulado_doze_meses_comunicacao" csv:"ipca_acumulado_doze_meses_comunicacao"`
+
 	IPCA15Variacao         float64 `json:"ipca15_variacao" csv:"ipca15_variacao"`
 	IPCA15AcumuladoAno     float64 `json:"ipca15_acumulado_ano" csv:"ipca15_acumulado_ano"`
 	IPCA15Acumulado12Meses float64 `json:"ipca15_acumulado_doze_meses" csv:"ipca15_acumulado_doze_meses"`
@@ -75,6 +95,8 @@ func RunnerConsolidacao() {
 
 	ipcaFile := "./data/inflacao/ipca.json"
 	ipcaDetalhadoFile := "./data/inflacao/ipca_detalhado.json"
+	ipcaDetalhadoAnoFile := "./data/inflacao/ipca_detalhado_ano.json"
+	ipcaDetalhado12MesesFile := "./data/inflacao/ipca_detalhado_12_meses.json"
 	ipca15File := "./data/inflacao/ipca15.json"
 	inpcFile := "./data/inflacao/inpc.json"
 	ipaFile := "./data/inflacao/ipa.json"
@@ -124,7 +146,7 @@ func RunnerConsolidacao() {
 			Msg("converter para struct")
 	}
 
-	IPCADetalhado := IPCADetalhado{}
+	IPCADetalhadoD := IPCADetalhado{}
 	fileIPCADetalhado, err := ioutil.ReadFile(ipcaDetalhadoFile)
 
 	if err != nil {
@@ -135,7 +157,47 @@ func RunnerConsolidacao() {
 			Msg("Erro ao ler o arquivo")
 	}
 
-	err = json.Unmarshal([]byte(fileIPCADetalhado), &IPCADetalhado)
+	err = json.Unmarshal([]byte(fileIPCADetalhado), &IPCADetalhadoD)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("converter para struct")
+	}
+
+	IPCADetalhadoAno := IPCADetalhado{}
+	fileIPCADetalhadoAno, err := ioutil.ReadFile(ipcaDetalhadoAnoFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPCADetalhadoAno), &IPCADetalhadoAno)
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("converter para struct")
+	}
+
+	IPCADetalhado12Meses := IPCADetalhado{}
+	fileIPCADetalhado12Meses, err := ioutil.ReadFile(ipcaDetalhado12MesesFile)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("Error", err.Error()).
+			Str("Arquivo", ipcaFile).
+			Msg("Erro ao ler o arquivo")
+	}
+
+	err = json.Unmarshal([]byte(fileIPCADetalhado12Meses), &IPCADetalhado12Meses)
 	if err != nil {
 		l.Fatal().
 			Str("Runner", runnerName).
@@ -389,7 +451,7 @@ func RunnerConsolidacao() {
 		Str("Runner", runnerName).
 		Msg("Agregando os Items de IPCA Detalhado ao Consolidado")
 
-	for _, ip := range IPCADetalhado.Data {
+	for _, ip := range IPCADetalhadoD.Data {
 
 		item := consolidado[ip.Referencia]
 		item.IPCAVariacaoAlimentacao = ip.VariacaoAlimentacao
@@ -401,6 +463,46 @@ func RunnerConsolidacao() {
 		item.IPCAVariacaoSaude = ip.VariacaoSaude
 		item.IPCAVariacaoTransporte = ip.VariacaoTransporte
 		item.IPCAVariacaoVestuario = ip.VariacaoVestuario
+
+		consolidado[ip.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPCA Detalhado Anual ao Consolidado")
+
+	for _, ip := range IPCADetalhadoAno.Data {
+
+		item := consolidado[ip.Referencia]
+		item.IPCAAcumuladoAnoAlimentacao = ip.VariacaoAlimentacao
+		item.IPCAAcumuladoAnoComunicacao = ip.VariacaoComunicacao
+		item.IPCAAcumuladoAnoEducacao = ip.VariacaoEducacao
+		item.IPCAAcumuladoAnoHabitacao = ip.VariacaoHabitacao
+		item.IPCAAcumuladoAnoPessoais = ip.VariacaoPessoais
+		item.IPCAAcumuladoAnoResidencia = ip.VariacaoArtigosResidencia
+		item.IPCAAcumuladoAnoSaude = ip.VariacaoSaude
+		item.IPCAAcumuladoAnoTransporte = ip.VariacaoTransporte
+		item.IPCAAcumuladoAnoVestuario = ip.VariacaoVestuario
+
+		consolidado[ip.Referencia] = item
+	}
+
+	l.Info().
+		Str("Runner", runnerName).
+		Msg("Agregando os Items de IPCA Detalhado 12 Meses ao Consolidado")
+
+	for _, ip := range IPCADetalhado12Meses.Data {
+
+		item := consolidado[ip.Referencia]
+		item.IPCAAcumulado12MesesAlimentacao = ip.VariacaoAlimentacao
+		item.IPCAAcumulado12MesesComunicacao = ip.VariacaoComunicacao
+		item.IPCAAcumulado12MesesEducacao = ip.VariacaoEducacao
+		item.IPCAAcumulado12MesesHabitacao = ip.VariacaoHabitacao
+		item.IPCAAcumulado12MesesPessoais = ip.VariacaoPessoais
+		item.IPCAAcumulado12MesesResidencia = ip.VariacaoArtigosResidencia
+		item.IPCAAcumulado12MesesSaude = ip.VariacaoSaude
+		item.IPCAAcumulado12MesesTransporte = ip.VariacaoTransporte
+		item.IPCAAcumulado12MesesVestuario = ip.VariacaoVestuario
 
 		consolidado[ip.Referencia] = item
 	}

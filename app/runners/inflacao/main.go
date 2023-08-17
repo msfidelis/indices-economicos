@@ -4,6 +4,8 @@ func Runner() {
 	RunnerIPCA()
 	RunnerIPCA15()
 	RunnerIPCADetalhado()
+	RunnerIPCADetalhadoAno()
+	RunnerIPCADetalhado12Meses()
 	RunnerINPC()
 	RunnerIPA()
 	RunnerIPC()
