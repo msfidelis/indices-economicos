@@ -249,7 +249,7 @@ type IPCADetalhado struct {
 }
 
 func RunnerIPCADetalhado() {
-	runnerName := "IPCA - Detalhado 2020+"
+	runnerName := "IPCA - Detalhado"
 	url_old := "https://servicodados.ibge.gov.br/api/v3/agregados/1419/periodos/-999999/variaveis/63?localidades=N1%5Ball%5D&classificacao=315%5B7169,7170,7445,7486,7558,7625,7660,7712,7766,7786%5D"
 	url := "https://servicodados.ibge.gov.br/api/v3/agregados/7060/periodos/-99999/variaveis/63?localidades=N1%5Ball%5D&classificacao=315%5B7169,7170,7445,7486,7558,7625,7660,7712,7766,7786%5D"
 	unidadeMedida := "%"
