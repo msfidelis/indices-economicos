@@ -1,7 +1,7 @@
 package ambientais
 
 func Runner() {
-	RunnerQueimadas()
+	// RunnerQueimadas()
 	RunnerDesmatamentoProdes()
-	// RunnerPoluentesAtmosfericosEmpresas()
+	RunnerPoluentesAtmosfericosEmpresas()
 }
