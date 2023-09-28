@@ -77,6 +77,7 @@ func RunnerINCC() {
 			Msg("Encontrando o elemento <table> para efetuar o parsing")
 
 		e.ForEach("tr", func(i int, tr *colly.HTMLElement) {
+
 			referencia_td := tr.ChildText("td:nth-child(1)")
 			valor_td := strings.Replace(tr.ChildText("td:nth-child(2)"), ",", ".", -1)
 
@@ -101,7 +102,10 @@ func RunnerINCC() {
 				Referencia: referencia,
 			}
 
-			acc = append(acc, item)
+			if item.Ano != "1944" {
+				acc = append(acc, item)
+			}
+
 		})
 	})
 
@@ -118,6 +122,8 @@ func RunnerINCC() {
 		Str("Domain", domain).
 		Str("URL", url).
 		Msg("Construindo o acomulado")
+
+	fmt.Println(acc)
 
 	for i, k := range acc {
 
