@@ -2,6 +2,7 @@ package inflacao
 
 import (
 	"crawlers/pkg/logger"
+	"crawlers/pkg/upload"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -237,8 +238,19 @@ type DataIPCADetalhado struct {
 	VariacaoPessoais          float64 `json:"variacao_despesas_pessoais" csv:"variacao_despesas_pessoais"`
 	VariacaoEducacao          float64 `json:"variacao_educacao" csv:"variacao_educacao"`
 	VariacaoComunicacao       float64 `json:"variacao_comunicacao" csv:"variacao_comunicacao"`
-	ConsolidacaoAno           bool    `json:"consolidado_ano" csv:"consolidado_ano"`
-	IdentificadorIBGE         string  `json:"identificador_ibge" csv:"identificador_ibge"`
+
+	VariacaoAlimentacaoDec       float64 `json:"variacao_alimentacao_dec" csv:"variacao_alimentacao_dec"`
+	VariacaoHabitacaoDec         float64 `json:"variacao_habitacao_dec" csv:"variacao_habitacao_dec"`
+	VariacaoArtigosResidenciaDec float64 `json:"variacao_artigos_residencia_dec" csv:"variacao_artigos_residencia_dec"`
+	VariacaoVestuarioDec         float64 `json:"variacao_vestuario_dec" csv:"variacao_vestuario_dec"`
+	VariacaoTransporteDec        float64 `json:"variacao_transporte_dec" csv:"variacao_transporte_dec"`
+	VariacaoSaudeDec             float64 `json:"variacao_saude_cuidados_pessoais_dec" csv:"variacao_saude_cuidados_pessoais_dec"`
+	VariacaoPessoaisDec          float64 `json:"variacao_despesas_pessoais_dec" csv:"variacao_despesas_pessoais_dec"`
+	VariacaoEducacaoDec          float64 `json:"variacao_educacao_dec" csv:"variacao_educacao_dec"`
+	VariacaoComunicacaoDec       float64 `json:"variacao_comunicacao_dec" csv:"variacao_comunicacao_dec"`
+
+	ConsolidacaoAno   bool   `json:"consolidado_ano" csv:"consolidado_ano"`
+	IdentificadorIBGE string `json:"identificador_ibge" csv:"identificador_ibge"`
 }
 
 type IPCADetalhado struct {
@@ -256,6 +268,9 @@ func RunnerIPCADetalhado() {
 	fonte := "https://servicodados.ibge.gov.br"
 	file_path := "./data/inflacao/ipca_detalhado.json"
 	fileNameOutputCSV := "./data/inflacao/ipca_detalhado.csv"
+
+	s3KeyCSV := "inflacao/ipca_detalhado.csv"
+	s3KeyJSON := "inflacao/ipca_detalhado.json"
 
 	ordenado := make(map[string]DataIPCADetalhado)
 
@@ -442,7 +457,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoAlimentacao = valor
-
+		item.VariacaoAlimentacaoDec = valor * 0.193
 		ordenado[n] = item
 	}
 
@@ -470,6 +485,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoAlimentacao = valor
+		item.VariacaoAlimentacaoDec = valor * 0.193
 
 		ordenado[n] = item
 	}
@@ -498,6 +514,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoHabitacao = valor
+		item.VariacaoHabitacaoDec = valor * 0.156
 
 		ordenado[n] = item
 	}
@@ -526,6 +543,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoHabitacao = valor
+		item.VariacaoHabitacaoDec = valor * 0.156
 
 		ordenado[n] = item
 	}
@@ -555,7 +573,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoArtigosResidencia = valor
-
+		item.VariacaoArtigosResidenciaDec = valor * 0.038
 		ordenado[n] = item
 	}
 
@@ -583,6 +601,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoArtigosResidencia = valor
+		item.VariacaoArtigosResidenciaDec = valor * 0.038
 
 		ordenado[n] = item
 	}
@@ -611,6 +630,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoVestuario = valor
+		item.VariacaoVestuarioDec = valor * 0.046
 
 		ordenado[n] = item
 	}
@@ -639,6 +659,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoVestuario = valor
+		item.VariacaoVestuarioDec = valor * 0.046
 
 		ordenado[n] = item
 	}
@@ -667,6 +688,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoTransporte = valor
+		item.VariacaoTransporteDec = valor * 0.206
 
 		ordenado[n] = item
 	}
@@ -695,6 +717,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoTransporte = valor
+		item.VariacaoTransporteDec = valor * 0.206
 
 		ordenado[n] = item
 	}
@@ -723,6 +746,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoSaude = valor
+		item.VariacaoSaudeDec = valor * 0.135
 
 		ordenado[n] = item
 	}
@@ -751,6 +775,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoSaude = valor
+		item.VariacaoSaudeDec = valor * 0.135
 
 		ordenado[n] = item
 	}
@@ -779,6 +804,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoPessoais = valor
+		item.VariacaoPessoaisDec = valor * 0.107
 
 		ordenado[n] = item
 	}
@@ -807,6 +833,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoPessoais = valor
+		item.VariacaoPessoaisDec = valor * 0.107
 
 		ordenado[n] = item
 	}
@@ -835,6 +862,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoEducacao = valor
+		item.VariacaoEducacaoDec = valor * 0.061
 
 		ordenado[n] = item
 	}
@@ -863,6 +891,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoEducacao = valor
+		item.VariacaoEducacaoDec = valor * 0.061
 
 		ordenado[n] = item
 	}
@@ -891,6 +920,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoComunicacao = valor
+		item.VariacaoComunicacaoDec = valor * 0.057
 
 		ordenado[n] = item
 	}
@@ -919,6 +949,7 @@ func RunnerIPCADetalhado() {
 
 		item := ordenado[n]
 		item.VariacaoComunicacao = valor
+		item.VariacaoComunicacaoDec = valor * 0.057
 
 		ordenado[n] = item
 	}
@@ -1011,6 +1042,34 @@ func RunnerIPCADetalhado() {
 		Str("Runner", runnerName).
 		Str("FilePath", fileNameOutputCSV).
 		Msg("Dataset em CSV Criado")
+
+	l.Info().
+		Str("Runner", runnerName).
+		Str("FilePath", fileNameOutputCSV).
+		Str("S3Key", s3KeyCSV).
+		Msg("Fazendo Upload para o S3")
+
+	err = upload.S3(fileNameOutputCSV, s3KeyCSV)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", fileNameOutputCSV).
+			Str("S3Key", s3KeyCSV).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
+
+	err = upload.S3(file_path, s3KeyJSON)
+
+	if err != nil {
+		l.Fatal().
+			Str("Runner", runnerName).
+			Str("FilePath", file_path).
+			Str("S3Key", s3KeyJSON).
+			Str("Error", err.Error()).
+			Msg("Erro ao fazer upload do arquivo para o S3")
+	}
 
 	l.Info().
 		Str("Runner", runnerName).

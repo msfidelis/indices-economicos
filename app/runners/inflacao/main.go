@@ -9,7 +9,7 @@ func Runner() {
 	RunnerINPC()
 	RunnerIPA()
 	RunnerIPC()
-	RunnerINCC()
+	// RunnerINCC()
 	RunnerINCCM2008()
 	RunnerINCCM()
 	RunnerINCCConsolidado()
